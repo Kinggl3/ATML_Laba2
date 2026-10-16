@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+dataset_kaggle/
+*.zip
+results/**/lag-llama/
+
+results/**/lag-llama/
+results/**/lightgbm_model.txt
+
+images/
+results/**/*.png.cache
+*.safetensors
+*.bin
