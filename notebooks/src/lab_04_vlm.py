@@ -1,7 +1,7 @@
 # %% [markdown]
 # # ЛР2 · lab_04 — визуально-языковые модели, zero-shot (GPU)
 #
-# **Inputs:** датасет `vkr-transit-lab`, вывод `lab-00-data`.
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA`, вывод `lab-00-data`.
 # **Accelerator:** GPU T4 ×1. Время: 3B — ~1 ч, 7B (4 бита) — ~2 ч, 2B — ~45 мин.
 # **Internet:** включён (загрузка весов с Hugging Face).
 #
@@ -17,8 +17,23 @@ MODEL_KEY = "qwen25vl_3b"          # qwen25vl_3b | qwen25vl_7b | internvl3_2b
 import os, sys, time, glob, json, subprocess
 from pathlib import Path
 import numpy as np, pandas as pd, torch
-_kit = glob.glob("/kaggle/input/**/labkit.py", recursive=True) or ["./labkit.py"]
-sys.path.insert(0, str(Path(_kit[0]).parent))
+def _find_labkit():
+    """labkit.py лежит в выводе ноутбука lab-00-data; ищем во всех подключённых Inputs."""
+    for root in ["/kaggle/input", "/kaggle/working", "."]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if "labkit.py" in fn:
+                return dp
+    tree = []
+    for dp, dn, fn in os.walk("/kaggle/input", followlinks=True):
+        if dp.count(os.sep) <= 5:
+            tree.append(dp)
+    raise FileNotFoundError("labkit.py не найден: подключите вывод ноутбука lab-00-data "
+                            "(Add Input → Your Work → Notebooks → lab-00-data). Сейчас в /kaggle/input:\n"
+                            + "\n".join(tree[:60]))
+
+
+sys.path.insert(0, _find_labkit())
+print("labkit:", sys.path[0])
 import labkit as lk
 OUT = lk.results_dir()
 dev = "cuda"
@@ -81,7 +96,10 @@ print(prompt_text(E.iloc[0], "text+chart"))
 # ## Модель и оценка вероятности по логитам Yes / No
 
 # %%
-kw = {"torch_dtype": torch.float16, "device_map": "cuda:0"}
+import inspect
+DT = "dtype" if "dtype" in inspect.signature(transformers.PreTrainedModel.from_pretrained).parameters or \
+    int(transformers.__version__.split(".")[0]) >= 5 else "torch_dtype"
+kw = {DT: torch.float16, "device_map": "cuda:0"}
 if CFG["quant"] == "nf4":
     kw = {"quantization_config": BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
                                                     bnb_4bit_compute_dtype=torch.float16), "device_map": "cuda:0"}

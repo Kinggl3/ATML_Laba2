@@ -3,7 +3,7 @@
 #
 # Задания 2 и 7 (протокол: разделы 1–5, 12). Только CPU.
 #
-# **Inputs:** датасет `vkr-transit-lab` (версия с папкой `alerts/`).
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA` (версия с папкой `alerts/`).
 # **Output:** `labkit.py`, объекты `objects_*.parquet`, оповещения `alerts_clean.parquet`, паспорт, журналы.
 #
 # Что делает:

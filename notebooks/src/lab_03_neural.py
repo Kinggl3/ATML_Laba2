@@ -1,7 +1,7 @@
 # %% [markdown]
 # # ЛР2 · lab_03 — нейросетевое слияние: M4 gated fusion, M5 cross-attention (GPU)
 #
-# **Inputs:** датасет `vkr-transit-lab`, вывод `lab-00-data`, `lab-01-embed`, `lab-02-gbm` (для сравнения).
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA`, вывод `lab-00-data`, `lab-01-embed`, `lab-02-gbm` (для сравнения).
 # **Accelerator:** GPU T4 ×1. Время: ~30–45 мин.
 #
 # - **M4 gated fusion:** свой кодировщик на модальность, обучаемые ворота, выпадение модальностей p = 0,2.
@@ -13,8 +13,23 @@
 import os, sys, time, glob, json, copy
 from pathlib import Path
 import numpy as np, pandas as pd, torch, torch.nn as nn, torch.nn.functional as F
-_kit = glob.glob("/kaggle/input/**/labkit.py", recursive=True) or ["./labkit.py"]
-sys.path.insert(0, str(Path(_kit[0]).parent))
+def _find_labkit():
+    """labkit.py лежит в выводе ноутбука lab-00-data; ищем во всех подключённых Inputs."""
+    for root in ["/kaggle/input", "/kaggle/working", "."]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if "labkit.py" in fn:
+                return dp
+    tree = []
+    for dp, dn, fn in os.walk("/kaggle/input", followlinks=True):
+        if dp.count(os.sep) <= 5:
+            tree.append(dp)
+    raise FileNotFoundError("labkit.py не найден: подключите вывод ноутбука lab-00-data "
+                            "(Add Input → Your Work → Notebooks → lab-00-data). Сейчас в /kaggle/input:\n"
+                            + "\n".join(tree[:60]))
+
+
+sys.path.insert(0, _find_labkit())
+print("labkit:", sys.path[0])
 import labkit as lk
 OUT = lk.results_dir()
 dev = "cuda" if torch.cuda.is_available() else "cpu"

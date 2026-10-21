@@ -1,7 +1,7 @@
 # %% [markdown]
 # # ЛР2 · lab_02 — одномодальные baseline'ы, раннее и позднее слияние, абляции (CPU)
 #
-# **Inputs:** датасет `vkr-transit-lab` (с `alerts/`), вывод `lab-00-data`, вывод `lab-01-embed`.
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA` (с `alerts/`), вывод `lab-00-data`, вывод `lab-01-embed`.
 # **Accelerator:** нет (CPU). Время: ~40–60 мин.
 #
 # Модели (протокол, разд. 6): U0 инерция, U1 числа, U2 текст, U3 изображение,
@@ -17,8 +17,23 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
-_kit = glob.glob("/kaggle/input/**/labkit.py", recursive=True) or ["./labkit.py"]
-sys.path.insert(0, str(Path(_kit[0]).parent))
+def _find_labkit():
+    """labkit.py лежит в выводе ноутбука lab-00-data; ищем во всех подключённых Inputs."""
+    for root in ["/kaggle/input", "/kaggle/working", "."]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if "labkit.py" in fn:
+                return dp
+    tree = []
+    for dp, dn, fn in os.walk("/kaggle/input", followlinks=True):
+        if dp.count(os.sep) <= 5:
+            tree.append(dp)
+    raise FileNotFoundError("labkit.py не найден: подключите вывод ноутбука lab-00-data "
+                            "(Add Input → Your Work → Notebooks → lab-00-data). Сейчас в /kaggle/input:\n"
+                            + "\n".join(tree[:60]))
+
+
+sys.path.insert(0, _find_labkit())
+print("labkit:", sys.path[0])
 import labkit as lk
 OUT = lk.results_dir()
 PARTS = ["train", "val", "test", "holdout"]

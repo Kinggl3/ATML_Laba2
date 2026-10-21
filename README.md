@@ -31,7 +31,7 @@ report/              обзор литературы, отчёт
 
 ## Данные
 
-1. **`vkr-transit-lab`** (приватный Kaggle-датасет из ЛР1, версия v1): почасовые входы по 424 станциям,
+1. **`VKR_PM232_Pevin_MTA`** (основной приватный Kaggle-датасет, тот же, что в ЛР1): почасовые входы по 424 станциям,
    ковариаты, граф станций. Подготовлены в рамках ВКР (`vkr-transit`).
 2. **`vkr-mta-alerts`** (новый приватный Kaggle-датасет): 45 файлов `alerts_YYYY-MM.parquet` — служебные
    оповещения MTA по метро за 01.2023–08.2026. Источник: [data.ny.gov `7kct-peq7`](https://data.ny.gov/d/7kct-peq7).
@@ -44,14 +44,14 @@ report/              обзор литературы, отчёт
 
 | № | Ноутбук | Accelerator | Internet | Inputs | Время |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `lab_00_data` | нет | нет | `vkr-transit-lab`, `vkr-mta-alerts` | ~5 мин |
-| 2 | `lab_01_embed` | GPU T4 | да | `vkr-transit-lab`, вывод `lab-00-data` | ~40 мин |
-| 3 | `lab_02_gbm` | нет | нет | `vkr-transit-lab`, `vkr-mta-alerts`, выводы `lab-00-data`, `lab-01-embed` | ~1 ч |
+| 1 | `lab_00_data` | нет | нет | `VKR_PM232_Pevin_MTA`, `vkr-mta-alerts` | ~5 мин |
+| 2 | `lab_01_embed` | GPU T4 | да | `VKR_PM232_Pevin_MTA`, вывод `lab-00-data` | ~40 мин |
+| 3 | `lab_02_gbm` | нет | нет | `VKR_PM232_Pevin_MTA`, `vkr-mta-alerts`, выводы `lab-00-data`, `lab-01-embed` | ~1 ч |
 | 4 | `lab_03_neural` | GPU T4 | нет | выводы `lab-00-data`, `lab-01-embed`, `lab-02-gbm` | ~40 мин |
-| 5 | `lab_04_vlm_qwen3b` | GPU T4 | да | `vkr-transit-lab`, вывод `lab-00-data` | ~1 ч |
+| 5 | `lab_04_vlm_qwen3b` | GPU T4 | да | `VKR_PM232_Pevin_MTA`, вывод `lab-00-data` | ~1 ч |
 | 6 | `lab_04_vlm_qwen7b` | GPU T4 | да | то же | ~2 ч |
 | 7 | `lab_04_vlm_internvl` | GPU T4 | да | то же | ~45 мин |
-| 8 | `lab_05_summary` | нет | нет | `vkr-transit-lab` + выводы **всех** ноутбуков выше | ~10 мин |
+| 8 | `lab_05_summary` | нет | нет | `VKR_PM232_Pevin_MTA` + выводы **всех** ноутбуков выше | ~10 мин |
 
 Ноутбуки 5–7 не зависят от 2–4 и могут идти параллельно с ними.
 

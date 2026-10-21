@@ -1,7 +1,7 @@
 # %% [markdown]
 # # ЛР2 · lab_05 — сводка: сравнение, выбор, holdout, применение, ошибки, гипотезы (CPU)
 #
-# **Inputs:** датасет `vkr-transit-lab`, выводы **всех** ноутбуков: `lab-00-data`, `lab-01-embed`, `lab-02-gbm`,
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA`, выводы **всех** ноутбуков: `lab-00-data`, `lab-01-embed`, `lab-02-gbm`,
 # `lab-03-neural`, `lab-04-vlm-qwen3b`, `lab-04-vlm-qwen7b`, `lab-04-vlm-internvl`.
 # **Accelerator:** нет. Время: ~10 мин.
 #
@@ -9,22 +9,43 @@
 # подтверждение на holdout, применение, анализ ошибок, проверка гипотез H1–H5.
 
 # %%
-import sys, glob, json, time
+import os, sys, glob, json, time
 from pathlib import Path
 import numpy as np, pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
-_kit = glob.glob("/kaggle/input/**/labkit.py", recursive=True) or ["./labkit.py"]
-sys.path.insert(0, str(Path(_kit[0]).parent))
+def _find_labkit():
+    """labkit.py лежит в выводе ноутбука lab-00-data; ищем во всех подключённых Inputs."""
+    for root in ["/kaggle/input", "/kaggle/working", "."]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if "labkit.py" in fn:
+                return dp
+    tree = []
+    for dp, dn, fn in os.walk("/kaggle/input", followlinks=True):
+        if dp.count(os.sep) <= 5:
+            tree.append(dp)
+    raise FileNotFoundError("labkit.py не найден: подключите вывод ноутбука lab-00-data "
+                            "(Add Input → Your Work → Notebooks → lab-00-data). Сейчас в /kaggle/input:\n"
+                            + "\n".join(tree[:60]))
+
+
+sys.path.insert(0, _find_labkit())
+print("labkit:", sys.path[0])
 import labkit as lk
 OUT = lk.results_dir(); FIG = OUT / "figures"; FIG.mkdir(exist_ok=True)
 T0 = time.time()
 
 
 def find_all(pattern):
-    hits = glob.glob(f"/kaggle/input/**/{pattern}", recursive=True) or glob.glob(f"results/**/{pattern}", recursive=True)
+    import fnmatch
+    hits = []
+    for root in ["/kaggle/input", "results"]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            hits += [os.path.join(dp, x) for x in fn if fnmatch.fnmatch(x, pattern)]
+        if hits:
+            break
     return sorted(set(hits), key=lambda p: Path(p).name)
 
 

@@ -1,7 +1,7 @@
 # %% [markdown]
 # # ЛР2 · lab_01 — эмбеддинги текста и изображений (GPU)
 #
-# **Inputs:** датасет `vkr-transit-lab` (с `alerts/`), вывод `lab-00-data`.
+# **Inputs:** датасет `VKR_PM232_Pevin_MTA` (с `alerts/`), вывод `lab-00-data`.
 # **Accelerator:** GPU T4 ×1. Время: ~30–40 мин.
 #
 # 1. Текст: `BAAI/bge-small-en-v1.5`, эмбеддинг каждого очищенного оповещения (header + начало description).
@@ -12,10 +12,26 @@
 # порядок строк = порядок в `alerts_clean.parquet` / `objects_<part>.parquet`.
 
 # %%
-import sys, time, glob
+import os, sys, time, glob
 from pathlib import Path
 import numpy as np, pandas as pd, torch
-sys.path.insert(0, str(Path(glob.glob("/kaggle/input/**/labkit.py", recursive=True)[0]).parent))
+def _find_labkit():
+    """labkit.py лежит в выводе ноутбука lab-00-data; ищем во всех подключённых Inputs."""
+    for root in ["/kaggle/input", "/kaggle/working", "."]:
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if "labkit.py" in fn:
+                return dp
+    tree = []
+    for dp, dn, fn in os.walk("/kaggle/input", followlinks=True):
+        if dp.count(os.sep) <= 5:
+            tree.append(dp)
+    raise FileNotFoundError("labkit.py не найден: подключите вывод ноутбука lab-00-data "
+                            "(Add Input → Your Work → Notebooks → lab-00-data). Сейчас в /kaggle/input:\n"
+                            + "\n".join(tree[:60]))
+
+
+sys.path.insert(0, _find_labkit())
+print("labkit:", sys.path[0])
 import labkit as lk
 OUT = lk.results_dir()
 dev = "cuda" if torch.cuda.is_available() else "cpu"
@@ -44,7 +60,11 @@ from transformers import AutoModel, AutoProcessor
 d = lk.load()
 Y = d.y.to_numpy("float32")
 proc = AutoProcessor.from_pretrained("google/siglip-base-patch16-224")
-model = AutoModel.from_pretrained("google/siglip-base-patch16-224", torch_dtype=torch.float16).to(dev).eval()
+try:
+    model = AutoModel.from_pretrained("google/siglip-base-patch16-224", dtype=torch.float16)
+except TypeError:                                # старые версии transformers
+    model = AutoModel.from_pretrained("google/siglip-base-patch16-224", torch_dtype=torch.float16)
+model = model.to(dev).eval()
 
 
 class Charts(torch.utils.data.Dataset):
@@ -73,6 +93,8 @@ for part in lk.SPLIT:
     with torch.no_grad():
         for px in dl:
             f = model.get_image_features(pixel_values=px.to(dev, torch.float16))
+            if not torch.is_tensor(f):          # transformers ≥ 5 возвращает объект, а не тензор
+                f = f.pooler_output
             f = torch.nn.functional.normalize(f.float(), dim=-1)
             out[k:k + len(f)] = f.cpu().numpy().astype("float16"); k += len(f)
     np.save(OUT / f"img_emb_{part}.npy", out)

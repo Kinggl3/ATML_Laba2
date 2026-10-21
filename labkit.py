@@ -69,28 +69,39 @@ TZ_NOTE = "местное время America/New_York без часового п
 # =============================================================================
 # Данные
 # =============================================================================
+def _walk(name: str, root: str = "/kaggle/input") -> list[Path]:
+    """Все файлы с именем name под root (по символическим ссылкам тоже — так монтируются Inputs Kaggle)."""
+    out = []
+    if os.path.isdir(root):
+        for dp, dn, fn in os.walk(root, followlinks=True):
+            if name in fn:
+                out.append(Path(dp) / name)
+    return sorted(out)
+
+
 def find_data_root() -> Path:
     """Папка, где лежат lab/, graph/ и alerts/. Ищет на Kaggle, затем локально."""
     env = os.environ.get("VKR_DATA_ROOT")
     if env:
         return Path(env)
-    hits = glob.glob("/kaggle/input/**/lab/split.json", recursive=True)
+    hits = [p for p in _walk("split.json") if p.parent.name == "lab"]
     if hits:
-        return Path(hits[0]).parent.parent
+        return hits[0].parent.parent
     for cand in [Path("dataset_kaggle"), Path("../dataset_kaggle"), Path("data"), Path("../data")]:
         if (cand / "lab" / "split.json").exists():
             return cand
-    raise FileNotFoundError("Не найден lab/split.json: подключите датасет vkr-transit-lab или задайте VKR_DATA_ROOT")
+    raise FileNotFoundError("Не найден lab/split.json: подключите основной датасет (VKR_PM232_Pevin_MTA) "
+                            "или задайте VKR_DATA_ROOT")
 
 
 def find_alerts_dir(root: Path) -> Path:
     for cand in [root / "alerts", root / "raw" / "alerts"]:
         if list(cand.glob("alerts_*.parquet")):
             return cand
-    hits = glob.glob("/kaggle/input/**/alerts_2023-01.parquet", recursive=True)
+    hits = _walk("alerts_2023-01.parquet")
     if hits:
-        return Path(hits[0]).parent
-    raise FileNotFoundError("Не найдена папка alerts/ с alerts_YYYY-MM.parquet")
+        return hits[0].parent
+    raise FileNotFoundError("Не найдены файлы alerts_YYYY-MM.parquet: подключите датасет vkr-mta-alerts")
 
 
 def station_lines(name: str) -> set[str]:
@@ -600,9 +611,9 @@ def format_alerts(row, a: pd.DataFrame, with_level: bool = True) -> str:
 # =============================================================================
 def find_file(name: str) -> Path:
     """Файл из вывода предыдущих ноутбуков: /kaggle/input/**/name или results/name."""
-    hits = glob.glob(f"/kaggle/input/**/{name}", recursive=True)
+    hits = _walk(name)
     if hits:
-        return Path(hits[0])
+        return hits[0]
     for cand in [Path("results"), Path("../results"), Path("/kaggle/working/results")]:
         for p in cand.glob(f"**/{name}"):
             return p
