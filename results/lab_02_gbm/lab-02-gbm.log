@@ -1,0 +1,124 @@
+[{"stream_name":"stderr","time":11.938188474,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.938284181,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.938292054,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.938297209,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.917484118,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.917579137,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.917589715,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.917595179,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":98.797673668,"data":"train 349165 провалов: 0.0881\n"}
+,{"stream_name":"stdout","time":98.797791095,"data":"val 105492 провалов: 0.0643\n"}
+,{"stream_name":"stdout","time":98.797799547,"data":"test 265288 провалов: 0.0866\n"}
+,{"stream_name":"stdout","time":98.79780527,"data":"holdout 153022 провалов: 0.0389\n"}
+,{"stream_name":"stdout","time":111.398395824,"data":"доля дисперсии PCA: текст 0.661 изображение 0.8\n"}
+,{"stream_name":"stdout","time":201.362218794,"data":"U1_num               признаков  52  деревьев  518  PR-AUC val 0.7512  40 c\n"}
+,{"stream_name":"stdout","time":210.440914827,"data":"U2_text              признаков  43  деревьев   14  PR-AUC val 0.0721  7 c\n"}
+,{"stream_name":"stdout","time":299.629469916,"data":"M1_num_txtstruct     признаков  63  деревьев  479  PR-AUC val 0.7516  41 c\n"}
+,{"stream_name":"stdout","time":446.237895965,"data":"M2_early_all         признаков 111  деревьев  510  PR-AUC val 0.7477  67 c\n"}
+,{"stream_name":"stdout","time":551.618361776,"data":"A1_M2_no_text        признаков  68  деревьев  524  PR-AUC val 0.7502  48 c\n"}
+,{"stream_name":"stdout","time":682.151263884,"data":"A2_M2_no_image       признаков  95  деревьев  524  PR-AUC val 0.7486  58 c\n"}
+,{"stream_name":"stdout","time":725.053469683,"data":"A3_M2_no_numbers     признаков  59  деревьев  156  PR-AUC val 0.3071  22 c\n"}
+,{"stream_name":"stdout","time":878.060189134,"data":"A5_num_txtemb        признаков  84  деревьев  674  PR-AUC val 0.7488  67 c\n"}
+,{"stream_name":"stdout","time":967.581189179,"data":"A6_num_txtline       признаков  56  деревьев  511  PR-AUC val 0.7519  41 c\n"}
+,{"stream_name":"stdout","time":1064.360644463,"data":"A10_U1_no_nbr        признаков  51  деревьев  595  PR-AUC val 0.7456  43 c\n"}
+,{"stream_name":"stdout","time":1143.295978883,"data":"A10_M1_no_nbr        признаков  62  деревьев  452  PR-AUC val 0.7477  37 c\n"}
+,{"stream_name":"stdout","time":1272.315728761,"data":"C0_U1_plus_noise     признаков  68  деревьев  693  PR-AUC val 0.7488  57 c\n"}
+,{"stream_name":"stdout","time":1399.961552189,"data":"C1_U1_seed2          признаков  52  деревьев  839  PR-AUC val 0.7509  55 c\n"}
+,{"stream_name":"stdout","time":1698.7190586,"data":"M3 веса логитов: {'U1': np.float64(0.934), 'U2': np.float64(0.034), 'U3': np.float64(0.019)}\n"}
+,{"stream_name":"stdout","time":1761.250160085,"data":"           model  pr_auc  pr_auc_ci_low  pr_auc_ci_high  auroc  macro_f1    mcc  brier    ece\n"}
+,{"stream_name":"stdout","time":1761.2502206,"data":"  U0_persistence  0.3955         0.2235          0.5230 0.7789    0.7814 0.5628 0.0543 0.0088\n"}
+,{"stream_name":"stdout","time":1761.250226712,"data":"          U1_num  0.7495         0.5649          0.8416 0.9425    0.8225 0.6474 0.0391 0.0055\n"}
+,{"stream_name":"stdout","time":1761.250230645,"data":"         U2_text  0.0918         0.0520          0.1461 0.5210    0.5013 0.0137 0.0791 0.0034\n"}
+,{"stream_name":"stdout","time":1761.250233918,"data":"        U3_image  0.4125         0.1914          0.5526 0.8228    0.6938 0.3893 0.0632 0.0052\n"}
+,{"stream_name":"stdout","time":1761.250237072,"data":"M1_num_txtstruct  0.7489         0.5642          0.8413 0.9428    0.8224 0.6459 0.0391 0.0049\n"}
+,{"stream_name":"stdout","time":1761.250241247,"data":"    M2_early_all  0.7470         0.5605          0.8398 0.9416    0.8224 0.6470 0.0393 0.0055\n"}
+,{"stream_name":"stdout","time":1761.250246075,"data":"   M3_late_stack  0.7498         0.5653          0.8418 0.9426    0.8227 0.6480 0.0390 0.0035\n"}
+,{"stream_name":"stdout","time":1761.25025104,"data":"   A1_M2_no_text  0.7475         0.5633          0.8402 0.9420    0.8230 0.6471 0.0392 0.0052\n"}
+,{"stream_name":"stdout","time":1761.250255863,"data":"  A2_M2_no_image  0.7470         0.5624          0.8390 0.9419    0.8218 0.6440 0.0393 0.0056\n"}
+,{"stream_name":"stdout","time":1761.250260733,"data":"A3_M2_no_numbers  0.3118         0.1219          0.4477 0.7866    0.6548 0.3110 0.0689 0.0088\n"}
+,{"stream_name":"stdout","time":1761.250265157,"data":"   A5_num_txtemb  0.7470         0.5622          0.8400 0.9414    0.8218 0.6442 0.0393 0.0072\n"}
+,{"stream_name":"stdout","time":1761.250269781,"data":"  A6_num_txtline  0.7496         0.5631          0.8417 0.9426    0.8225 0.6490 0.0391 0.0058\n"}
+,{"stream_name":"stdout","time":1761.250274341,"data":"   A10_U1_no_nbr  0.7460         0.5636          0.8389 0.9410    0.8209 0.6444 0.0393 0.0060\n"}
+,{"stream_name":"stdout","time":1761.250279157,"data":"   A10_M1_no_nbr  0.7458         0.5629          0.8392 0.9417    0.8216 0.6438 0.0393 0.0046\n"}
+,{"stream_name":"stdout","time":1761.25028409,"data":"C0_U1_plus_noise  0.7473         0.5637          0.8397 0.9418    0.8225 0.6463 0.0392 0.0063\n"}
+,{"stream_name":"stdout","time":1761.250289045,"data":"     C1_U1_seed2  0.7475         0.5612          0.8412 0.9418    0.8217 0.6465 0.0393 0.0075\n"}
+,{"stream_name":"stdout","time":1761.446855039,"data":"лучший одномодальный baseline по val: U1_num\n"}
+,{"stream_name":"stdout","time":1797.064669171,"data":"           model     vs    part metric    diff  ci_low  ci_high  p_perm\n"}
+,{"stream_name":"stdout","time":1797.064704586,"data":"M1_num_txtstruct U1_num    test pr_auc -0.0006 -0.0021   0.0002  0.8791\n"}
+,{"stream_name":"stdout","time":1797.064711718,"data":"    M2_early_all U1_num    test pr_auc -0.0025 -0.0049  -0.0009  0.9970\n"}
+,{"stream_name":"stdout","time":1797.064717763,"data":"   M3_late_stack U1_num    test pr_auc  0.0002 -0.0000   0.0005  0.3926\n"}
+,{"stream_name":"stdout","time":1797.064724113,"data":"   A1_M2_no_text U1_num    test pr_auc -0.0020 -0.0050   0.0003  0.9481\n"}
+,{"stream_name":"stdout","time":1797.064730203,"data":"  A2_M2_no_image U1_num    test pr_auc -0.0026 -0.0042  -0.0008  0.9870\n"}
+,{"stream_name":"stdout","time":1797.064736113,"data":"A3_M2_no_numbers U1_num    test pr_auc -0.4378 -0.5354  -0.3438  1.0000\n"}
+,{"stream_name":"stdout","time":1797.064741815,"data":"   A5_num_txtemb U1_num    test pr_auc -0.0025 -0.0044  -0.0011  0.9920\n"}
+,{"stream_name":"stdout","time":1797.064747371,"data":"  A6_num_txtline U1_num    test pr_auc  0.0000 -0.0014   0.0013  0.4565\n"}
+,{"stream_name":"stdout","time":1797.06477114,"data":"   A10_U1_no_nbr U1_num    test pr_auc -0.0035 -0.0068  -0.0006  0.9730\n"}
+,{"stream_name":"stdout","time":1797.064776613,"data":"   A10_M1_no_nbr U1_num    test pr_auc -0.0037 -0.0076  -0.0008  0.9800\n"}
+,{"stream_name":"stdout","time":1797.064781217,"data":"C0_U1_plus_noise U1_num    test pr_auc -0.0022 -0.0036  -0.0009  0.9830\n"}
+,{"stream_name":"stdout","time":1797.064786226,"data":"     C1_U1_seed2 U1_num    test pr_auc -0.0020 -0.0041  -0.0004  0.9970\n"}
+,{"stream_name":"stdout","time":1797.064790851,"data":"M1_num_txtstruct U1_num holdout pr_auc -0.0028 -0.0059  -0.0005  0.9960\n"}
+,{"stream_name":"stdout","time":1797.064795996,"data":"    M2_early_all U1_num holdout pr_auc -0.0037 -0.0063  -0.0002  0.9800\n"}
+,{"stream_name":"stdout","time":1797.064800868,"data":"   M3_late_stack U1_num holdout pr_auc  0.0000 -0.0001   0.0003  0.5105\n"}
+,{"stream_name":"stdout","time":1797.064806293,"data":"   A1_M2_no_text U1_num holdout pr_auc -0.0029 -0.0076   0.0033  0.8292\n"}
+,{"stream_name":"stdout","time":1797.064811503,"data":"  A2_M2_no_image U1_num holdout pr_auc -0.0035 -0.0086  -0.0004  0.9740\n"}
+,{"stream_name":"stdout","time":1797.06481663,"data":"A3_M2_no_numbers U1_num holdout pr_auc -0.4720 -0.5238  -0.3870  1.0000\n"}
+,{"stream_name":"stdout","time":1797.064821529,"data":"   A5_num_txtemb U1_num holdout pr_auc -0.0065 -0.0127  -0.0029  1.0000\n"}
+,{"stream_name":"stdout","time":1797.064826051,"data":"  A6_num_txtline U1_num holdout pr_auc -0.0004 -0.0026   0.0020  0.6454\n"}
+,{"stream_name":"stdout","time":1797.064830929,"data":"   A10_U1_no_nbr U1_num holdout pr_auc -0.0113 -0.0147  -0.0068  1.0000\n"}
+,{"stream_name":"stdout","time":1797.064835921,"data":"   A10_M1_no_nbr U1_num holdout pr_auc -0.0114 -0.0162  -0.0052  1.0000\n"}
+,{"stream_name":"stdout","time":1797.064841101,"data":"C0_U1_plus_noise U1_num holdout pr_auc -0.0044 -0.0082  -0.0009  0.9830\n"}
+,{"stream_name":"stdout","time":1797.06484623,"data":"     C1_U1_seed2 U1_num holdout pr_auc -0.0008 -0.0044   0.0042  0.6404\n"}
+,{"stream_name":"stdout","time":1799.650568731,"data":"model                               M1_num_txtstruct  M2_early_all  M3_late_stack  U0_persistence  U1_num  U2_text  U3_image\n"}
+,{"stream_name":"stdout","time":1799.650620957,"data":"срез                                                                                                                        \n"}
+,{"stream_name":"stdout","time":1799.650628602,"data":"начало провала (в T−1 провала нет)             0.359         0.355          0.359           0.038   0.358    0.040     0.115\n"}
+,{"stream_name":"stdout","time":1799.650634837,"data":"начало провала, слой a                         0.367         0.397          0.366           0.051   0.366    0.081     0.206\n"}
+,{"stream_name":"stdout","time":1799.650640409,"data":"с оповещения 0–15 мин                          0.706         0.710            NaN             NaN   0.700      NaN       NaN\n"}
+,{"stream_name":"stdout","time":1799.650645807,"data":"с оповещения 15–60 мин                         0.750         0.752            NaN             NaN   0.751      NaN       NaN\n"}
+,{"stream_name":"stdout","time":1799.650651539,"data":"с оповещения 60–180 мин                        0.758         0.757            NaN             NaN   0.784      NaN       NaN\n"}
+,{"stream_name":"stdout","time":1799.650656415,"data":"слой a                                         0.743         0.746          0.743           0.488   0.743    0.248     0.503\n"}
+,{"stream_name":"stdout","time":1799.650661595,"data":"слой b                                         0.726         0.721          0.727           0.379   0.727    0.085     0.397\n"}
+,{"stream_name":"stdout","time":1799.650682648,"data":"слой c                                         0.761         0.761          0.762           0.404   0.761    0.091     0.420\n"}
+,{"stream_name":"stdout","time":1840.567286711,"data":"           model                              условие  pr_auc  доля от полного\n"}
+,{"stream_name":"stdout","time":1840.567338304,"data":"    M2_early_all                           без текста  0.7484           1.0020\n"}
+,{"stream_name":"stdout","time":1840.567346572,"data":"    M2_early_all                      без изображения  0.7456           0.9982\n"}
+,{"stream_name":"stdout","time":1840.567353337,"data":"    M2_early_all      перестановка текста внутри часа  0.7467           0.9996\n"}
+,{"stream_name":"stdout","time":1840.567360194,"data":"    M2_early_all перестановка изображения внутри часа  0.7460           0.9987\n"}
+,{"stream_name":"stdout","time":1840.567366724,"data":"    M2_early_all       перестановка чисел внутри часа  0.3787           0.5070\n"}
+,{"stream_name":"stdout","time":1840.567373144,"data":"M1_num_txtstruct                           без текста  0.7488           1.0000\n"}
+,{"stream_name":"stdout","time":1840.567379686,"data":"M1_num_txtstruct      перестановка текста внутри часа  0.7485           0.9995\n"}
+,{"stream_name":"stdout","time":2013.268272055,"data":"U1_num_h2            признаков  52  деревьев  845  PR-AUC val 0.6912  61 c\n"}
+,{"stream_name":"stdout","time":2104.38689931,"data":"M1_num_txtstruct_h2  признаков  63  деревьев  459  PR-AUC val 0.6893  40 c\n"}
+,{"stream_name":"stdout","time":2251.048897329,"data":"U1_num_h3            признаков  52  деревьев  869  PR-AUC val 0.6190  60 c\n"}
+,{"stream_name":"stdout","time":2373.210900081,"data":"M1_num_txtstruct_h3  признаков  63  деревьев  777  PR-AUC val 0.6172  53 c\n"}
+,{"stream_name":"stdout","time":2567.532630281,"data":"M1_win30             признаков  63  деревьев  675  PR-AUC val 0.7519  41 c\n"}
+,{"stream_name":"stdout","time":2687.394625341,"data":"M1_win180            признаков  63  деревьев  519  PR-AUC val 0.7516  43 c\n"}
+,{"stream_name":"stdout","time":2688.260500544,"data":"           абляция                 вариант  pr_auc_U1  pr_auc_M1    diff  ci_low  ci_high  p_perm\n"}
+,{"stream_name":"stdout","time":2688.260571788,"data":"       A8 горизонт          h=1 (основной)     0.7495     0.7489 -0.0006 -0.0021   0.0002  0.8882\n"}
+,{"stream_name":"stdout","time":2688.260580778,"data":"       A8 горизонт                     h=2     0.6855     0.6874  0.0020 -0.0010   0.0041  0.1756\n"}
+,{"stream_name":"stdout","time":2688.260587358,"data":"       A8 горизонт                     h=3     0.6365     0.6375  0.0010 -0.0009   0.0037  0.1916\n"}
+,{"stream_name":"stdout","time":2688.260592983,"data":"A7 окно активности             30 / 60 мин     0.7495     0.7494 -0.0001 -0.0020   0.0014  0.5828\n"}
+,{"stream_name":"stdout","time":2688.260599348,"data":"A7 окно активности           180 / 360 мин     0.7495     0.7490 -0.0005 -0.0018   0.0012  0.6766\n"}
+,{"stream_name":"stdout","time":2688.260605079,"data":"A7 окно активности 90 / 180 мин (основной)     0.7495     0.7489 -0.0006 -0.0021   0.0002  0.8882\n"}
+,{"stream_name":"stdout","time":2708.246110113,"data":"           model  p50_ms  p95_ms  objects_per_sec  fit_sec  gpu_gb\n"}
+,{"stream_name":"stdout","time":2708.246184423,"data":"          U1_num    2.83    3.75         51172.08     39.7     0.0\n"}
+,{"stream_name":"stdout","time":2708.246209961,"data":"         U2_text    4.01    4.96       1802431.30      6.7     0.0\n"}
+,{"stream_name":"stdout","time":2708.246213812,"data":"M1_num_txtstruct    3.10    3.99         57004.91     40.7     0.0\n"}
+,{"stream_name":"stdout","time":2708.24621703,"data":"    M2_early_all    5.25    7.56         51281.75     67.3     0.0\n"}
+,{"stream_name":"stdout","time":2708.246220026,"data":"        U3_image     NaN     NaN              NaN    297.8     0.0\n"}
+,{"stream_name":"stdout","time":2708.246222955,"data":"   M3_late_stack     NaN     NaN              NaN      NaN     0.0\n"}
+,{"stream_name":"stdout","time":2708.246226053,"data":"Без учёта эмбеддингов: для U2/M2 добавляется кодирование текста и изображения (см. lab_01, embed_timing.csv).\n"}
+,{"stream_name":"stdout","time":2708.277584232,"data":"modality\n"}
+,{"stream_name":"stdout","time":2708.27765755,"data":"изображение    0.050\n"}
+,{"stream_name":"stdout","time":2708.277665976,"data":"текст          0.035\n"}
+,{"stream_name":"stdout","time":2708.277671194,"data":"числа          0.914\n"}
+,{"stream_name":"stdout","time":2708.277675907,"data":"Name: gain, dtype: float64\n"}
+,{"stream_name":"stdout","time":2708.277680611,"data":"готово, мин: 44.7\n"}
+,{"stream_name":"stderr","time":2713.376657875,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2713.377001505,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2713.65490722,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2713.654949886,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2714.69950716,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2714.820480293,"data":"[NbConvertApp] Writing 45038 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2718.388174285,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2719.304929382,"data":"[NbConvertApp] Writing 412660 bytes to __results__.html\n"}
+]

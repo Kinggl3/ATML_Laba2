@@ -1,0 +1,33 @@
+{
+ "station": "5 Av/53 St (E,F)",
+ "T": "2026-06-03 21:00:00",
+ "y_drop": 1,
+ "y": 297.0,
+ "ref": 421.0,
+ "text": "[18 min ago; reroute | delays; this station] Uptown E/F trains are rerouted via Roosevelt Island from Manhattan to Queens while we investigate why a train's brakes activated at Lexington Av/53 St.\n[88 min ago; delays; nearby station] Uptown C/E trains are running with delays after we addressed a signal problem near 23 St.",
+ "numbers": {
+  "r_lag1": 1.009608268737793,
+  "r_lag2": 1.02842378616333,
+  "r_lag3": 0.9416652321815491,
+  "r_lag4": 0.9871703386306763,
+  "r_lag5": 1.0147947072982788,
+  "r_lag6": 0.9685863852500916,
+  "r_lag7": 0.949932336807251,
+  "r_lag8": 0.855967104434967,
+  "nbr_r_lag1": 1.0085629224777222,
+  "hour": 21.0
+ },
+ "text_features": {
+  "txt_n_line": 2.0,
+  "txt_n_service_line": 1.0,
+  "txt_n_delay_line": 1.0,
+  "txt_n_mention": 1.0,
+  "txt_n_range": 0.0,
+  "txt_n_nbr": 1.0,
+  "txt_service_core": 1.0,
+  "txt_severe_core": 0.0,
+  "txt_min_since": 18.0,
+  "txt_min_since_core": 18.0,
+  "txt_min_since_service": 18.0
+ }
+}

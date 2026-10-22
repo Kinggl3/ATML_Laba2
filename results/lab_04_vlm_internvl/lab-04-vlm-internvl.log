@@ -1,0 +1,50 @@
+[{"stream_name":"stderr","time":6.142527023,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.142567258,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.142571407,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.142573816,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.6936642299999995,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.693706301,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.693711885,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.693715568,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.92195836,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-data\n"}
+,{"stream_name":"stdout","time":34.079387459,"data":"5.16.1 2.11.0+cu128 {'id': 'OpenGVLab/InternVL3-2B-hf', 'quant': None, 'name': 'M8_internvl3_2b'}\n"}
+,{"stream_name":"stdout","time":45.554464043,"data":"1200 60\n"}
+,{"stream_name":"stdout","time":45.554502256,"data":"You help a New York City subway dispatcher. Station: 155 St (B,D), Manhattan. Now: Monday 01 June 2026, 06:00.\n"}
+,{"stream_name":"stdout","time":45.554507424,"data":"The image shows hourly entries at this station over the last 48 hours (solid blue line) and the same 48 hours one week earlier (dashed grey line, the usual pattern). The red line on the right marks now.\n"}
+,{"stream_name":"stdout","time":45.554515738,"data":"There are no active MTA service alerts on this station's lines.\n"}
+,{"stream_name":"stdout","time":45.554519528,"data":"Question: in the next hour (06:00–07:00), will the number of people entering this station be below 75% of its usual level for this hour of the week? Answer with one word: Yes or No.\n"}
+,{"stream_name":"stderr","time":45.671978248,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":45.67200224,"data":"\n"}
+,{"stream_name":"stderr","time":45.672007906,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":75.684287117,"data":"[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stderr","time":75.68432819,"data":"\n"}
+,{"stream_name":"stderr","time":75.684334672,"data":"[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stdout","time":75.958621508,"data":"токены Yes: [7414, 9454, 9693, 9834, 14004, 14080] No: [902, 2152, 2308, 2753, 5664, 8996] загрузка 30 c\n"}
+,{"stream_name":"stdout","time":151.03586773,"data":"val text+chart p95 1475 мс; первый токен Yes/No в 100% ответов; средняя p 0.307\n"}
+,{"stream_name":"stdout","time":154.600589705,"data":"val text p95 78 мс; первый токен Yes/No в 100% ответов; средняя p 0.260\n"}
+,{"stream_name":"stdout","time":230.549212691,"data":"val chart p95 1342 мс; первый токен Yes/No в 100% ответов; средняя p 0.335\n"}
+,{"stream_name":"stdout","time":1810.726109294,"data":"test text+chart p95 1411 мс; первый токен Yes/No в 100% ответов; средняя p 0.310\n"}
+,{"stream_name":"stdout","time":1877.70159926,"data":"test text p95 90 мс; первый токен Yes/No в 100% ответов; средняя p 0.262\n"}
+,{"stream_name":"stdout","time":3411.083487465,"data":"test chart p95 1294 мс; первый токен Yes/No в 100% ответов; средняя p 0.332\n"}
+,{"stream_name":"stdout","time":3412.421423666,"data":"            variant  pr_auc  pr_auc_ci_low  pr_auc_ci_high  auroc  macro_f1  brier    p95_ms\n"}
+,{"stream_name":"stdout","time":3412.421448746,"data":"         text+chart  0.0941         0.0545          0.1524 0.5051    0.4726 0.1309 1411.0683\n"}
+,{"stream_name":"stdout","time":3412.421454349,"data":"text+chart | слой a  0.1635            NaN             NaN 0.5635       NaN 0.1432       NaN\n"}
+,{"stream_name":"stdout","time":3412.421459928,"data":"text+chart | слой b  0.0562            NaN             NaN 0.4627       NaN 0.1167       NaN\n"}
+,{"stream_name":"stdout","time":3412.421464801,"data":"text+chart | слой c  0.0729            NaN             NaN 0.4088       NaN 0.1327       NaN\n"}
+,{"stream_name":"stdout","time":3412.421469593,"data":"               text  0.0844         0.0459          0.1449 0.4678    0.4876 0.1263   90.4398\n"}
+,{"stream_name":"stdout","time":3412.421474257,"data":"      text | слой a  0.1226            NaN             NaN 0.5048       NaN 0.1141       NaN\n"}
+,{"stream_name":"stdout","time":3412.421479041,"data":"      text | слой b  0.0452            NaN             NaN 0.3863       NaN 0.0722       NaN\n"}
+,{"stream_name":"stdout","time":3412.421483759,"data":"      text | слой c  0.0865            NaN             NaN 0.4936       NaN 0.1926       NaN\n"}
+,{"stream_name":"stdout","time":3412.421488546,"data":"              chart  0.0802         0.0493          0.1256 0.4478    0.4843 0.1420 1294.2247\n"}
+,{"stream_name":"stdout","time":3412.421493217,"data":"     chart | слой a  0.1319            NaN             NaN 0.4712       NaN 0.1553       NaN\n"}
+,{"stream_name":"stdout","time":3412.421497977,"data":"     chart | слой b  0.0545            NaN             NaN 0.4602       NaN 0.1319       NaN\n"}
+,{"stream_name":"stdout","time":3412.421520368,"data":"     chart | слой c  0.0694            NaN             NaN 0.3800       NaN 0.1389       NaN\n"}
+,{"stream_name":"stderr","time":3417.6889747,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3417.689012525,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3417.85412484,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3417.854151307,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3418.565049036,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3418.670601138,"data":"[NbConvertApp] Writing 195537 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3421.195346479,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3421.762369331,"data":"[NbConvertApp] Writing 476300 bytes to __results__.html\n"}
+]

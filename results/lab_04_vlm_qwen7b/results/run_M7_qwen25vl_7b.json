@@ -1,0 +1,8 @@
+{
+ "model": "M7_qwen25vl_7b",
+ "weights": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "quant": "nf4",
+ "transformers": "5.16.1",
+ "load_sec": 132.1570725440979,
+ "gpu": "Tesla T4"
+}

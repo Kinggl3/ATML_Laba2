@@ -1,0 +1,8 @@
+{
+ "model": "M8_internvl3_2b",
+ "weights": "OpenGVLab/InternVL3-2B-hf",
+ "quant": null,
+ "transformers": "5.16.1",
+ "load_sec": 30.171053171157837,
+ "gpu": "Tesla T4"
+}

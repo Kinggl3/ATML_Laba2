@@ -1,0 +1,8 @@
+{
+ "model": "M6_qwen25vl_3b",
+ "weights": "Qwen/Qwen2.5-VL-3B-Instruct",
+ "quant": null,
+ "transformers": "5.16.1",
+ "load_sec": 47.01950788497925,
+ "gpu": "Tesla T4"
+}

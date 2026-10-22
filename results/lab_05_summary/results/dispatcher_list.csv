@@ -1,0 +1,13 @@
+T,station_name,borough,p_best,p_base,y_drop,y,ref,alerts
+2026-07-17 09:00:00,"5 Av/59 St (N,R,W)",Manhattan,0.26438487,0.27527636,1,150.0,202.5,[1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel
+2026-07-17 09:00:00,"225 St (2,5)",Bronx,0.028092822,0.02530998,0,142.0,110.0,
+2026-07-17 09:00:00,"Crescent St (J,Z)",Brooklyn,0.026341874,0.022919793,0,122.0,143.0,
+2026-07-17 09:00:00,Nostrand Av (3),Brooklyn,0.019129185,0.017476166,0,158.0,163.5,[75 min ago; delays] New Lots-bound 3 trains are running with delays after FDNY extinguished a track fire near Van Siclen Av.
+2026-07-17 09:00:00,"39 Av-Dutch Kills (N,W)",Queens,0.0182255,0.015817596,0,250.0,208.5,[1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel
+2026-07-17 09:00:00,Ocean Pkwy (Q),Brooklyn,0.016086236,0.014119638,0,105.0,114.5,
+2026-07-17 09:00:00,86 St (N),Brooklyn,0.015713366,0.013588347,0,118.0,126.0,[1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel
+2026-07-17 09:00:00,Wakefield-241 St (2),Bronx,0.01521241,0.01328854,0,148.0,127.0,
+2026-07-17 09:00:00,Beach 67 St (A),Queens,0.013927527,0.012105486,0,101.0,78.0,
+2026-07-17 09:00:00,"36 Av (N,W)",Queens,0.013141421,0.0110623995,0,315.0,325.5,[1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel
+2026-07-17 09:00:00,Avenue X (F),Brooklyn,0.012936125,0.010962533,0,91.0,95.5,[17 min ago; reroute | delays] Downtown E trains are running via the F line from 5 Av/53 St to W 4 St-Wash Sq.
+2026-07-17 09:00:00,"233 St (2,5)",Bronx,0.01180275,0.010054659,0,139.0,114.0,

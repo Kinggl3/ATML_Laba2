@@ -1,0 +1,177 @@
+[{"stream_name":"stderr","time":10.261504916,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.261709736,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.261737269,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.26174368,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.236624037,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.236664901,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.236670745,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.236675165,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":12.74973271,"data":"Writing /kaggle/working/labkit.py\n"}
+,{"stream_name":"stdout","time":21.560598509,"data":"/kaggle/input/datasets/nikitospevindos/vkr-pm232-pevin-mta (32708, 424)\n"}
+,{"stream_name":"stdout","time":89.566535435,"data":"строк в выгрузке: 168,492; после очистки: 167,583; исключено: 909\n"}
+,{"stream_name":"stdout","time":89.566649315,"data":"reason\n"}
+,{"stream_name":"stdout","time":89.566660227,"data":"S5: нет линий метро (только Staten Island)    907\n"}
+,{"stream_name":"stdout","time":89.566664564,"data":"S3: повтор (event_id, update_number)            2\n"}
+,{"stream_name":"stdout","time":89.566669146,"data":"дней-провалов выгрузки (UTC): 40\n"}
+,{"stream_name":"stdout","time":89.566691708,"data":"доля оповещений с упоминанием станции: 0.934 | с участком from–to: 0.105 | непривязанных упоминаний: 2967\n"}
+,{"stream_name":"stdout","time":98.151868326,"data":"            исходное время, зима (EST)  исходное время, лето (EDT)  местное время (после перевода)\n"}
+,{"stream_name":"stdout","time":98.151959449,"data":"сдвиг k, ч                                                                                        \n"}
+,{"stream_name":"stdout","time":98.151973391,"data":"-6                               0.100                       0.058                           0.068\n"}
+,{"stream_name":"stdout","time":98.151982725,"data":"-5                               0.131                       0.065                           0.067\n"}
+,{"stream_name":"stdout","time":98.151991639,"data":"-4                               0.118                       0.102                           0.069\n"}
+,{"stream_name":"stdout","time":98.151999877,"data":"-3                               0.107                       0.089                           0.069\n"}
+,{"stream_name":"stdout","time":98.152007761,"data":"-2                               0.103                       0.074                           0.071\n"}
+,{"stream_name":"stdout","time":98.152015575,"data":"-1                               0.097                       0.068                           0.077\n"}
+,{"stream_name":"stdout","time":98.152023552,"data":" 0                               0.101                       0.067                           0.112\n"}
+,{"stream_name":"stdout","time":98.152031292,"data":" 1                               0.098                       0.066                           0.099\n"}
+,{"stream_name":"stdout","time":98.152047449,"data":" 2                               0.096                       0.067                           0.085\n"}
+,{"stream_name":"stdout","time":98.152085112,"data":" 3                               0.096                       0.068                           0.080\n"}
+,{"stream_name":"stdout","time":98.152092189,"data":" 4                               0.093                       0.068                           0.077\n"}
+,{"stream_name":"stdout","time":98.15209974,"data":" 5                               0.092                       0.065                           0.078\n"}
+,{"stream_name":"stdout","time":98.152105413,"data":" 6                               0.093                       0.066                           0.078\n"}
+,{"stream_name":"stdout","time":118.013828064,"data":"активных пар (оповещение, час): 137642 | (час, станция) с оповещениями: 3766045\n"}
+,{"stream_name":"stdout","time":118.515665991,"data":"часть                                  holdout   test    train    val\n"}
+,{"stream_name":"stdout","time":118.515712162,"data":"причина                                                              \n"}
+,{"stream_name":"stdout","time":118.515719407,"data":"ref \u003c 50 входов                          25029  38812  1216241  54263\n"}
+,{"stream_name":"stdout","time":118.515724997,"data":"ref не определён: \u003c 2 открытых недель      360    180   134064    900\n"}
+,{"stream_name":"stdout","time":118.51573097,"data":"переход на летнее/зимнее время ±3 ч          0      0     1371      0\n"}
+,{"stream_name":"stdout","time":118.515736926,"data":"провал выгрузки оповещений (S8)           8429   7613   243524  14129\n"}
+,{"stream_name":"stdout","time":118.515742476,"data":"станционный день закрыт (closed_wide)     2808   3186   155520   7182\n"}
+,{"stream_name":"stdout","time":118.515748499,"data":"цель h=2 не определена                    7610  12990   358699  17688\n"}
+,{"stream_name":"stdout","time":118.515754119,"data":"цель h=3 не определена                    8806  15371   409776  20692\n"}
+,{"stream_name":"stdout","time":127.018353049,"data":"stratum      a        b        c\n"}
+,{"stream_name":"stdout","time":127.018408524,"data":"part                            \n"}
+,{"stream_name":"stdout","time":127.01841637,"data":"holdout    548    57792    94682\n"}
+,{"stream_name":"stdout","time":127.018421647,"data":"test      1064   101156   163068\n"}
+,{"stream_name":"stdout","time":127.018426468,"data":"train    23930  2589504  3918923\n"}
+,{"stream_name":"stdout","time":127.018433609,"data":"val       1142   140565   208991\n"}
+,{"stream_name":"stdout","time":129.590731886,"data":"              n      drop   strat_a\n"}
+,{"stream_name":"stdout","time":129.590793739,"data":"part                               \n"}
+,{"stream_name":"stdout","time":129.590799422,"data":"holdout  153022  0.038949  0.003581\n"}
+,{"stream_name":"stdout","time":129.590803185,"data":"test     265288  0.086604  0.004011\n"}
+,{"stream_name":"stdout","time":129.590806743,"data":"train    349165  0.088079  0.068535\n"}
+,{"stream_name":"stdout","time":129.590810328,"data":"val      105492  0.064337  0.003119\n"}
+,{"stream_name":"stdout","time":137.654127161,"data":"E-1200: {'size': {'a': 400, 'b': 400, 'c': 400}, 'mean': {'a': 0.125, 'b': 0.0575, 'c': 0.0825}}\n"}
+,{"stream_name":"stdout","time":143.937355823,"data":"сохранено, мин: 2.2\n"}
+,{"stream_name":"stdout","time":144.202761694,"data":"{\n"}
+,{"stream_name":"stdout","time":144.202825682,"data":" \"station\": \"5 Av/53 St (E,F)\",\n"}
+,{"stream_name":"stdout","time":144.20286885,"data":" \"T\": \"2026-06-03 21:00:00\",\n"}
+,{"stream_name":"stdout","time":144.202874483,"data":" \"y_drop\": 1,\n"}
+,{"stream_name":"stdout","time":144.202878841,"data":" \"y\": 297.0,\n"}
+,{"stream_name":"stdout","time":144.202883356,"data":" \"ref\": 421.0,\n"}
+,{"stream_name":"stdout","time":144.202889246,"data":" \"text\": \"[18 min ago; reroute | delays; this station] Uptown E/F trains are rerouted via Roosevelt Island from Manhattan to Queens while we investigate why a train's brakes activated at Lexington Av/53 St.\\n[88 min ago; delays; nearby station] Uptown C/E trains are running with delays after we addressed a signal problem near 23 St.\",\n"}
+,{"stream_name":"stdout","time":144.202896077,"data":" \"numbers\": {\n"}
+,{"stream_name":"stdout","time":144.202899597,"data":"  \"r_lag1\": 1.009608268737793,\n"}
+,{"stream_name":"stdout","time":144.202903483,"data":"  \"r_lag2\": 1.02842378616333,\n"}
+,{"stream_name":"stdout","time":144.202907149,"data":"  \"r_lag3\": 0.9416652321815491,\n"}
+,{"stream_name":"stdout","time":144.202911671,"data":"  \"r_lag4\": 0.9871703386306763,\n"}
+,{"stream_name":"stdout","time":144.202938603,"data":"  \"r_lag5\": 1.0147947072982788,\n"}
+,{"stream_name":"stdout","time":144.202943023,"data":"  \"r_lag6\": 0.9685863852500916,\n"}
+,{"stream_name":"stdout","time":144.20294713,"data":"  \"r_lag7\": 0.949932336807251,\n"}
+,{"stream_name":"stdout","time":144.202950842,"data":"  \"r_lag8\": 0.855967104434967,\n"}
+,{"stream_name":"stdout","time":144.202954922,"data":"  \"nbr_r_lag1\": 1.0085629224777222,\n"}
+,{"stream_name":"stdout","time":144.20295867,"data":"  \"hour\": 21.0\n"}
+,{"stream_name":"stdout","time":144.202962374,"data":" },\n"}
+,{"stream_name":"stdout","time":144.202966365,"data":" \"text_features\": {\n"}
+,{"stream_name":"stdout","time":144.202970526,"data":"  \"txt_n_line\": 2.0,\n"}
+,{"stream_name":"stdout","time":144.202975658,"data":"  \"txt_n_service_line\": 1.0,\n"}
+,{"stream_name":"stdout","time":144.202980383,"data":"  \"txt_n_delay_line\": 1.0,\n"}
+,{"stream_name":"stdout","time":144.202984283,"data":"  \"txt_n_mention\": 1.0,\n"}
+,{"stream_name":"stdout","time":144.202988506,"data":"  \"txt_n_range\": 0.0,\n"}
+,{"stream_name":"stdout","time":144.202993078,"data":"  \"txt_n_nbr\": 1.0,\n"}
+,{"stream_name":"stdout","time":144.202997449,"data":"  \"txt_service_core\": 1.0,\n"}
+,{"stream_name":"stdout","time":144.203001137,"data":"  \"txt_severe_core\": 0.0,\n"}
+,{"stream_name":"stdout","time":144.203004806,"data":"  \"txt_min_since\": 18.0,\n"}
+,{"stream_name":"stdout","time":144.203009128,"data":"  \"txt_min_since_core\": 18.0,\n"}
+,{"stream_name":"stdout","time":144.203013468,"data":"  \"txt_min_since_service\": 18.0\n"}
+,{"stream_name":"stdout","time":144.203018291,"data":" }\n"}
+,{"stream_name":"stdout","time":144.203022136,"data":"}\n"}
+,{"stream_name":"stdout","time":145.230905976,"data":"# Паспорт данных: служебные оповещения MTA (метро)\n"}
+,{"stream_name":"stdout","time":145.230967159,"data":"\n"}
+,{"stream_name":"stdout","time":145.230974604,"data":"| Параметр | Значение |\n"}
+,{"stream_name":"stdout","time":145.230979269,"data":"| --- | --- |\n"}
+,{"stream_name":"stdout","time":145.230983273,"data":"| Источник | MTA Service Alerts: Beginning April 2020, data.ny.gov `7kct-peq7` |\n"}
+,{"stream_name":"stdout","time":145.230988427,"data":"| Фильтр | agency = NYCT Subway |\n"}
+,{"stream_name":"stdout","time":145.230993008,"data":"| Период | 31.12.2022 19:04 – 11.08.2026 19:51 (местное время) |\n"}
+,{"stream_name":"stdout","time":145.231018427,"data":"| Строк в выгрузке | 168,492 |\n"}
+,{"stream_name":"stdout","time":145.231023007,"data":"| После очистки | 167,583 |\n"}
+,{"stream_name":"stdout","time":145.231027036,"data":"| Событий (event_id) | 72,936 |\n"}
+,{"stream_name":"stdout","time":145.231031264,"data":"| Обновлений на событие (медиана / макс.) | 2 / 42 |\n"}
+,{"stream_name":"stdout","time":145.231036361,"data":"| Длина header, символов (медиана) | 116 |\n"}
+,{"stream_name":"stdout","time":145.231040261,"data":"| description заполнено | 37.1% |\n"}
+,{"stream_name":"stdout","time":145.231050632,"data":"| Упомянута хотя бы одна станция | 93.4% |\n"}
+,{"stream_name":"stdout","time":145.231054656,"data":"| Есть участок «from X to Y» | 10.5% |\n"}
+,{"stream_name":"stdout","time":145.231057372,"data":"| Станций на линиях оповещения (среднее) | 49.8 |\n"}
+,{"stream_name":"stdout","time":145.231060214,"data":"| Сообщений о восстановлении | 0.8% |\n"}
+,{"stream_name":"stdout","time":145.231062959,"data":"| Дней-провалов выгрузки | 40 |\n"}
+,{"stream_name":"stdout","time":145.231065607,"data":"\n"}
+,{"stream_name":"stdout","time":145.231068114,"data":"## Проблемы качества и решения\n"}
+,{"stream_name":"stdout","time":145.23107121,"data":"\n"}
+,{"stream_name":"stdout","time":145.231074087,"data":"| Проблема | Объём | Решение |\n"}
+,{"stream_name":"stdout","time":145.231096704,"data":"| --- | --- | --- |\n"}
+,{"stream_name":"stdout","time":145.231102251,"data":"| Время `date` в UTC, а не местное (обнаружено проверкой S1) | все строки | перевод в America/New_York; см. sync_check.png |\n"}
+,{"stream_name":"stdout","time":145.23110819,"data":"| Нет оповещений в последний день месяца (по UTC) с 02.2025 и 18–30.11.2024 | 40 сут | объекты в эти интервалы исключаются (S8) |\n"}
+,{"stream_name":"stdout","time":145.231120836,"data":"| Повторы (event_id, update_number) | 2 | удалены (S3) |\n"}
+,{"stream_name":"stdout","time":145.231125947,"data":"| Только Staten Island Railway | 907 | удалены (S5) |\n"}
+,{"stream_name":"stdout","time":145.231130866,"data":"| Названия станций без однозначной привязки | 2967 упоминаний | журнал unmatched_mentions.csv |\n"}
+,{"stream_name":"stdout","time":145.231135633,"data":"| Набор кончается 11.08.2026 | — | оценка до 11.08.2026 |\n"}
+,{"stream_name":"stdout","time":145.231141031,"data":"| Почти нет анонсов плановых работ | ~3% текстов | постановка — прогноз на ближайший час |\n"}
+,{"stream_name":"stdout","time":145.23114691,"data":"\n"}
+,{"stream_name":"stdout","time":145.231153385,"data":"## Объём по годам (исходная выгрузка)\n"}
+,{"stream_name":"stdout","time":145.231157876,"data":"\n"}
+,{"stream_name":"stdout","time":145.231161632,"data":"| date | строк |\n"}
+,{"stream_name":"stdout","time":145.231166188,"data":"| --- | --- |\n"}
+,{"stream_name":"stdout","time":145.231170782,"data":"| 2022 | 24 |\n"}
+,{"stream_name":"stdout","time":145.231175793,"data":"| 2023 | 45578 |\n"}
+,{"stream_name":"stdout","time":145.231180652,"data":"| 2024 | 46164 |\n"}
+,{"stream_name":"stdout","time":145.231184551,"data":"| 2025 | 45963 |\n"}
+,{"stream_name":"stdout","time":145.231194867,"data":"| 2026 | 30763 |\n"}
+,{"stream_name":"stdout","time":145.231200029,"data":"\n"}
+,{"stream_name":"stdout","time":145.231204666,"data":"## Типы оповещений (status_label)\n"}
+,{"stream_name":"stdout","time":145.231209472,"data":"\n"}
+,{"stream_name":"stdout","time":145.231213678,"data":"| тип | оповещений |\n"}
+,{"stream_name":"stdout","time":145.231218844,"data":"| --- | --- |\n"}
+,{"stream_name":"stdout","time":145.231223552,"data":"| delays | 144423 |\n"}
+,{"stream_name":"stdout","time":145.231227787,"data":"| stops-skipped | 8611 |\n"}
+,{"stream_name":"stdout","time":145.231232704,"data":"| part-suspended | 6737 |\n"}
+,{"stream_name":"stdout","time":145.231237272,"data":"| express-to-local | 5687 |\n"}
+,{"stream_name":"stdout","time":145.231241138,"data":"| reroute | 4977 |\n"}
+,{"stream_name":"stdout","time":145.231245093,"data":"| local-to-express | 3653 |\n"}
+,{"stream_name":"stdout","time":145.23124974,"data":"| trains-rerouted | 1695 |\n"}
+,{"stream_name":"stdout","time":145.231253966,"data":"| some-reroutes | 1058 |\n"}
+,{"stream_name":"stdout","time":145.231258321,"data":"| severe-delays | 773 |\n"}
+,{"stream_name":"stdout","time":145.231262731,"data":"| multiple-changes | 660 |\n"}
+,{"stream_name":"stdout","time":145.23126766,"data":"| some-delays | 624 |\n"}
+,{"stream_name":"stdout","time":145.231272499,"data":"| suspended | 612 |\n"}
+,{"stream_name":"stdout","time":145.231277097,"data":"| slow-speeds | 587 |\n"}
+,{"stream_name":"stdout","time":145.231281236,"data":"| boarding-change | 512 |\n"}
+,{"stream_name":"stdout","time":145.231285014,"data":"| stations-skipped | 367 |\n"}
+,{"stream_name":"stdout","time":145.231289133,"data":"\n"}
+,{"stream_name":"stdout","time":145.231304511,"data":"## Объекты\n"}
+,{"stream_name":"stdout","time":145.23130964,"data":"\n"}
+,{"stream_name":"stdout","time":145.231314081,"data":"| part | a | b | c | All |\n"}
+,{"stream_name":"stdout","time":145.23131851,"data":"| --- | --- | --- | --- | --- |\n"}
+,{"stream_name":"stdout","time":145.231323267,"data":"| holdout | 548 | 57792 | 94682 | 153022 |\n"}
+,{"stream_name":"stdout","time":145.231327792,"data":"| test | 1064 | 101156 | 163068 | 265288 |\n"}
+,{"stream_name":"stdout","time":145.231331785,"data":"| train | 23930 | 129257 | 195978 | 349165 |\n"}
+,{"stream_name":"stdout","time":145.231335939,"data":"| val | 329 | 42161 | 63002 | 105492 |\n"}
+,{"stream_name":"stdout","time":145.231340088,"data":"| All | 25871 | 330366 | 516730 | 872967 |\n"}
+,{"stream_name":"stdout","time":145.231344928,"data":"\n"}
+,{"stream_name":"stdout","time":145.231349584,"data":"## Доля провалов\n"}
+,{"stream_name":"stdout","time":145.23135422,"data":"\n"}
+,{"stream_name":"stdout","time":145.23135775,"data":"| part | a | b | c |\n"}
+,{"stream_name":"stdout","time":145.231361278,"data":"| --- | --- | --- | --- |\n"}
+,{"stream_name":"stdout","time":145.231364992,"data":"| holdout | 0.1332 | 0.039 | 0.0384 |\n"}
+,{"stream_name":"stdout","time":145.231368568,"data":"| test | 0.1419 | 0.0787 | 0.0911 |\n"}
+,{"stream_name":"stdout","time":145.231372382,"data":"| train | 0.1593 | 0.0777 | 0.0862 |\n"}
+,{"stream_name":"stdout","time":145.231376568,"data":"| val | 0.1368 | 0.0552 | 0.07 |\n"}
+,{"stream_name":"stdout","time":145.231381392,"data":"готово, мин: 2.2\n"}
+,{"stream_name":"stderr","time":149.803428644,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":149.803480957,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":150.035114191,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":150.035159889,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":151.074610253,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":151.188256301,"data":"[NbConvertApp] Writing 88047 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":154.705624645,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":155.708610855,"data":"[NbConvertApp] Writing 624691 bytes to __results__.html\n"}
+]

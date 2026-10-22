@@ -1,0 +1,15 @@
+№,тип,T,станция,p,y / ref,r_lag1,оповещения
+0,пропуск провала (FN),2026-06-11 10:00:00,Halsey St (L),0.0,156 / 358,1.11,—
+1,пропуск провала (FN),2026-06-09 06:00:00,1 Av (L),0.0,283 / 388,0.92,—
+2,пропуск провала (FN),2026-06-20 17:00:00,"Coney Island-Stillwell Av (D,F,N,Q)",0.001,760 / 1086,1.74,"[31 min ago; delays; same line] E/F trains are running with delays in both directions after we addressed a signal problem near 75 Av.
+[72 min ago; delays; same line] Uptown Q trains are running with delays while we conduct track maintenance in Brooklyn.
+[77 min ago; delays; same line] F trains are r"
+3,пропуск провала (FN),2026-06-02 17:00:00,"Winthrop St (2,5)",0.001,373 / 595,1.07,—
+4,пропуск провала (FN),2026-07-11 07:00:00,"Atlantic Av-Barclays Ctr (2,3,4,5,B,D,N,Q,R)",0.001,280 / 384,1.09,"[1 min ago; delays; same line] Downtown D trains are delayed while we investigate what caused a train's brakes to activate at 7 Av.
+[40 min ago; delays; same line] Coney Island-Stillwell Av-bound N trains are running with delays after we moved a train that had its brakes activated at 86 St.
+[42 min "
+5,ложная тревога (FP),2026-06-19 08:00:00,"Clark St (2,3)",0.992,382 / 460,0.34,[71 min ago; delays; same line] Downtown 2/5 trains are running with delays after we addressed a switch malfunction near Nereid Av.
+6,ложная тревога (FP),2026-07-11 14:00:00,103 St-Corona Plaza (7),0.991,614 / 684,0.05,—
+7,ложная тревога (FP),2026-07-04 18:00:00,20 Av (D),0.986,111 / 130,0.44,[65 min ago; delays; same line] D/N trains are running with delays in both directions after we addressed a signal problem near 8 Av.
+8,ложная тревога (FP),2026-07-11 20:00:00,"81 St-Museum of Natural History (C,B)",0.985,391 / 492,0.47,—
+9,ложная тревога (FP),2026-07-11 08:00:00,57 St (M),0.985,118 / 94,0.3,—

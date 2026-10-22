@@ -1,0 +1,69 @@
+[{"stream_name":"stderr","time":11.484658598,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.484737682,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.484746787,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.48475225,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.288615554,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.288656371,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.288682943,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.288688254,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":29.361088693,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-data\n"}
+,{"stream_name":"stdout","time":33.325324014,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.1/43.1 MB 46.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.527527282,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.1/43.1 MB 46.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":74.606588615,"data":"5.16.1 2.11.0+cu128 {'id': 'Qwen/Qwen2.5-VL-7B-Instruct', 'quant': 'nf4', 'name': 'M7_qwen25vl_7b'}\n"}
+,{"stream_name":"stdout","time":95.704555911,"data":"1200 60\n"}
+,{"stream_name":"stdout","time":95.704594349,"data":"You help a New York City subway dispatcher. Station: 155 St (B,D), Manhattan. Now: Monday 01 June 2026, 06:00.\n"}
+,{"stream_name":"stdout","time":95.70460603,"data":"The image shows hourly entries at this station over the last 48 hours (solid blue line) and the same 48 hours one week earlier (dashed grey line, the usual pattern). The red line on the right marks now.\n"}
+,{"stream_name":"stdout","time":95.70461346,"data":"There are no active MTA service alerts on this station's lines.\n"}
+,{"stream_name":"stdout","time":95.704618589,"data":"Question: in the next hour (06:00–07:00), will the number of people entering this station be below 75% of its usual level for this hour of the week? Answer with one word: Yes or No.\n"}
+,{"stream_name":"stderr","time":95.94127473,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":95.941315271,"data":"\n"}
+,{"stream_name":"stderr","time":95.941320162,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":228.129718961,"data":"токены Yes: [7414, 9454, 9693, 9834, 14004, 14080] No: [902, 2152, 2308, 2753, 5664, 8996] загрузка 132 c\n"}
+,{"stream_name":"stderr","time":230.201974218,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":230.202024025,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":230.202028729,"data":"\n"}
+,{"stream_name":"stderr","time":230.202031842,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":230.202046787,"data":"  warn(\n"}
+,{"stream_name":"stdout","time":276.674349492,"data":"val text+chart p95 856 мс; первый токен Yes/No в 100% ответов; средняя p 0.351\n"}
+,{"stream_name":"stdout","time":301.922954748,"data":"val text p95 620 мс; первый токен Yes/No в 100% ответов; средняя p 0.223\n"}
+,{"stream_name":"stderr","time":301.96068718,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":301.960735257,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":301.960742311,"data":"\n"}
+,{"stream_name":"stderr","time":301.960747724,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":301.960754273,"data":"  warn(\n"}
+,{"stream_name":"stdout","time":354.448699618,"data":"val chart p95 913 мс; первый токен Yes/No в 100% ответов; средняя p 0.333\n"}
+,{"stream_name":"stderr","time":354.497595809,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":354.497624279,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":354.497657613,"data":"\n"}
+,{"stream_name":"stderr","time":354.497662855,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":354.497684739,"data":"  warn(\n"}
+,{"stream_name":"stdout","time":1446.128059394,"data":"test text+chart p95 1058 мс; первый токен Yes/No в 100% ответов; средняя p 0.348\n"}
+,{"stream_name":"stdout","time":2008.884556583,"data":"test text p95 739 мс; первый токен Yes/No в 100% ответов; средняя p 0.214\n"}
+,{"stream_name":"stderr","time":2008.923240324,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":2008.923300799,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":2008.923309025,"data":"\n"}
+,{"stream_name":"stderr","time":2008.923315536,"data":"/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.\n"}
+,{"stream_name":"stderr","time":2008.923322724,"data":"  warn(\n"}
+,{"stream_name":"stdout","time":3069.978142385,"data":"test chart p95 892 мс; первый токен Yes/No в 100% ответов; средняя p 0.331\n"}
+,{"stream_name":"stdout","time":3071.22479815,"data":"            variant  pr_auc  pr_auc_ci_low  pr_auc_ci_high  auroc  macro_f1  brier    p95_ms\n"}
+,{"stream_name":"stdout","time":3071.224821878,"data":"         text+chart  0.1541         0.0833          0.2487 0.6510    0.5004 0.1466 1057.6954\n"}
+,{"stream_name":"stdout","time":3071.224827351,"data":"text+chart | слой a  0.1997            NaN             NaN 0.6347       NaN 0.1638       NaN\n"}
+,{"stream_name":"stdout","time":3071.224832273,"data":"text+chart | слой b  0.0962            NaN             NaN 0.6003       NaN 0.1362       NaN\n"}
+,{"stream_name":"stdout","time":3071.22485561,"data":"text+chart | слой c  0.1501            NaN             NaN 0.6574       NaN 0.1397       NaN\n"}
+,{"stream_name":"stdout","time":3071.224858608,"data":"               text  0.1184         0.0751          0.1821 0.5734    0.5318 0.0988  738.6889\n"}
+,{"stream_name":"stdout","time":3071.224860993,"data":"      text | слой a  0.1554            NaN             NaN 0.5415       NaN 0.1330       NaN\n"}
+,{"stream_name":"stdout","time":3071.224863332,"data":"      text | слой b  0.0648            NaN             NaN 0.5230       NaN 0.0836       NaN\n"}
+,{"stream_name":"stdout","time":3071.224865636,"data":"      text | слой c  0.1228            NaN             NaN 0.6136       NaN 0.0799       NaN\n"}
+,{"stream_name":"stdout","time":3071.224867878,"data":"              chart  0.1343         0.0621          0.2433 0.6330    0.5000 0.1381  891.5009\n"}
+,{"stream_name":"stdout","time":3071.224870103,"data":"     chart | слой a  0.1696            NaN             NaN 0.6248       NaN 0.1505       NaN\n"}
+,{"stream_name":"stdout","time":3071.224872354,"data":"     chart | слой b  0.1585            NaN             NaN 0.6878       NaN 0.1271       NaN\n"}
+,{"stream_name":"stdout","time":3071.224874717,"data":"     chart | слой c  0.1164            NaN             NaN 0.5990       NaN 0.1368       NaN\n"}
+,{"stream_name":"stderr","time":3077.975666269,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3077.975720136,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3078.223935946,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3078.223959582,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3079.083524291,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3079.198236881,"data":"[NbConvertApp] Writing 173473 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3081.804717913,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3082.469736894,"data":"[NbConvertApp] Writing 459395 bytes to __results__.html\n"}
+]

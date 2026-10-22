@@ -1,0 +1,47 @@
+[{"stream_name":"stderr","time":6.608376163,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.608421504,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.608425786,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.608428196,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.182365389,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.182392388,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.182397707,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.1824021,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.054757834,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-data\n"}
+,{"stream_name":"stdout","time":34.719410646,"data":"5.16.1 2.11.0+cu128 {'id': 'Qwen/Qwen2.5-VL-3B-Instruct', 'quant': None, 'name': 'M6_qwen25vl_3b'}\n"}
+,{"stream_name":"stdout","time":89.8607982,"data":"1200 60\n"}
+,{"stream_name":"stdout","time":89.860836021,"data":"You help a New York City subway dispatcher. Station: 155 St (B,D), Manhattan. Now: Monday 01 June 2026, 06:00.\n"}
+,{"stream_name":"stdout","time":89.86084147,"data":"The image shows hourly entries at this station over the last 48 hours (solid blue line) and the same 48 hours one week earlier (dashed grey line, the usual pattern). The red line on the right marks now.\n"}
+,{"stream_name":"stdout","time":89.860848504,"data":"There are no active MTA service alerts on this station's lines.\n"}
+,{"stream_name":"stdout","time":89.860853724,"data":"Question: in the next hour (06:00–07:00), will the number of people entering this station be below 75% of its usual level for this hour of the week? Answer with one word: Yes or No.\n"}
+,{"stream_name":"stderr","time":89.991202259,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":89.991229068,"data":"\n"}
+,{"stream_name":"stderr","time":89.991234851,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":137.11544669,"data":"токены Yes: [7414, 9454, 9693, 9834, 14004, 14080] No: [902, 2152, 2308, 2753, 5664, 8996] загрузка 47 c\n"}
+,{"stream_name":"stdout","time":152.065852833,"data":"val text+chart p95 244 мс; первый токен Yes/No в 100% ответов; средняя p 0.417\n"}
+,{"stream_name":"stdout","time":157.048531403,"data":"val text p95 124 мс; первый токен Yes/No в 100% ответов; средняя p 0.408\n"}
+,{"stream_name":"stdout","time":168.393484028,"data":"val chart p95 194 мс; первый токен Yes/No в 100% ответов; средняя p 0.421\n"}
+,{"stream_name":"stdout","time":445.621252929,"data":"test text+chart p95 287 мс; первый токен Yes/No в 100% ответов; средняя p 0.417\n"}
+,{"stream_name":"stdout","time":560.886388956,"data":"test text p95 155 мс; первый токен Yes/No в 100% ответов; средняя p 0.409\n"}
+,{"stream_name":"stdout","time":820.633368466,"data":"test chart p95 220 мс; первый токен Yes/No в 100% ответов; средняя p 0.421\n"}
+,{"stream_name":"stdout","time":822.002628061,"data":"            variant  pr_auc  pr_auc_ci_low  pr_auc_ci_high  auroc  macro_f1  brier   p95_ms\n"}
+,{"stream_name":"stdout","time":822.002652544,"data":"         text+chart  0.1212         0.0734          0.1852 0.5612    0.5219 0.1883 286.8199\n"}
+,{"stream_name":"stdout","time":822.002658066,"data":"text+chart | слой a  0.2309            NaN             NaN 0.6747       NaN 0.1935      NaN\n"}
+,{"stream_name":"stdout","time":822.002663096,"data":"text+chart | слой b  0.0494            NaN             NaN 0.4379       NaN 0.1780      NaN\n"}
+,{"stream_name":"stdout","time":822.002666961,"data":"text+chart | слой c  0.1081            NaN             NaN 0.4209       NaN 0.1934      NaN\n"}
+,{"stream_name":"stdout","time":822.00267046,"data":"               text  0.1006         0.0493          0.1828 0.5461    0.4829 0.1833 154.7895\n"}
+,{"stream_name":"stdout","time":822.002674039,"data":"      text | слой a  0.2839            NaN             NaN 0.7159       NaN 0.1815      NaN\n"}
+,{"stream_name":"stdout","time":822.002678085,"data":"      text | слой b  0.0503            NaN             NaN 0.4303       NaN 0.1706      NaN\n"}
+,{"stream_name":"stdout","time":822.002681559,"data":"      text | слой c  0.0725            NaN             NaN 0.4295       NaN 0.1979      NaN\n"}
+,{"stream_name":"stdout","time":822.002685295,"data":"              chart  0.0928         0.0559          0.1464 0.4847    0.4768 0.1914 219.6439\n"}
+,{"stream_name":"stdout","time":822.002688751,"data":"     chart | слой a  0.1790            NaN             NaN 0.5750       NaN 0.1967      NaN\n"}
+,{"stream_name":"stdout","time":822.002692637,"data":"     chart | слой b  0.0469            NaN             NaN 0.4077       NaN 0.1858      NaN\n"}
+,{"stream_name":"stdout","time":822.002696181,"data":"     chart | слой c  0.0873            NaN             NaN 0.4064       NaN 0.1916      NaN\n"}
+,{"stream_name":"stderr","time":827.27850859,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":827.278535672,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":827.438898631,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":827.438935273,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":828.19282665,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":828.288612735,"data":"[NbConvertApp] Writing 171732 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":830.699966738,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":831.292940446,"data":"[NbConvertApp] Writing 457197 bytes to __results__.html\n"}
+]

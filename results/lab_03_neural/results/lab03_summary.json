@@ -1,0 +1,42 @@
+{
+ "info": {
+  "M4_gated": {
+   "best_epoch": 12,
+   "val_pr_auc": 0.7335001558415591,
+   "fit_sec": 32.3
+  },
+  "M5_crossattn": {
+   "best_epoch": 11,
+   "val_pr_auc": 0.7485245940213741,
+   "fit_sec": 164.0
+  },
+  "A1_M4_no_text": {
+   "best_epoch": 11,
+   "val_pr_auc": 0.7338183146583497,
+   "fit_sec": 31.1
+  },
+  "A2_M4_no_image": {
+   "best_epoch": 9,
+   "val_pr_auc": 0.7340631908994453,
+   "fit_sec": 30.2
+  },
+  "A3_M4_no_numbers": {
+   "best_epoch": 12,
+   "val_pr_auc": 0.38100413336894223,
+   "fit_sec": 29.9
+  },
+  "A4_M5_no_attention": {
+   "best_epoch": 9,
+   "val_pr_auc": 0.7474716880011935,
+   "fit_sec": 110.5
+  }
+ },
+ "thresholds": {
+  "M4_gated": 0.3702040322653614,
+  "M5_crossattn": 0.34551171480620957,
+  "A1_M4_no_text": 0.39738386047964747,
+  "A2_M4_no_image": 0.4280344709930714,
+  "A3_M4_no_numbers": 0.3146192087510124,
+  "A4_M5_no_attention": 0.4113331507636078
+ }
+}

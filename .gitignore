@@ -12,3 +12,11 @@ images/
 results/**/*.png.cache
 *.safetensors
 *.bin
+
+results/**/*.npy
+results/**/objects_*.parquet
+results/**/alerts_clean.parquet
+
+results/**/*.npy
+results/**/objects_*.parquet
+results/**/alerts_clean.parquet

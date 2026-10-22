@@ -1,0 +1,69 @@
+[{"stream_name":"stderr","time":7.611238656,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.611291843,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.611298081,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.6113073060000005,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.221057343,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.221095832,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.221113555,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.221123198,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":39.446570462,"data":"{'train': 349165, 'val': 105492, 'test': 265288, 'holdout': 153022} мин: 0.3\n"}
+,{"stream_name":"stdout","time":114.694945007,"data":"M4_gated             эпох 12  PR-AUC val 0.7335  32 c\n"}
+,{"stream_name":"stdout","time":466.17024792,"data":"M5_crossattn         эпох 11  PR-AUC val 0.7485  164 c\n"}
+,{"stream_name":"stdout","time":531.577266207,"data":"A1_M4_no_text        эпох 11  PR-AUC val 0.7338  31 c\n"}
+,{"stream_name":"stdout","time":590.307982959,"data":"A2_M4_no_image       эпох  9  PR-AUC val 0.7341  30 c\n"}
+,{"stream_name":"stdout","time":657.75399738,"data":"A3_M4_no_numbers     эпох 12  PR-AUC val 0.3810  30 c\n"}
+,{"stream_name":"stdout","time":871.757889244,"data":"A4_M5_no_attention   эпох  9  PR-AUC val 0.7475  110 c\n"}
+,{"stream_name":"stdout","time":908.792533787,"data":"             model  pr_auc  pr_auc_ci_low  pr_auc_ci_high  auroc  macro_f1    mcc  brier    ece\n"}
+,{"stream_name":"stdout","time":908.792559902,"data":"          M4_gated  0.7301         0.5314          0.8305 0.9348    0.8174 0.6349 0.0410 0.0116\n"}
+,{"stream_name":"stdout","time":908.792564095,"data":"      M5_crossattn  0.7451         0.5540          0.8408 0.9404    0.8212 0.6426 0.0395 0.0066\n"}
+,{"stream_name":"stdout","time":908.792567242,"data":"     A1_M4_no_text  0.7282         0.5308          0.8291 0.9340    0.8138 0.6312 0.0408 0.0064\n"}
+,{"stream_name":"stdout","time":908.792570362,"data":"    A2_M4_no_image  0.7285         0.5249          0.8294 0.9329    0.8152 0.6339 0.0409 0.0102\n"}
+,{"stream_name":"stdout","time":908.792573382,"data":"  A3_M4_no_numbers  0.3965         0.1690          0.5388 0.8155    0.6891 0.3786 0.0650 0.0230\n"}
+,{"stream_name":"stdout","time":908.792576249,"data":"A4_M5_no_attention  0.7412         0.5527          0.8363 0.9397    0.8198 0.6424 0.0398 0.0079\n"}
+,{"stream_name":"stdout","time":908.792579142,"data":"             model     vs    part metric    diff  ci_low  ci_high  p_perm\n"}
+,{"stream_name":"stdout","time":908.792581913,"data":"          M4_gated U1_num    test pr_auc -0.0194 -0.0378  -0.0104  1.0000\n"}
+,{"stream_name":"stdout","time":908.792584721,"data":"          M4_gated U1_num holdout pr_auc -0.0351 -0.0540  -0.0215  1.0000\n"}
+,{"stream_name":"stdout","time":908.792587917,"data":"      M5_crossattn U1_num    test pr_auc -0.0044 -0.0131   0.0002  0.9770\n"}
+,{"stream_name":"stdout","time":908.792590713,"data":"      M5_crossattn U1_num holdout pr_auc -0.0096 -0.0266   0.0029  0.8242\n"}
+,{"stream_name":"stdout","time":908.792593459,"data":"     A1_M4_no_text U1_num    test pr_auc -0.0213 -0.0383  -0.0117  1.0000\n"}
+,{"stream_name":"stdout","time":908.792603796,"data":"     A1_M4_no_text U1_num holdout pr_auc -0.0280 -0.0439  -0.0178  1.0000\n"}
+,{"stream_name":"stdout","time":908.792606277,"data":"    A2_M4_no_image U1_num    test pr_auc -0.0210 -0.0416  -0.0116  1.0000\n"}
+,{"stream_name":"stdout","time":908.792608487,"data":"    A2_M4_no_image U1_num holdout pr_auc -0.0332 -0.0510  -0.0196  1.0000\n"}
+,{"stream_name":"stdout","time":908.792610663,"data":"  A3_M4_no_numbers U1_num    test pr_auc -0.3530 -0.4535  -0.2719  1.0000\n"}
+,{"stream_name":"stdout","time":908.792612908,"data":"  A3_M4_no_numbers U1_num holdout pr_auc -0.4325 -0.4811  -0.3566  1.0000\n"}
+,{"stream_name":"stdout","time":908.792615095,"data":"A4_M5_no_attention U1_num    test pr_auc -0.0083 -0.0179  -0.0022  0.9980\n"}
+,{"stream_name":"stdout","time":908.792617338,"data":"A4_M5_no_attention U1_num holdout pr_auc -0.0141 -0.0404   0.0005  0.9441\n"}
+,{"stream_name":"stdout","time":919.688901917,"data":"       model                  условие  pr_auc  доля от полного\n"}
+,{"stream_name":"stdout","time":919.68893877,"data":"    M4_gated               без текста  0.7298           0.9996\n"}
+,{"stream_name":"stdout","time":919.688942602,"data":"    M4_gated          без изображения  0.7304           1.0004\n"}
+,{"stream_name":"stdout","time":919.688946,"data":"    M4_gated без текста и изображения  0.7302           1.0001\n"}
+,{"stream_name":"stdout","time":919.688949367,"data":"    M4_gated                   слой a  0.7295              NaN\n"}
+,{"stream_name":"stdout","time":919.688952477,"data":"    M4_gated                   слой b  0.7039              NaN\n"}
+,{"stream_name":"stdout","time":919.688955457,"data":"    M4_gated                   слой c  0.7439              NaN\n"}
+,{"stream_name":"stdout","time":919.688958442,"data":"M5_crossattn               без текста  0.7478           1.0035\n"}
+,{"stream_name":"stdout","time":919.688961554,"data":"M5_crossattn          без изображения  0.7421           0.9959\n"}
+,{"stream_name":"stdout","time":919.688964625,"data":"M5_crossattn без текста и изображения  0.7465           1.0018\n"}
+,{"stream_name":"stdout","time":919.68896775,"data":"M5_crossattn                   слой a  0.7387              NaN\n"}
+,{"stream_name":"stdout","time":919.688970784,"data":"M5_crossattn                   слой b  0.7183              NaN\n"}
+,{"stream_name":"stdout","time":919.688973871,"data":"M5_crossattn                   слой c  0.7595              NaN\n"}
+,{"stream_name":"stdout","time":919.98803349,"data":"         ворота: числа  ворота: текст  ворота: изображение\n"}
+,{"stream_name":"stdout","time":919.988067813,"data":"stratum                                                   \n"}
+,{"stream_name":"stdout","time":919.988072354,"data":"a                0.946          0.554                0.177\n"}
+,{"stream_name":"stdout","time":919.988108304,"data":"b                0.952          0.140                0.190\n"}
+,{"stream_name":"stdout","time":919.988112943,"data":"c                0.963          0.000                0.219\n"}
+,{"stream_name":"stdout","time":1305.28395338,"data":"       model             pr_auc_seeds     mean      std\n"}
+,{"stream_name":"stdout","time":1305.283989128,"data":"    M4_gated [0.7301, 0.7181, 0.7264] 0.724857 0.005008\n"}
+,{"stream_name":"stdout","time":1305.283993297,"data":"M5_crossattn [0.7451, 0.7448, 0.7308] 0.740258 0.006676\n"}
+,{"stream_name":"stdout","time":1309.357176156,"data":"       model  p50_ms  p95_ms  objects_per_sec  fit_sec  gpu_gb  params\n"}
+,{"stream_name":"stdout","time":1309.357208699,"data":"    M4_gated   0.964   1.060       581855.781     32.3   0.339  173837\n"}
+,{"stream_name":"stdout","time":1309.357227684,"data":"M5_crossattn   2.311   2.588       100523.925    164.0   0.458  187585\n"}
+,{"stream_name":"stdout","time":1309.357232083,"data":"готово, мин: 21.5\n"}
+,{"stream_name":"stderr","time":1315.399951135,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1315.399983268,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1315.582350716,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1315.582371989,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1316.34089404,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1316.418158356,"data":"[NbConvertApp] Writing 30265 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1318.882855084,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1319.484873568,"data":"[NbConvertApp] Writing 392369 bytes to __results__.html\n"}
+]
