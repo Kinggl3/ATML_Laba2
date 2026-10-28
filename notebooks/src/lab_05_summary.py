@@ -321,7 +321,8 @@ strat_gain = {s: lk.metrics(o["y_drop"][o["stratum"] == s], o["p_best"][o["strat
 gain_all = pd.concat([pd.read_csv(f) for f in find_all("gain_*.csv")], ignore_index=True)
 img_gain = gain_all[(gain_all["model"] == "A1_M2_no_text") & (gain_all["part"] == "test") & (gain_all["metric"] == "pr_auc")]
 hz = pd.read_csv(find_all("ablations_horizon_window.csv")[0])
-vlm_best = T2[T2["модель"].str.contains(r"\[text\+chart\]")]["pr_auc"].max() if len(T2) else np.nan
+vlm_rows = T2["модель"].str.match(r"^M[678]_") & ~T2["модель"].str.contains("склейка")   # только сами VLM
+vlm_best = T2[vlm_rows]["pr_auc"].max() if vlm_rows.any() else np.nan
 trained_best_e = T2[T2["модель"].isin([m for m in TRAINED if m.startswith("M")])]["pr_auc"].max()
 H = [
     {"гипотеза": "H1: прирост PR-AUC ≥ 0,02, ДИ > 0, p < 0,05",
