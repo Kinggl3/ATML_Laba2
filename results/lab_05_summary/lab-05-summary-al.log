@@ -1,195 +1,196 @@
-[{"stream_name":"stderr","time":10.300746689,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":10.300814466,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":10.300819848,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":10.300823189,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":11.294269821,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":11.294322995,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":11.294329658,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":11.294334674,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stdout","time":65.425014516,"data":"нет прогнозов: —\n"}
-,{"stream_name":"stdout","time":66.270864933,"data":"лучший одномодальный baseline (по val): U1_num\n"}
-,{"stream_name":"stdout","time":103.412582033,"data":"          модель  pr_auc  pr_auc_lo  pr_auc_hi  auroc  macro_f1    mcc  brier    ece  Δpr_auc    Δ_lo    Δ_hi  p_perm\n"}
-,{"stream_name":"stdout","time":103.412654079,"data":"  U0_persistence  0.3955     0.2235     0.5230 0.7789    0.7814 0.5628 0.0543 0.0088      NaN     NaN     NaN     NaN\n"}
-,{"stream_name":"stdout","time":103.412664247,"data":"          U1_num  0.7495     0.5649     0.8416 0.9425    0.8225 0.6474 0.0391 0.0055      NaN     NaN     NaN     NaN\n"}
-,{"stream_name":"stdout","time":103.412670992,"data":"         U2_text  0.0918     0.0520     0.1461 0.5210    0.5013 0.0137 0.0791 0.0034  -0.6577 -0.7164 -0.5080  1.0000\n"}
-,{"stream_name":"stdout","time":103.412677326,"data":"        U3_image  0.4125     0.1914     0.5526 0.8228    0.6938 0.3893 0.0632 0.0052  -0.3370 -0.4300 -0.2658  1.0000\n"}
-,{"stream_name":"stdout","time":103.412683538,"data":"M1_num_txtstruct  0.7489     0.5642     0.8413 0.9428    0.8224 0.6459 0.0391 0.0049  -0.0006 -0.0021  0.0002  0.8861\n"}
-,{"stream_name":"stdout","time":103.412689754,"data":"    M2_early_all  0.7470     0.5605     0.8398 0.9416    0.8224 0.6470 0.0393 0.0055  -0.0025 -0.0049 -0.0009  0.9985\n"}
-,{"stream_name":"stdout","time":103.412695969,"data":"   M3_late_stack  0.7498     0.5653     0.8418 0.9426    0.8227 0.6480 0.0390 0.0035   0.0002 -0.0000  0.0005  0.3973\n"}
-,{"stream_name":"stdout","time":103.412702152,"data":"        M4_gated  0.7301     0.5314     0.8305 0.9348    0.8174 0.6349 0.0410 0.0116  -0.0194 -0.0378 -0.0104  1.0000\n"}
-,{"stream_name":"stdout","time":103.412708199,"data":"    M5_crossattn  0.7451     0.5540     0.8408 0.9404    0.8212 0.6426 0.0395 0.0066  -0.0044 -0.0131  0.0002  0.9765\n"}
-,{"stream_name":"stdout","time":117.816818415,"data":"                                                     модель  pr_auc  pr_auc_lo  pr_auc_hi  pr_auc_a  pr_auc_b  pr_auc_c  auroc  brier  Δpr_auc    Δ_lo    Δ_hi  p_perm\n"}
-,{"stream_name":"stdout","time":117.816876119,"data":"                                             U0_persistence  0.3582     0.2150     0.4896    0.5024    0.2995    0.2466 0.7801 0.0601  -0.3693 -0.4236 -0.3060  1.0000\n"}
-,{"stream_name":"stdout","time":117.816885799,"data":"                                                     U1_num  0.7276     0.5477     0.8410    0.7132    0.7808    0.7418 0.9283 0.0416      NaN     NaN     NaN     NaN\n"}
-,{"stream_name":"stdout","time":117.816890183,"data":"                                                    U2_text  0.1597     0.0900     0.2673    0.2327    0.0682    0.0825 0.6239 0.0787  -0.5679 -0.6404 -0.4180  1.0000\n"}
-,{"stream_name":"stdout","time":117.817016759,"data":"                                                   U3_image  0.4021     0.1623     0.5700    0.4529    0.3642    0.4198 0.8170 0.0655  -0.3254 -0.4518 -0.2099  1.0000\n"}
-,{"stream_name":"stdout","time":117.817024591,"data":"                                           M1_num_txtstruct  0.7319     0.5361     0.8532    0.7136    0.7992    0.7360 0.9463 0.0415   0.0043 -0.0237  0.0285  0.3746\n"}
-,{"stream_name":"stdout","time":117.817029853,"data":"                                               M2_early_all  0.7306     0.5327     0.8477    0.7098    0.7844    0.7339 0.9414 0.0418   0.0030 -0.0223  0.0244  0.3836\n"}
-,{"stream_name":"stdout","time":117.817037466,"data":"                                              M3_late_stack  0.7289     0.5465     0.8427    0.7135    0.7836    0.7435 0.9290 0.0414   0.0013 -0.0016  0.0032  0.3457\n"}
-,{"stream_name":"stdout","time":117.817042699,"data":"                                                   M4_gated  0.7158     0.5262     0.8380    0.7152    0.8128    0.7051 0.9356 0.0444  -0.0118 -0.0609  0.0222  0.7223\n"}
-,{"stream_name":"stdout","time":117.817047884,"data":"                                               M5_crossattn  0.7311     0.5441     0.8446    0.7060    0.8119    0.7271 0.9455 0.0414   0.0035 -0.0545  0.0451  0.4376\n"}
-,{"stream_name":"stdout","time":117.817053095,"data":"                                M6_qwen25vl_3b [text+chart]  0.1212     0.0738     0.1812    0.2309    0.0494    0.1081 0.5612 0.1883  -0.6064 -0.7022 -0.4334  1.0000\n"}
-,{"stream_name":"stdout","time":117.817058456,"data":"                                      M6_qwen25vl_3b [text]  0.1006     0.0505     0.1846    0.2839    0.0503    0.0725 0.5461 0.1833  -0.6269 -0.6979 -0.4742  1.0000\n"}
-,{"stream_name":"stdout","time":117.817065413,"data":"                                     M6_qwen25vl_3b [chart]  0.0928     0.0565     0.1479    0.1790    0.0469    0.0873 0.4847 0.1914  -0.6348 -0.7408 -0.4458  1.0000\n"}
-,{"stream_name":"stdout","time":117.817070521,"data":"                                M7_qwen25vl_7b [text+chart]  0.1541     0.0831     0.2491    0.1997    0.0962    0.1501 0.6510 0.1466  -0.5735 -0.6563 -0.4417  1.0000\n"}
-,{"stream_name":"stdout","time":117.817075737,"data":"                                      M7_qwen25vl_7b [text]  0.1184     0.0754     0.1805    0.1554    0.0648    0.1228 0.5734 0.0988  -0.6092 -0.7033 -0.4490  1.0000\n"}
-,{"stream_name":"stdout","time":117.817080957,"data":"                                     M7_qwen25vl_7b [chart]  0.1343     0.0606     0.2393    0.1696    0.1585    0.1164 0.6330 0.1381  -0.5933 -0.6726 -0.4619  1.0000\n"}
-,{"stream_name":"stdout","time":117.817086001,"data":"                               M8_internvl3_2b [text+chart]  0.0941     0.0557     0.1514    0.1635    0.0562    0.0729 0.5051 0.1309  -0.6334 -0.7270 -0.4627  1.0000\n"}
-,{"stream_name":"stdout","time":117.817091283,"data":"                                     M8_internvl3_2b [text]  0.0844     0.0462     0.1482    0.1226    0.0452    0.0865 0.4678 0.1263  -0.6431 -0.7419 -0.4858  1.0000\n"}
-,{"stream_name":"stdout","time":117.817096024,"data":"                                    M8_internvl3_2b [chart]  0.0802     0.0508     0.1249    0.1319    0.0545    0.0694 0.4478 0.1420  -0.6474 -0.7422 -0.4778  1.0000\n"}
-,{"stream_name":"stdout","time":117.817099238,"data":" U1_num + M6_qwen25vl_3b [text+chart] (поздняя склейка, CV)  0.7171        NaN        NaN       NaN       NaN       NaN 0.9284 0.0422  -0.0003 -0.0048  0.0019  0.6114\n"}
-,{"stream_name":"stdout","time":117.817102908,"data":" U1_num + M7_qwen25vl_7b [text+chart] (поздняя склейка, CV)  0.7168        NaN        NaN       NaN       NaN       NaN 0.9288 0.0423  -0.0007 -0.0048  0.0024  0.6643\n"}
-,{"stream_name":"stdout","time":117.817112963,"data":"U1_num + M8_internvl3_2b [text+chart] (поздняя склейка, CV)  0.7181        NaN        NaN       NaN       NaN       NaN 0.9265 0.0422   0.0007 -0.0049  0.0048  0.3686\n"}
-,{"stream_name":"stdout","time":122.676603998,"data":"           model   p50_ms   p95_ms  objects_per_sec  fit_sec  gpu_gb   params  cost_usd_per_1000\n"}
-,{"stream_name":"stdout","time":122.676671426,"data":"          U1_num    2.833    3.752        51172.083     39.7   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676678426,"data":"         U2_text    4.011    4.959      1802431.300      6.7   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676683098,"data":"M1_num_txtstruct    3.097    3.991        57004.911     40.7   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676687658,"data":"    M2_early_all    5.254    7.560        51281.747     67.3   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676692676,"data":"        U3_image      NaN      NaN              NaN    297.8   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676697672,"data":"   M3_late_stack      NaN      NaN              NaN      NaN   0.000      NaN                NaN\n"}
-,{"stream_name":"stdout","time":122.676702846,"data":"        M4_gated    0.964    1.060       581855.781     32.3   0.339 173837.0                NaN\n"}
-,{"stream_name":"stdout","time":122.676707536,"data":"    M5_crossattn    2.311    2.588       100523.925    164.0   0.458 187585.0                NaN\n"}
-,{"stream_name":"stdout","time":122.676712286,"data":"  M6_qwen25vl_3b  224.985  286.820              NaN      NaN   7.170      NaN              0.022\n"}
-,{"stream_name":"stdout","time":122.676717307,"data":"  M7_qwen25vl_7b  889.203 1057.695              NaN      NaN   6.037      NaN              0.088\n"}
-,{"stream_name":"stdout","time":122.676721926,"data":" M8_internvl3_2b 1299.921 1411.068              NaN      NaN   4.604      NaN              0.128\n"}
-,{"stream_name":"stdout","time":122.676726632,"data":"              what      n      sec  per_item_ms\n"}
-,{"stream_name":"stdout","time":122.676731693,"data":"    text_bge_small 167583  151.514        0.904\n"}
-,{"stream_name":"stdout","time":122.676737024,"data":"  img_siglip_train 349165 1235.460        3.538\n"}
-,{"stream_name":"stdout","time":122.676741508,"data":"    img_siglip_val 105492  377.542        3.579\n"}
-,{"stream_name":"stdout","time":122.676746626,"data":"   img_siglip_test 265288  945.911        3.566\n"}
-,{"stream_name":"stdout","time":122.676751072,"data":"img_siglip_holdout 153022  546.008        3.568\n"}
-,{"stream_name":"stdout","time":122.676755752,"data":"           model                              условие  pr_auc  доля от полного\n"}
-,{"stream_name":"stdout","time":122.676761798,"data":"    M2_early_all                           без текста  0.7484           1.0020\n"}
-,{"stream_name":"stdout","time":122.676766739,"data":"    M2_early_all                      без изображения  0.7456           0.9982\n"}
-,{"stream_name":"stdout","time":122.676771856,"data":"    M2_early_all      перестановка текста внутри часа  0.7467           0.9996\n"}
-,{"stream_name":"stdout","time":122.676777298,"data":"    M2_early_all перестановка изображения внутри часа  0.7460           0.9987\n"}
-,{"stream_name":"stdout","time":122.676784239,"data":"    M2_early_all       перестановка чисел внутри часа  0.3787           0.5070\n"}
-,{"stream_name":"stdout","time":122.676806238,"data":"M1_num_txtstruct                           без текста  0.7488           1.0000\n"}
-,{"stream_name":"stdout","time":122.676811211,"data":"M1_num_txtstruct      перестановка текста внутри часа  0.7485           0.9995\n"}
-,{"stream_name":"stdout","time":122.676816228,"data":"        M4_gated                           без текста  0.7298           0.9996\n"}
-,{"stream_name":"stdout","time":122.676820813,"data":"        M4_gated                      без изображения  0.7304           1.0004\n"}
-,{"stream_name":"stdout","time":122.676825434,"data":"        M4_gated             без текста и изображения  0.7302           1.0001\n"}
-,{"stream_name":"stdout","time":122.676830314,"data":"        M4_gated                               слой a  0.7295              NaN\n"}
-,{"stream_name":"stdout","time":122.676835185,"data":"        M4_gated                               слой b  0.7039              NaN\n"}
-,{"stream_name":"stdout","time":122.676839973,"data":"        M4_gated                               слой c  0.7439              NaN\n"}
-,{"stream_name":"stdout","time":122.676845099,"data":"    M5_crossattn                           без текста  0.7478           1.0035\n"}
-,{"stream_name":"stdout","time":122.676849782,"data":"    M5_crossattn                      без изображения  0.7421           0.9959\n"}
-,{"stream_name":"stdout","time":122.676854641,"data":"    M5_crossattn             без текста и изображения  0.7465           1.0018\n"}
-,{"stream_name":"stdout","time":122.676859559,"data":"    M5_crossattn                               слой a  0.7387              NaN\n"}
-,{"stream_name":"stdout","time":122.676864141,"data":"    M5_crossattn                               слой b  0.7183              NaN\n"}
-,{"stream_name":"stdout","time":122.676868648,"data":"    M5_crossattn                               слой c  0.7595              NaN\n"}
-,{"stream_name":"stdout","time":123.971784828,"data":"отрицательные контроли:\n"}
-,{"stream_name":"stdout","time":123.971839632,"data":"            model    diff  ci_low  ci_high  p_perm\n"}
-,{"stream_name":"stdout","time":123.971846728,"data":"C0_U1_plus_noise -0.0022 -0.0036  -0.0009   0.983\n"}
-,{"stream_name":"stdout","time":123.971851647,"data":"     C1_U1_seed2 -0.0020 -0.0041  -0.0004   0.997\n"}
-,{"stream_name":"stdout","time":123.971856884,"data":"порог допуска по Δ_lo: 0.0\n"}
-,{"stream_name":"stdout","time":123.971861866,"data":"          модель  pr_auc  Δpr_auc    Δ_lo  p_perm  допуск  устойчивость  p95_ms\n"}
-,{"stream_name":"stdout","time":123.971867389,"data":"M1_num_txtstruct  0.7489  -0.0006 -0.0021  0.8861   False        1.0000  3.9910\n"}
-,{"stream_name":"stdout","time":123.971871952,"data":"    M2_early_all  0.7470  -0.0025 -0.0049  0.9985   False        0.9982 12.0268\n"}
-,{"stream_name":"stdout","time":123.971876156,"data":"   M3_late_stack  0.7498   0.0002 -0.0000  0.3973   False           NaN  3.9910\n"}
-,{"stream_name":"stdout","time":123.971880567,"data":"        M4_gated  0.7301  -0.0194 -0.0378  1.0000   False        0.9996  4.6226\n"}
-,{"stream_name":"stdout","time":123.971885025,"data":"    M5_crossattn  0.7451  -0.0044 -0.0131  0.9765   False        0.9959  6.1508\n"}
-,{"stream_name":"stdout","time":123.971889967,"data":"ВЫБРАНА: M3_late_stack — ни одна схема не прошла допуск; применяется лучшая по PR-AUC с пометкой «прирост не доказан»\n"}
-,{"stream_name":"stdout","time":125.188514333,"data":"{\n"}
-,{"stream_name":"stdout","time":125.188560971,"data":" \"модель\": \"M3_late_stack\",\n"}
-,{"stream_name":"stdout","time":125.188588908,"data":" \"n\": 153022,\n"}
-,{"stream_name":"stdout","time":125.188594259,"data":" \"pos_rate\": 0.03894864790683693,\n"}
-,{"stream_name":"stdout","time":125.188663138,"data":" \"pr_auc\": 0.5693357731914257,\n"}
-,{"stream_name":"stdout","time":125.188671698,"data":" \"auroc\": 0.9245884440238371,\n"}
-,{"stream_name":"stdout","time":125.188676416,"data":" \"brier\": 0.02400638983479328,\n"}
-,{"stream_name":"stdout","time":125.188681007,"data":" \"ece\": 0.0036109452324888133,\n"}
-,{"stream_name":"stdout","time":125.188685433,"data":" \"diff_vs_U1_num\": 3.096942965019611e-05,\n"}
-,{"stream_name":"stdout","time":125.188689712,"data":" \"ci_low_vs_U1_num\": -0.00014182449292137744,\n"}
-,{"stream_name":"stdout","time":125.188694247,"data":" \"ci_high_vs_U1_num\": 0.0003285116590272446,\n"}
-,{"stream_name":"stdout","time":125.188698607,"data":" \"p_perm_vs_U1_num\": 0.5052473763118441,\n"}
-,{"stream_name":"stdout","time":125.188703058,"data":" \"pr_auc_U1_num\": 0.5693048037617755,\n"}
-,{"stream_name":"stdout","time":125.188707541,"data":" \"подтверждено\": false\n"}
-,{"stream_name":"stdout","time":125.188712212,"data":"}\n"}
-,{"stream_name":"stdout","time":139.894511937,"data":"   срез  значение      n  провалов  pr_auc M3_late_stack  pr_auc U1_num       Δ\n"}
-,{"stream_name":"stdout","time":139.894575193,"data":"borough     Bronx  22786       815                0.4536         0.4537 -0.0001\n"}
-,{"stream_name":"stdout","time":139.894584094,"data":"borough  Brooklyn  55185      2610                0.6314         0.6314 -0.0001\n"}
-,{"stream_name":"stdout","time":139.894590318,"data":"borough Manhattan  49964      1494                0.4692         0.4688  0.0004\n"}
-,{"stream_name":"stdout","time":139.894596249,"data":"borough    Queens  25087      1041                0.6215         0.6214  0.0001\n"}
-,{"stream_name":"stdout","time":139.894602266,"data":"stratum         a    548        73                0.7386         0.7405 -0.0019\n"}
-,{"stream_name":"stdout","time":139.894626131,"data":"stratum         b  57792      2253                0.5867         0.5867  0.0000\n"}
-,{"stream_name":"stdout","time":139.894633828,"data":"stratum         c  94682      3634                0.5548         0.5547  0.0001\n"}
-,{"stream_name":"stdout","time":139.894639397,"data":"   peak  вне пика 105070      5303                0.6021         0.6020  0.0000\n"}
-,{"stream_name":"stdout","time":139.894645553,"data":"   peak       пик  47952       657                0.2771         0.2773 -0.0002\n"}
-,{"stream_name":"stdout","time":139.894651293,"data":"Час: 2026-07-17 09:00:00\n"}
-,{"stream_name":"stdout","time":139.89465828,"data":"           station_name  p_best  p_base  y_drop                                                                                                                                       alerts\n"}
-,{"stream_name":"stdout","time":139.894666906,"data":"     5 Av/59 St (N,R,W)   0.264   0.275       1 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
-,{"stream_name":"stdout","time":139.894673393,"data":"           225 St (2,5)   0.028   0.025       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":139.894679054,"data":"      Crescent St (J,Z)   0.026   0.023       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":139.89470337,"data":"        Nostrand Av (3)   0.019   0.017       0                [75 min ago; delays] New Lots-bound 3 trains are running with delays after FDNY extinguished a track fire near Van Siclen Av.\n"}
-,{"stream_name":"stdout","time":139.894709021,"data":"39 Av-Dutch Kills (N,W)   0.018   0.016       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
-,{"stream_name":"stdout","time":139.894716082,"data":"         Ocean Pkwy (Q)   0.016   0.014       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":139.894722315,"data":"              86 St (N)   0.016   0.014       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
-,{"stream_name":"stdout","time":139.894727603,"data":"   Wakefield-241 St (2)   0.015   0.013       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":139.894732193,"data":"        Beach 67 St (A)   0.014   0.012       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":139.894736933,"data":"            36 Av (N,W)   0.013   0.011       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
-,{"stream_name":"stdout","time":139.894741681,"data":"           Avenue X (F)   0.013   0.011       0                               [17 min ago; reroute | delays] Downtown E trains are running via the F line from 5 Av/53 St to W 4 St-Wash Sq.\n"}
-,{"stream_name":"stdout","time":139.894746645,"data":"           233 St (2,5)   0.012   0.010       0                                                                                                                                             \n"}
-,{"stream_name":"stdout","time":145.415438048,"data":"          срез          значение      n  провалов  pr_auc M3_late_stack  pr_auc U1_num       Δ\n"}
-,{"stream_name":"stdout","time":145.415504227,"data":"       stratum                 a   1064       151                0.7434         0.7429  0.0005\n"}
-,{"stream_name":"stdout","time":145.4155113,"data":"       stratum                 b 101156      7966                0.7274         0.7271  0.0003\n"}
-,{"stream_name":"stdout","time":145.415516542,"data":"       stratum                 c 163068     14858                0.7615         0.7613  0.0002\n"}
-,{"stream_name":"stdout","time":145.415521958,"data":"тип оповещения            delays  87424      6748                0.7277         0.7275  0.0003\n"}
-,{"stream_name":"stdout","time":145.415527383,"data":"тип оповещения  express-to-local   3012       273                0.6715         0.6706  0.0009\n"}
-,{"stream_name":"stdout","time":145.415532595,"data":"тип оповещения    part-suspended   1791       229                0.7172         0.7169  0.0003\n"}
-,{"stream_name":"stdout","time":145.415537863,"data":"тип оповещения           reroute   2991       289                0.7828         0.7829 -0.0001\n"}
-,{"stream_name":"stdout","time":145.41554319,"data":"тип оповещения     severe-delays    365        96                0.8313         0.8326 -0.0013\n"}
-,{"stream_name":"stdout","time":145.415548361,"data":"тип оповещения     stops-skipped   6414       474                0.7116         0.7113  0.0003\n"}
-,{"stream_name":"stdout","time":145.41557698,"data":"тип оповещения    нет оповещений 163068     14858                0.7615         0.7613  0.0002\n"}
-,{"stream_name":"stdout","time":145.415582736,"data":"  с оповещения              0–15  34289      2904                0.7340         0.7338  0.0002\n"}
-,{"stream_name":"stdout","time":145.41558811,"data":"  с оповещения             15–60  46952      3637                0.7148         0.7143  0.0004\n"}
-,{"stream_name":"stdout","time":145.415593308,"data":"  с оповещения            60–180  20979      1576                0.7456         0.7453  0.0002\n"}
-,{"stream_name":"stdout","time":145.415598618,"data":"  с оповещения               nan 163068     14858                0.7615         0.7613  0.0002\n"}
-,{"stream_name":"stdout","time":145.415603886,"data":"           час          вне пика 179208     16439                0.7234         0.7232  0.0002\n"}
-,{"stream_name":"stdout","time":145.415643164,"data":"           час               пик  86080      6536                0.8077         0.8075  0.0002\n"}
-,{"stream_name":"stdout","time":145.415649171,"data":"      выходной            будний 198276     13299                0.7189         0.7187  0.0002\n"}
-,{"stream_name":"stdout","time":145.415654425,"data":"      выходной          выходной  67012      9676                0.7895         0.7892  0.0003\n"}
-,{"stream_name":"stdout","time":145.41566175,"data":"       borough             Bronx  38934      3166                0.6889         0.6886  0.0004\n"}
-,{"stream_name":"stdout","time":145.41566699,"data":"       borough          Brooklyn  95739      8751                0.7438         0.7436  0.0002\n"}
-,{"stream_name":"stdout","time":145.4156719,"data":"       borough         Manhattan  87313      7691                0.7870         0.7868  0.0002\n"}
-,{"stream_name":"stdout","time":145.41567684,"data":"       borough            Queens  43302      3367                0.7320         0.7317  0.0004\n"}
-,{"stream_name":"stdout","time":145.415681661,"data":"       масштаб                Q1  53543      5352                0.6726         0.6724  0.0002\n"}
-,{"stream_name":"stdout","time":145.415686711,"data":"       масштаб                Q2  52709      5035                0.7537         0.7535  0.0002\n"}
-,{"stream_name":"stdout","time":145.415691776,"data":"       масштаб                Q3  53351      4743                0.7706         0.7702  0.0004\n"}
-,{"stream_name":"stdout","time":145.415696846,"data":"       масштаб                Q4  52653      4189                0.7725         0.7723  0.0002\n"}
-,{"stream_name":"stdout","time":145.415701901,"data":"       масштаб                Q5  53032      3656                0.7932         0.7930  0.0002\n"}
-,{"stream_name":"stdout","time":145.415706937,"data":"        осадки        дождь/снег  18640      3389                0.6686         0.6682  0.0004\n"}
-,{"stream_name":"stdout","time":145.41571226,"data":"        осадки              сухо 246648     19586                0.7616         0.7614  0.0002\n"}
-,{"stream_name":"stdout","time":145.415717473,"data":"начало провала в T−1 провала нет 242769      9321                0.3586         0.3582  0.0005\n"}
-,{"stream_name":"stdout","time":145.415723148,"data":"начало провала   провал уже идёт  22519     13654                0.9202         0.9201  0.0001\n"}
-,{"stream_name":"stdout","time":145.719711132,"data":"                            ситуация      n  доля провалов  средняя p M3_late_stack  средняя p U1_num  pr_auc M3_late_stack  pr_auc U1_num\n"}
-,{"stream_name":"stdout","time":145.719783317,"data":" текст: сбой у станции; числа: норма    900         0.0511                   0.0360            0.0357                0.3661         0.3658\n"}
-,{"stream_name":"stdout","time":145.719791019,"data":"текст: нет оповещений; числа: провал  14474         0.6138                   0.6135            0.6306                0.9266         0.9266\n"}
-,{"stream_name":"stdout","time":145.719796828,"data":"                      согласны: сбой    164         0.6402                   0.5788            0.5967                0.8540         0.8542\n"}
-,{"stream_name":"stdout","time":145.719801951,"data":"                     согласны: норма 241869         0.0383                   0.0355            0.0351                0.3587         0.3582\n"}
-,{"stream_name":"stdout","time":146.338342046,"data":" №                  тип                   T                                      станция     p    y / ref  r_lag1                                                                                                                                                                                                                                                                                                     оповещения\n"}
-,{"stream_name":"stdout","time":146.338392851,"data":" 0 пропуск провала (FN) 2026-06-11 10:00:00                                Halsey St (L) 0.000  156 / 358    1.11                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":146.338401585,"data":" 1 пропуск провала (FN) 2026-06-09 06:00:00                                     1 Av (L) 0.000  283 / 388    0.92                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":146.338408359,"data":" 2 пропуск провала (FN) 2026-06-20 17:00:00          Coney Island-Stillwell Av (D,F,N,Q) 0.001 760 / 1086    1.74 [31 min ago; delays; same line] E/F trains are running with delays in both directions after we addressed a signal problem near 75 Av.\\n[72 min ago; delays; same line] Uptown Q trains are running with delays while we conduct track maintenance in Brooklyn.\\n[77 min ago; delays; same line] F trains are r\n"}
-,{"stream_name":"stdout","time":146.338416479,"data":" 3 пропуск провала (FN) 2026-06-02 17:00:00                            Winthrop St (2,5) 0.001  373 / 595    1.07                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":146.338423101,"data":" 4 пропуск провала (FN) 2026-07-11 07:00:00 Atlantic Av-Barclays Ctr (2,3,4,5,B,D,N,Q,R) 0.001  280 / 384    1.09 [1 min ago; delays; same line] Downtown D trains are delayed while we investigate what caused a train's brakes to activate at 7 Av.\\n[40 min ago; delays; same line] Coney Island-Stillwell Av-bound N trains are running with delays after we moved a train that had its brakes activated at 86 St.\\n[42 min \n"}
-,{"stream_name":"stdout","time":146.338429824,"data":" 5  ложная тревога (FP) 2026-06-19 08:00:00                               Clark St (2,3) 0.992  382 / 460    0.34                                                                                                                                                                            [71 min ago; delays; same line] Downtown 2/5 trains are running with delays after we addressed a switch malfunction near Nereid Av.\n"}
-,{"stream_name":"stdout","time":146.338451806,"data":" 6  ложная тревога (FP) 2026-07-11 14:00:00                      103 St-Corona Plaza (7) 0.991  614 / 684    0.05                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":146.33845928,"data":" 7  ложная тревога (FP) 2026-07-04 18:00:00                                    20 Av (D) 0.986  111 / 130    0.44                                                                                                                                                                           [65 min ago; delays; same line] D/N trains are running with delays in both directions after we addressed a signal problem near 8 Av.\n"}
-,{"stream_name":"stdout","time":146.338466666,"data":" 8  ложная тревога (FP) 2026-07-11 20:00:00        81 St-Museum of Natural History (C,B) 0.985  391 / 492    0.47                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":146.338473587,"data":" 9  ложная тревога (FP) 2026-07-11 08:00:00                                    57 St (M) 0.985   118 / 94    0.30                                                                                                                                                                                                                                                                                                              —\n"}
-,{"stream_name":"stdout","time":148.210078149,"data":"                                    гипотеза                                                               факт           вывод\n"}
-,{"stream_name":"stdout","time":148.210118921,"data":" H1: прирост PR-AUC ≥ 0,02, ДИ \u003e 0, p \u003c 0,05           M3_late_stack: Δ = +0.0002 [-0.0000; +0.0005], p = 0.397       отклонена\n"}
-,{"stream_name":"stdout","time":148.210124801,"data":"           H2: прирост сосредоточен в слое a            слой a: Δ +0.0005, слой b: Δ +0.0003, слой c: Δ +0.0002 не подтверждена\n"}
-,{"stream_name":"stdout","time":148.210195123,"data":"H3: изображение не даёт прироста сверх чисел   числа + изображение против чисел: Δ = -0.0020 [-0.0050; +0.0003]    подтверждена\n"}
-,{"stream_name":"stdout","time":148.21020167,"data":"     H4: прирост текста убывает с горизонтом          h=1 (основной): Δ -0.0006; h=2: Δ +0.0020; h=3: Δ +0.0010 не подтверждена\n"}
-,{"stream_name":"stdout","time":148.210207612,"data":" H5: VLM zero-shot уступают обучаемым схемам лучшая VLM PR-AUC 0.7181 против 0.7319 у лучшей обучаемой (E-1200)    подтверждена\n"}
-,{"stream_name":"stdout","time":148.210213718,"data":"готово, мин: 2.1\n"}
-,{"stream_name":"stderr","time":152.141829085,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":152.141895728,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":152.387650282,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":152.387695795,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":153.411271161,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":153.523560803,"data":"[NbConvertApp] Writing 55123 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":156.999229129,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":157.854275131,"data":"[NbConvertApp] Writing 429928 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":11.037502076,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.037632346,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.037640759,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.037645472,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.987602008,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.987687719,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.987695348,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.987699872,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.553076086,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-data\n"}
+,{"stream_name":"stdout","time":37.158367361,"data":"нет прогнозов: —\n"}
+,{"stream_name":"stdout","time":37.158440166,"data":"лучший одномодальный baseline (по val): U1_num\n"}
+,{"stream_name":"stdout","time":75.107099018,"data":"          модель  pr_auc  pr_auc_lo  pr_auc_hi  auroc  macro_f1    mcc  brier    ece  Δpr_auc    Δ_lo    Δ_hi  p_perm\n"}
+,{"stream_name":"stdout","time":75.107161535,"data":"  U0_persistence  0.3955     0.2235     0.5230 0.7789    0.7814 0.5628 0.0543 0.0088      NaN     NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":75.10716998,"data":"          U1_num  0.7495     0.5649     0.8416 0.9425    0.8225 0.6474 0.0391 0.0055      NaN     NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":75.10717639800001,"data":"         U2_text  0.0918     0.0520     0.1461 0.5210    0.5013 0.0137 0.0791 0.0034  -0.6577 -0.7164 -0.5080  1.0000\n"}
+,{"stream_name":"stdout","time":75.107182072,"data":"        U3_image  0.4125     0.1914     0.5526 0.8228    0.6938 0.3893 0.0632 0.0052  -0.3370 -0.4300 -0.2658  1.0000\n"}
+,{"stream_name":"stdout","time":75.107187499,"data":"M1_num_txtstruct  0.7489     0.5642     0.8413 0.9428    0.8224 0.6459 0.0391 0.0049  -0.0006 -0.0021  0.0002  0.8861\n"}
+,{"stream_name":"stdout","time":75.107192722,"data":"    M2_early_all  0.7470     0.5605     0.8398 0.9416    0.8224 0.6470 0.0393 0.0055  -0.0025 -0.0049 -0.0009  0.9985\n"}
+,{"stream_name":"stdout","time":75.107198188,"data":"   M3_late_stack  0.7498     0.5653     0.8418 0.9426    0.8227 0.6480 0.0390 0.0035   0.0002 -0.0000  0.0005  0.3973\n"}
+,{"stream_name":"stdout","time":75.107203314,"data":"        M4_gated  0.7301     0.5314     0.8305 0.9348    0.8174 0.6349 0.0410 0.0116  -0.0194 -0.0378 -0.0104  1.0000\n"}
+,{"stream_name":"stdout","time":75.107208637,"data":"    M5_crossattn  0.7451     0.5540     0.8408 0.9404    0.8212 0.6426 0.0395 0.0066  -0.0044 -0.0131  0.0002  0.9765\n"}
+,{"stream_name":"stdout","time":88.938834469,"data":"                                                     модель  pr_auc  pr_auc_lo  pr_auc_hi  pr_auc_a  pr_auc_b  pr_auc_c  auroc  brier  Δpr_auc    Δ_lo    Δ_hi  p_perm\n"}
+,{"stream_name":"stdout","time":88.93891564,"data":"                                             U0_persistence  0.3582     0.2150     0.4896    0.5024    0.2995    0.2466 0.7801 0.0601  -0.3693 -0.4236 -0.3060  1.0000\n"}
+,{"stream_name":"stdout","time":88.938925115,"data":"                                                     U1_num  0.7276     0.5477     0.8410    0.7132    0.7808    0.7418 0.9283 0.0416      NaN     NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":88.93897665,"data":"                                                    U2_text  0.1597     0.0900     0.2673    0.2327    0.0682    0.0825 0.6239 0.0787  -0.5679 -0.6404 -0.4180  1.0000\n"}
+,{"stream_name":"stdout","time":88.938986003,"data":"                                                   U3_image  0.4021     0.1623     0.5700    0.4529    0.3642    0.4198 0.8170 0.0655  -0.3254 -0.4518 -0.2099  1.0000\n"}
+,{"stream_name":"stdout","time":88.93899223,"data":"                                           M1_num_txtstruct  0.7319     0.5361     0.8532    0.7136    0.7992    0.7360 0.9463 0.0415   0.0043 -0.0237  0.0285  0.3746\n"}
+,{"stream_name":"stdout","time":88.938997719,"data":"                                               M2_early_all  0.7306     0.5327     0.8477    0.7098    0.7844    0.7339 0.9414 0.0418   0.0030 -0.0223  0.0244  0.3836\n"}
+,{"stream_name":"stdout","time":88.939002026,"data":"                                              M3_late_stack  0.7289     0.5465     0.8427    0.7135    0.7836    0.7435 0.9290 0.0414   0.0013 -0.0016  0.0032  0.3457\n"}
+,{"stream_name":"stdout","time":88.939006622,"data":"                                                   M4_gated  0.7158     0.5262     0.8380    0.7152    0.8128    0.7051 0.9356 0.0444  -0.0118 -0.0609  0.0222  0.7223\n"}
+,{"stream_name":"stdout","time":88.939011804,"data":"                                               M5_crossattn  0.7311     0.5441     0.8446    0.7060    0.8119    0.7271 0.9455 0.0414   0.0035 -0.0545  0.0451  0.4376\n"}
+,{"stream_name":"stdout","time":88.939017267,"data":"                                M6_qwen25vl_3b [text+chart]  0.1212     0.0738     0.1812    0.2309    0.0494    0.1081 0.5612 0.1883  -0.6064 -0.7022 -0.4334  1.0000\n"}
+,{"stream_name":"stdout","time":88.939022771,"data":"                                      M6_qwen25vl_3b [text]  0.1006     0.0505     0.1846    0.2839    0.0503    0.0725 0.5461 0.1833  -0.6269 -0.6979 -0.4742  1.0000\n"}
+,{"stream_name":"stdout","time":88.93903048600001,"data":"                                     M6_qwen25vl_3b [chart]  0.0928     0.0565     0.1479    0.1790    0.0469    0.0873 0.4847 0.1914  -0.6348 -0.7408 -0.4458  1.0000\n"}
+,{"stream_name":"stdout","time":88.939035874,"data":"                                M7_qwen25vl_7b [text+chart]  0.1541     0.0831     0.2491    0.1997    0.0962    0.1501 0.6510 0.1466  -0.5735 -0.6563 -0.4417  1.0000\n"}
+,{"stream_name":"stdout","time":88.939045927,"data":"                                      M7_qwen25vl_7b [text]  0.1184     0.0754     0.1805    0.1554    0.0648    0.1228 0.5734 0.0988  -0.6092 -0.7033 -0.4490  1.0000\n"}
+,{"stream_name":"stdout","time":88.93905164,"data":"                                     M7_qwen25vl_7b [chart]  0.1343     0.0606     0.2393    0.1696    0.1585    0.1164 0.6330 0.1381  -0.5933 -0.6726 -0.4619  1.0000\n"}
+,{"stream_name":"stdout","time":88.939056549,"data":"                               M8_internvl3_2b [text+chart]  0.0941     0.0557     0.1514    0.1635    0.0562    0.0729 0.5051 0.1309  -0.6334 -0.7270 -0.4627  1.0000\n"}
+,{"stream_name":"stdout","time":88.939061131,"data":"                                     M8_internvl3_2b [text]  0.0844     0.0462     0.1482    0.1226    0.0452    0.0865 0.4678 0.1263  -0.6431 -0.7419 -0.4858  1.0000\n"}
+,{"stream_name":"stdout","time":88.939066192,"data":"                                    M8_internvl3_2b [chart]  0.0802     0.0508     0.1249    0.1319    0.0545    0.0694 0.4478 0.1420  -0.6474 -0.7422 -0.4778  1.0000\n"}
+,{"stream_name":"stdout","time":88.939070893,"data":" U1_num + M6_qwen25vl_3b [text+chart] (поздняя склейка, CV)  0.7171        NaN        NaN       NaN       NaN       NaN 0.9284 0.0422  -0.0003 -0.0048  0.0019  0.6114\n"}
+,{"stream_name":"stdout","time":88.939076531,"data":" U1_num + M7_qwen25vl_7b [text+chart] (поздняя склейка, CV)  0.7168        NaN        NaN       NaN       NaN       NaN 0.9288 0.0423  -0.0007 -0.0048  0.0024  0.6643\n"}
+,{"stream_name":"stdout","time":88.93908788,"data":"U1_num + M8_internvl3_2b [text+chart] (поздняя склейка, CV)  0.7181        NaN        NaN       NaN       NaN       NaN 0.9265 0.0422   0.0007 -0.0049  0.0048  0.3686\n"}
+,{"stream_name":"stdout","time":90.041846693,"data":"           model   p50_ms   p95_ms  objects_per_sec  fit_sec  gpu_gb   params  cost_usd_per_1000\n"}
+,{"stream_name":"stdout","time":90.041889277,"data":"          U1_num    2.833    3.752        51172.083     39.7   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.041894566,"data":"         U2_text    4.011    4.959      1802431.300      6.7   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.041898877,"data":"M1_num_txtstruct    3.097    3.991        57004.911     40.7   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.04190326,"data":"    M2_early_all    5.254    7.560        51281.747     67.3   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.041907306,"data":"        U3_image      NaN      NaN              NaN    297.8   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.041911637,"data":"   M3_late_stack      NaN      NaN              NaN      NaN   0.000      NaN                NaN\n"}
+,{"stream_name":"stdout","time":90.041915863,"data":"        M4_gated    0.964    1.060       581855.781     32.3   0.339 173837.0                NaN\n"}
+,{"stream_name":"stdout","time":90.041921991,"data":"    M5_crossattn    2.311    2.588       100523.925    164.0   0.458 187585.0                NaN\n"}
+,{"stream_name":"stdout","time":90.041925925,"data":"  M6_qwen25vl_3b  224.985  286.820              NaN      NaN   7.170      NaN              0.022\n"}
+,{"stream_name":"stdout","time":90.04193572,"data":"  M7_qwen25vl_7b  889.203 1057.695              NaN      NaN   6.037      NaN              0.088\n"}
+,{"stream_name":"stdout","time":90.041938569,"data":" M8_internvl3_2b 1299.921 1411.068              NaN      NaN   4.604      NaN              0.128\n"}
+,{"stream_name":"stdout","time":90.041941654,"data":"              what      n      sec  per_item_ms\n"}
+,{"stream_name":"stdout","time":90.0419444,"data":"    text_bge_small 167583  151.514        0.904\n"}
+,{"stream_name":"stdout","time":90.041947176,"data":"  img_siglip_train 349165 1235.460        3.538\n"}
+,{"stream_name":"stdout","time":90.04194988,"data":"    img_siglip_val 105492  377.542        3.579\n"}
+,{"stream_name":"stdout","time":90.041952691,"data":"   img_siglip_test 265288  945.911        3.566\n"}
+,{"stream_name":"stdout","time":90.041955441,"data":"img_siglip_holdout 153022  546.008        3.568\n"}
+,{"stream_name":"stdout","time":90.063235815,"data":"           model                              условие  pr_auc  доля от полного\n"}
+,{"stream_name":"stdout","time":90.06330296,"data":"    M2_early_all                           без текста  0.7484           1.0020\n"}
+,{"stream_name":"stdout","time":90.063311627,"data":"    M2_early_all                      без изображения  0.7456           0.9982\n"}
+,{"stream_name":"stdout","time":90.063316865,"data":"    M2_early_all      перестановка текста внутри часа  0.7467           0.9996\n"}
+,{"stream_name":"stdout","time":90.063321782,"data":"    M2_early_all перестановка изображения внутри часа  0.7460           0.9987\n"}
+,{"stream_name":"stdout","time":90.06332801,"data":"    M2_early_all       перестановка чисел внутри часа  0.3787           0.5070\n"}
+,{"stream_name":"stdout","time":90.063358876,"data":"M1_num_txtstruct                           без текста  0.7488           1.0000\n"}
+,{"stream_name":"stdout","time":90.06336423,"data":"M1_num_txtstruct      перестановка текста внутри часа  0.7485           0.9995\n"}
+,{"stream_name":"stdout","time":90.063369071,"data":"        M4_gated                           без текста  0.7298           0.9996\n"}
+,{"stream_name":"stdout","time":90.063374487,"data":"        M4_gated                      без изображения  0.7304           1.0004\n"}
+,{"stream_name":"stdout","time":90.063380278,"data":"        M4_gated             без текста и изображения  0.7302           1.0001\n"}
+,{"stream_name":"stdout","time":90.063384964,"data":"        M4_gated                               слой a  0.7295              NaN\n"}
+,{"stream_name":"stdout","time":90.063390837,"data":"        M4_gated                               слой b  0.7039              NaN\n"}
+,{"stream_name":"stdout","time":90.063395833,"data":"        M4_gated                               слой c  0.7439              NaN\n"}
+,{"stream_name":"stdout","time":90.06340029,"data":"    M5_crossattn                           без текста  0.7478           1.0035\n"}
+,{"stream_name":"stdout","time":90.063404985,"data":"    M5_crossattn                      без изображения  0.7421           0.9959\n"}
+,{"stream_name":"stdout","time":90.06340937,"data":"    M5_crossattn             без текста и изображения  0.7465           1.0018\n"}
+,{"stream_name":"stdout","time":90.063414408,"data":"    M5_crossattn                               слой a  0.7387              NaN\n"}
+,{"stream_name":"stdout","time":90.063419825,"data":"    M5_crossattn                               слой b  0.7183              NaN\n"}
+,{"stream_name":"stdout","time":90.063424597,"data":"    M5_crossattn                               слой c  0.7595              NaN\n"}
+,{"stream_name":"stdout","time":90.265864846,"data":"отрицательные контроли:\n"}
+,{"stream_name":"stdout","time":90.265939741,"data":"            model    diff  ci_low  ci_high  p_perm\n"}
+,{"stream_name":"stdout","time":90.265947193,"data":"C0_U1_plus_noise -0.0022 -0.0036  -0.0009   0.983\n"}
+,{"stream_name":"stdout","time":90.26595193,"data":"     C1_U1_seed2 -0.0020 -0.0041  -0.0004   0.997\n"}
+,{"stream_name":"stdout","time":90.265956424,"data":"порог допуска по Δ_lo: 0.0\n"}
+,{"stream_name":"stdout","time":90.46427733,"data":"          модель  pr_auc  Δpr_auc    Δ_lo  p_perm  допуск  устойчивость  p95_ms\n"}
+,{"stream_name":"stdout","time":90.464324962,"data":"M1_num_txtstruct  0.7489  -0.0006 -0.0021  0.8861   False        1.0000  3.9910\n"}
+,{"stream_name":"stdout","time":90.464331673,"data":"    M2_early_all  0.7470  -0.0025 -0.0049  0.9985   False        0.9982 12.0268\n"}
+,{"stream_name":"stdout","time":90.464336733,"data":"   M3_late_stack  0.7498   0.0002 -0.0000  0.3973   False           NaN  3.9910\n"}
+,{"stream_name":"stdout","time":90.464341099,"data":"        M4_gated  0.7301  -0.0194 -0.0378  1.0000   False        0.9996  4.6226\n"}
+,{"stream_name":"stdout","time":90.464345345,"data":"    M5_crossattn  0.7451  -0.0044 -0.0131  0.9765   False        0.9959  6.1508\n"}
+,{"stream_name":"stdout","time":90.464349648,"data":"ВЫБРАНА: M3_late_stack — ни одна схема не прошла допуск; применяется лучшая по PR-AUC с пометкой «прирост не доказан»\n"}
+,{"stream_name":"stdout","time":91.962804525,"data":"{\n"}
+,{"stream_name":"stdout","time":91.962897228,"data":" \"модель\": \"M3_late_stack\",\n"}
+,{"stream_name":"stdout","time":91.962905948,"data":" \"n\": 153022,\n"}
+,{"stream_name":"stdout","time":91.962910416,"data":" \"pos_rate\": 0.03894864790683693,\n"}
+,{"stream_name":"stdout","time":91.962914782,"data":" \"pr_auc\": 0.5693357731914257,\n"}
+,{"stream_name":"stdout","time":91.962918952,"data":" \"auroc\": 0.9245884440238371,\n"}
+,{"stream_name":"stdout","time":91.962923196,"data":" \"brier\": 0.02400638983479328,\n"}
+,{"stream_name":"stdout","time":91.962927273,"data":" \"ece\": 0.0036109452324888133,\n"}
+,{"stream_name":"stdout","time":91.962931417,"data":" \"diff_vs_U1_num\": 3.096942965019611e-05,\n"}
+,{"stream_name":"stdout","time":91.962935389,"data":" \"ci_low_vs_U1_num\": -0.00014182449292137744,\n"}
+,{"stream_name":"stdout","time":91.962939546,"data":" \"ci_high_vs_U1_num\": 0.0003285116590272446,\n"}
+,{"stream_name":"stdout","time":91.962943631,"data":" \"p_perm_vs_U1_num\": 0.5052473763118441,\n"}
+,{"stream_name":"stdout","time":91.962949812,"data":" \"pr_auc_U1_num\": 0.5693048037617755,\n"}
+,{"stream_name":"stdout","time":91.962995005,"data":" \"подтверждено\": false\n"}
+,{"stream_name":"stdout","time":91.963004711,"data":"}\n"}
+,{"stream_name":"stdout","time":101.082206657,"data":"   срез  значение      n  провалов  pr_auc M3_late_stack  pr_auc U1_num       Δ\n"}
+,{"stream_name":"stdout","time":101.082268399,"data":"borough     Bronx  22786       815                0.4536         0.4537 -0.0001\n"}
+,{"stream_name":"stdout","time":101.082275428,"data":"borough  Brooklyn  55185      2610                0.6314         0.6314 -0.0001\n"}
+,{"stream_name":"stdout","time":101.082280612,"data":"borough Manhattan  49964      1494                0.4692         0.4688  0.0004\n"}
+,{"stream_name":"stdout","time":101.082285097,"data":"borough    Queens  25087      1041                0.6215         0.6214  0.0001\n"}
+,{"stream_name":"stdout","time":101.082289288,"data":"stratum         a    548        73                0.7386         0.7405 -0.0019\n"}
+,{"stream_name":"stdout","time":101.082293452,"data":"stratum         b  57792      2253                0.5867         0.5867  0.0000\n"}
+,{"stream_name":"stdout","time":101.082297431,"data":"stratum         c  94682      3634                0.5548         0.5547  0.0001\n"}
+,{"stream_name":"stdout","time":101.082301402,"data":"   peak  вне пика 105070      5303                0.6021         0.6020  0.0000\n"}
+,{"stream_name":"stdout","time":101.08230556,"data":"   peak       пик  47952       657                0.2771         0.2773 -0.0002\n"}
+,{"stream_name":"stdout","time":101.082310327,"data":"Час: 2026-07-17 09:00:00\n"}
+,{"stream_name":"stdout","time":101.082315045,"data":"           station_name  p_best  p_base  y_drop                                                                                                                                       alerts\n"}
+,{"stream_name":"stdout","time":101.082322352,"data":"     5 Av/59 St (N,R,W)   0.264   0.275       1 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
+,{"stream_name":"stdout","time":101.082327529,"data":"           225 St (2,5)   0.028   0.025       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":101.082333045,"data":"      Crescent St (J,Z)   0.026   0.023       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":101.082361304,"data":"        Nostrand Av (3)   0.019   0.017       0                [75 min ago; delays] New Lots-bound 3 trains are running with delays after FDNY extinguished a track fire near Van Siclen Av.\n"}
+,{"stream_name":"stdout","time":101.082368905,"data":"39 Av-Dutch Kills (N,W)   0.018   0.016       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
+,{"stream_name":"stdout","time":101.082374899,"data":"         Ocean Pkwy (Q)   0.016   0.014       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":101.082379236,"data":"              86 St (N)   0.016   0.014       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
+,{"stream_name":"stdout","time":101.082382953,"data":"   Wakefield-241 St (2)   0.015   0.013       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":101.082387157,"data":"        Beach 67 St (A)   0.014   0.012       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":101.08239108,"data":"            36 Av (N,W)   0.013   0.011       0 [1 min ago; severe-delays] N/R/W trains are running with severe delays in both directions after FDNY responded to a track fire in the tunnel\n"}
+,{"stream_name":"stdout","time":101.082395394,"data":"           Avenue X (F)   0.013   0.011       0                               [17 min ago; reroute | delays] Downtown E trains are running via the F line from 5 Av/53 St to W 4 St-Wash Sq.\n"}
+,{"stream_name":"stdout","time":101.082399564,"data":"           233 St (2,5)   0.012   0.010       0                                                                                                                                             \n"}
+,{"stream_name":"stdout","time":107.073188037,"data":"          срез          значение      n  провалов  pr_auc M3_late_stack  pr_auc U1_num       Δ\n"}
+,{"stream_name":"stdout","time":107.07329144,"data":"       stratum                 a   1064       151                0.7434         0.7429  0.0005\n"}
+,{"stream_name":"stdout","time":107.073299278,"data":"       stratum                 b 101156      7966                0.7274         0.7271  0.0003\n"}
+,{"stream_name":"stdout","time":107.073303494,"data":"       stratum                 c 163068     14858                0.7615         0.7613  0.0002\n"}
+,{"stream_name":"stdout","time":107.073307589,"data":"тип оповещения            delays  87424      6748                0.7277         0.7275  0.0003\n"}
+,{"stream_name":"stdout","time":107.073311604,"data":"тип оповещения  express-to-local   3012       273                0.6715         0.6706  0.0009\n"}
+,{"stream_name":"stdout","time":107.073315532,"data":"тип оповещения    part-suspended   1791       229                0.7172         0.7169  0.0003\n"}
+,{"stream_name":"stdout","time":107.073319392,"data":"тип оповещения           reroute   2991       289                0.7828         0.7829 -0.0001\n"}
+,{"stream_name":"stdout","time":107.073323101,"data":"тип оповещения     severe-delays    365        96                0.8313         0.8326 -0.0013\n"}
+,{"stream_name":"stdout","time":107.0733373,"data":"тип оповещения     stops-skipped   6414       474                0.7116         0.7113  0.0003\n"}
+,{"stream_name":"stdout","time":107.073410879,"data":"тип оповещения    нет оповещений 163068     14858                0.7615         0.7613  0.0002\n"}
+,{"stream_name":"stdout","time":107.07341653,"data":"  с оповещения              0–15  34289      2904                0.7340         0.7338  0.0002\n"}
+,{"stream_name":"stdout","time":107.073420708,"data":"  с оповещения             15–60  46952      3637                0.7148         0.7143  0.0004\n"}
+,{"stream_name":"stdout","time":107.073425156,"data":"  с оповещения            60–180  20979      1576                0.7456         0.7453  0.0002\n"}
+,{"stream_name":"stdout","time":107.073430179,"data":"  с оповещения               nan 163068     14858                0.7615         0.7613  0.0002\n"}
+,{"stream_name":"stdout","time":107.073434986,"data":"           час          вне пика 179208     16439                0.7234         0.7232  0.0002\n"}
+,{"stream_name":"stdout","time":107.073439728,"data":"           час               пик  86080      6536                0.8077         0.8075  0.0002\n"}
+,{"stream_name":"stdout","time":107.073443812,"data":"      выходной            будний 198276     13299                0.7189         0.7187  0.0002\n"}
+,{"stream_name":"stdout","time":107.073447867,"data":"      выходной          выходной  67012      9676                0.7895         0.7892  0.0003\n"}
+,{"stream_name":"stdout","time":107.073454965,"data":"       borough             Bronx  38934      3166                0.6889         0.6886  0.0004\n"}
+,{"stream_name":"stdout","time":107.073458944,"data":"       borough          Brooklyn  95739      8751                0.7438         0.7436  0.0002\n"}
+,{"stream_name":"stdout","time":107.073462994,"data":"       borough         Manhattan  87313      7691                0.7870         0.7868  0.0002\n"}
+,{"stream_name":"stdout","time":107.073467478,"data":"       borough            Queens  43302      3367                0.7320         0.7317  0.0004\n"}
+,{"stream_name":"stdout","time":107.073470928,"data":"       масштаб                Q1  53543      5352                0.6726         0.6724  0.0002\n"}
+,{"stream_name":"stdout","time":107.07347534,"data":"       масштаб                Q2  52709      5035                0.7537         0.7535  0.0002\n"}
+,{"stream_name":"stdout","time":107.073479727,"data":"       масштаб                Q3  53351      4743                0.7706         0.7702  0.0004\n"}
+,{"stream_name":"stdout","time":107.073485142,"data":"       масштаб                Q4  52653      4189                0.7725         0.7723  0.0002\n"}
+,{"stream_name":"stdout","time":107.073489716,"data":"       масштаб                Q5  53032      3656                0.7932         0.7930  0.0002\n"}
+,{"stream_name":"stdout","time":107.073493598,"data":"        осадки        дождь/снег  18640      3389                0.6686         0.6682  0.0004\n"}
+,{"stream_name":"stdout","time":107.073498061,"data":"        осадки              сухо 246648     19586                0.7616         0.7614  0.0002\n"}
+,{"stream_name":"stdout","time":107.073502974,"data":"начало провала в T−1 провала нет 242769      9321                0.3586         0.3582  0.0005\n"}
+,{"stream_name":"stdout","time":107.073508252,"data":"начало провала   провал уже идёт  22519     13654                0.9202         0.9201  0.0001\n"}
+,{"stream_name":"stdout","time":107.391324091,"data":"                            ситуация      n  доля провалов  средняя p M3_late_stack  средняя p U1_num  pr_auc M3_late_stack  pr_auc U1_num\n"}
+,{"stream_name":"stdout","time":107.391448964,"data":" текст: сбой у станции; числа: норма    900         0.0511                   0.0360            0.0357                0.3661         0.3658\n"}
+,{"stream_name":"stdout","time":107.391670793,"data":"текст: нет оповещений; числа: провал  14474         0.6138                   0.6135            0.6306                0.9266         0.9266\n"}
+,{"stream_name":"stdout","time":107.391685517,"data":"                      согласны: сбой    164         0.6402                   0.5788            0.5967                0.8540         0.8542\n"}
+,{"stream_name":"stdout","time":107.391690923,"data":"                     согласны: норма 241869         0.0383                   0.0355            0.0351                0.3587         0.3582\n"}
+,{"stream_name":"stdout","time":108.248357533,"data":" №                  тип                   T                                      станция     p    y / ref  r_lag1                                                                                                                                                                                                                                                                                                     оповещения\n"}
+,{"stream_name":"stdout","time":108.248449679,"data":" 0 пропуск провала (FN) 2026-06-11 10:00:00                                Halsey St (L) 0.000  156 / 358    1.11                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":108.248457305,"data":" 1 пропуск провала (FN) 2026-06-09 06:00:00                                     1 Av (L) 0.000  283 / 388    0.92                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":108.248463306,"data":" 2 пропуск провала (FN) 2026-06-20 17:00:00          Coney Island-Stillwell Av (D,F,N,Q) 0.001 760 / 1086    1.74 [31 min ago; delays; same line] E/F trains are running with delays in both directions after we addressed a signal problem near 75 Av.\\n[72 min ago; delays; same line] Uptown Q trains are running with delays while we conduct track maintenance in Brooklyn.\\n[77 min ago; delays; same line] F trains are r\n"}
+,{"stream_name":"stdout","time":108.248473193,"data":" 3 пропуск провала (FN) 2026-06-02 17:00:00                            Winthrop St (2,5) 0.001  373 / 595    1.07                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":108.248481173,"data":" 4 пропуск провала (FN) 2026-07-11 07:00:00 Atlantic Av-Barclays Ctr (2,3,4,5,B,D,N,Q,R) 0.001  280 / 384    1.09 [1 min ago; delays; same line] Downtown D trains are delayed while we investigate what caused a train's brakes to activate at 7 Av.\\n[40 min ago; delays; same line] Coney Island-Stillwell Av-bound N trains are running with delays after we moved a train that had its brakes activated at 86 St.\\n[42 min \n"}
+,{"stream_name":"stdout","time":108.248487587,"data":" 5  ложная тревога (FP) 2026-06-19 08:00:00                               Clark St (2,3) 0.992  382 / 460    0.34                                                                                                                                                                            [71 min ago; delays; same line] Downtown 2/5 trains are running with delays after we addressed a switch malfunction near Nereid Av.\n"}
+,{"stream_name":"stdout","time":108.248516396,"data":" 6  ложная тревога (FP) 2026-07-11 14:00:00                      103 St-Corona Plaza (7) 0.991  614 / 684    0.05                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":108.248522451,"data":" 7  ложная тревога (FP) 2026-07-04 18:00:00                                    20 Av (D) 0.986  111 / 130    0.44                                                                                                                                                                           [65 min ago; delays; same line] D/N trains are running with delays in both directions after we addressed a signal problem near 8 Av.\n"}
+,{"stream_name":"stdout","time":108.248528362,"data":" 8  ложная тревога (FP) 2026-07-11 20:00:00        81 St-Museum of Natural History (C,B) 0.985  391 / 492    0.47                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":108.248534146,"data":" 9  ложная тревога (FP) 2026-07-11 08:00:00                                    57 St (M) 0.985   118 / 94    0.30                                                                                                                                                                                                                                                                                                              —\n"}
+,{"stream_name":"stdout","time":109.090896729,"data":"                                    гипотеза                                                               факт           вывод\n"}
+,{"stream_name":"stdout","time":109.090976309,"data":" H1: прирост PR-AUC ≥ 0,02, ДИ \u003e 0, p \u003c 0,05           M3_late_stack: Δ = +0.0002 [-0.0000; +0.0005], p = 0.397       отклонена\n"}
+,{"stream_name":"stdout","time":109.090985872,"data":"           H2: прирост сосредоточен в слое a            слой a: Δ +0.0005, слой b: Δ +0.0003, слой c: Δ +0.0002 не подтверждена\n"}
+,{"stream_name":"stdout","time":109.090994512,"data":"H3: изображение не даёт прироста сверх чисел   числа + изображение против чисел: Δ = -0.0020 [-0.0050; +0.0003]    подтверждена\n"}
+,{"stream_name":"stdout","time":109.091000435,"data":"     H4: прирост текста убывает с горизонтом          h=1 (основной): Δ -0.0006; h=2: Δ +0.0020; h=3: Δ +0.0010 не подтверждена\n"}
+,{"stream_name":"stdout","time":109.091005849,"data":" H5: VLM zero-shot уступают обучаемым схемам лучшая VLM PR-AUC 0.1541 против 0.7319 у лучшей обучаемой (E-1200)    подтверждена\n"}
+,{"stream_name":"stdout","time":109.091010969,"data":"готово, мин: 1.5\n"}
+,{"stream_name":"stderr","time":114.009951812,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":114.010076451,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":114.272143189,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":114.272196431,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":115.318828353,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":115.433141544,"data":"[NbConvertApp] Writing 56260 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":119.217180058,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":120.149942534,"data":"[NbConvertApp] Writing 433843 bytes to __results__.html\n"}
 ]
