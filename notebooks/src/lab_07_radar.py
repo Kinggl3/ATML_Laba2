@@ -8,8 +8,8 @@
 # радаров NEXRAD, система NCEP MRMS), PNG 8 бит, сетка широта/долгота 0,01° (~1 км).
 # Индекс пикселя → мм по таблице IEM: 0–100 — шаг 0,25 мм; 100–180 — 1,25 мм; 180–254 — 5 мм; 255 — нет данных.
 #
-# Для каждого часа прогноза T (06–23, местное время) берётся последний файл, вышедший не позже T−5 мин
-# (правило S11), и файл на час раньше. Из всей карты США сохраняется только вырезка вокруг Нью-Йорка.
+# Для каждого часа прогноза T (06–23, местное время) берётся последний файл с меткой не позже T
+# (осадки за прошедший час, правило S11) и файл на час раньше. Из всей карты США сохраняется только вырезка вокруг Нью-Йорка.
 
 # %%
 import os, sys, re, json, time, io, traceback
@@ -36,7 +36,10 @@ MARGIN = 0.25                                       # запас вокруг с
 BBOX = (LON.min() - MARGIN, LON.max() + MARGIN, LAT.min() - MARGIN, LAT.max() + MARGIN)
 DAY0 = pd.Timestamp(os.environ.get("RADAR_START", "2023-01-01"))
 DAY1 = pd.Timestamp(os.environ.get("RADAR_END", "2026-08-11"))
-LAG_MIN = 5
+# Файлы p1h выходят раз в час (метка — конец часа накопления). Кадр с меткой T — осадки за [T−1 ч, T).
+# Допущение, как для входов в ЛР2: данные за прошедший час известны в момент T (у MRMS задержка — минуты).
+# Строгий вариант без него: RADAR_LAG_MIN=5 → берётся кадр T−1 ч.
+LAG_MIN = int(os.environ.get("RADAR_LAG_MIN", 0))
 ARCH = "https://mesonet.agron.iastate.edu/archive/data/{d:%Y/%m/%d}/GIS/mrms/"
 SESSION = requests.Session()
 SESSION.headers["User-Agent"] = "ATML-Laba2 student project (Kaggle notebook)"
@@ -118,7 +121,15 @@ def world(ts):
 W = world(avail[need[0]])
 W_last = world(avail[need[-1]])
 print("world-файл:", W, "| последний:", W_last)
-assert abs(W["dx"] - W_last["dx"]) < 1e-9 and abs(W["x0"] - W_last["x0"]) < 1e-6, "сетка менялась — проверить"
+# В архиве IEM world-файл со временем поменялся на полпикселя (−130,000 → −129,995): это смена соглашения
+# «угол / центр пикселя», а растр тот же (MRMS CONUS 7000 × 3500). Сдвиг меньше пикселя (< 1 км) на признаки
+# с окнами 3×3…15×15 не влияет; берём соглашение «центр пикселя» (последний файл) для всего периода.
+assert abs(W["dx"] - W_last["dx"]) < 1e-9 and abs(W["dy"] - W_last["dy"]) < 1e-9, "сменился шаг сетки — проверить"
+assert abs(W["x0"] - W_last["x0"]) <= abs(W["dx"]) and abs(W["y0"] - W_last["y0"]) <= abs(W["dy"]), \
+    "сетка сдвинулась больше чем на пиксель — проверить"
+if (W["x0"], W["y0"]) != (W_last["x0"], W_last["y0"]):
+    print("world-файл сдвинут меньше чем на пиксель — используется последний:", W_last)
+W = W_last
 c0 = int(np.floor((BBOX[0] - W["x0"]) / W["dx"])); c1 = int(np.ceil((BBOX[1] - W["x0"]) / W["dx"])) + 1
 r0 = int(np.floor((BBOX[3] - W["y0"]) / W["dy"])); r1 = int(np.ceil((BBOX[2] - W["y0"]) / W["dy"])) + 1
 GRID = {"lon0": W["x0"] + c0 * W["dx"], "lat0": W["y0"] + r0 * W["dy"], "dx": W["dx"], "dy": W["dy"],
@@ -171,14 +182,14 @@ json.dump({**GRID, "lag_min": LAG_MIN, "files": int(len(need)), "loaded_share": 
 
 cov = lk.load().cov
 city = np.array([np.nanmean(p1h_mm(CROPS[i])) if i >= 0 else np.nan for i in hm["cur"]])
-era = cov["precipitation"].reindex(hm["T"] - pd.Timedelta(hours=1)).to_numpy()     # ERA5: осадки за час до T
-mask = np.isfinite(city) & np.isfinite(era)
+# Open-Meteo/ERA5: precipitation в метке t — сумма за час, закончившийся в t; кадр MRMS «сейчас» — тоже за час до T
 rows = []
+fr_end = hm["T"] - pd.Timedelta(minutes=LAG_MIN)
 for lag in range(-3, 4):
-    e = cov["precipitation"].reindex(hm["T"] - pd.Timedelta(hours=1) + pd.Timedelta(hours=lag)).to_numpy()
+    e = cov["precipitation"].reindex(fr_end.dt.ceil("h") + pd.Timedelta(hours=lag)).to_numpy()
     m = np.isfinite(city) & np.isfinite(e)
     rows.append({"сдвиг ERA5, ч": lag, "корреляция": float(np.corrcoef(city[m], e[m])[0, 1])})
 sync = pd.DataFrame(rows)
 sync.to_csv(OUT / "radar_sync_check.csv", index=False)
 print(sync.round(3).to_string(index=False))
-print("пик корреляции должен быть на сдвиге 0 (или −1, если кадр взят на час раньше T)")
+print("пик корреляции должен быть на сдвиге 0 (правило S16); другой пик — время одного из источников сдвинуто")

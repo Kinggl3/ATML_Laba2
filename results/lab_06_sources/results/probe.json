@@ -1,0 +1,1274 @@
+{
+ "nws_columns": [
+  "url",
+  "product_issued",
+  "issue",
+  "expire",
+  "init_expired",
+  "purge_time",
+  "updated",
+  "eventid",
+  "phenomena",
+  "hvtec_nwsli",
+  "significance",
+  "last_product_id",
+  "product_id",
+  "wfo",
+  "ugc"
+ ],
+ "permits_bkfu-528j_columns": [
+  {
+   "field": "event_id",
+   "name": "Event ID",
+   "type": "number"
+  },
+  {
+   "field": "event_name",
+   "name": "Event Name",
+   "type": "text"
+  },
+  {
+   "field": "start_date_time",
+   "name": "Start Date/Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "end_date_time",
+   "name": "End Date/Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "event_agency",
+   "name": "Event Agency",
+   "type": "text"
+  },
+  {
+   "field": "event_type",
+   "name": "Event Type",
+   "type": "text"
+  },
+  {
+   "field": "event_borough",
+   "name": "Event Borough",
+   "type": "text"
+  },
+  {
+   "field": "event_location",
+   "name": "Event Location",
+   "type": "text"
+  },
+  {
+   "field": "event_street_side",
+   "name": "Event Street Side",
+   "type": "text"
+  },
+  {
+   "field": "street_closure_type",
+   "name": "Street Closure Type",
+   "type": "text"
+  },
+  {
+   "field": "community_board",
+   "name": "Community Board",
+   "type": "text"
+  },
+  {
+   "field": "police_precinct",
+   "name": "Police Precinct",
+   "type": "text"
+  },
+  {
+   "field": "cemsid",
+   "name": "CEMSID",
+   "type": "text"
+  }
+ ],
+ "permits_tvpp-9vvx_columns": [
+  {
+   "field": "event_id",
+   "name": "Event ID",
+   "type": "number"
+  },
+  {
+   "field": "event_name",
+   "name": "Event Name",
+   "type": "text"
+  },
+  {
+   "field": "start_date_time",
+   "name": "Start Date/Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "end_date_time",
+   "name": "End Date/Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "event_agency",
+   "name": "Event Agency",
+   "type": "text"
+  },
+  {
+   "field": "event_type",
+   "name": "Event Type",
+   "type": "text"
+  },
+  {
+   "field": "event_borough",
+   "name": "Event Borough",
+   "type": "text"
+  },
+  {
+   "field": "event_location",
+   "name": "Event Location",
+   "type": "text"
+  },
+  {
+   "field": "event_street_side",
+   "name": "Event Street Side",
+   "type": "text"
+  },
+  {
+   "field": "street_closure_type",
+   "name": "Street Closure Type",
+   "type": "text"
+  },
+  {
+   "field": "community_board",
+   "name": "Community Board",
+   "type": "text"
+  },
+  {
+   "field": "police_precinct",
+   "name": "Police Precinct",
+   "type": "text"
+  },
+  {
+   "field": "cemsid",
+   "name": "CEMSID",
+   "type": "text"
+  }
+ ],
+ "permits_fields": {
+  "id": "event_id",
+  "name": "event_name",
+  "type": "event_type",
+  "start": "start_date_time",
+  "end": "end_date_time",
+  "boro": "event_borough",
+  "loc": "event_location",
+  "closure": "street_closure_type",
+  "agency": "event_agency"
+ },
+ "permits_type_counts": {
+  "Sport - Youth": 562843,
+  "Sport - Adult": 196320,
+  "Special Event": 154194,
+  "Street Event": 10722,
+  "Block Party": 5364,
+  "Production Event": 5145,
+  "Farmers Market": 4842,
+  "Plaza Partner Event": 2533,
+  "Parade": 2107,
+  "Religious Event": 2074,
+  "Plaza Event": 1676,
+  "Sidewalk Sale": 1571,
+  "Open Street Partner Event": 1553,
+  "Single Block Festival": 853,
+  "Street Festival": 700,
+  "Theater Load in and Load Outs": 683,
+  "Health Fair": 422,
+  "Athletic Race / Tour": 231,
+  "Stickball": 127,
+  "Open Street Event": 98,
+  "Clean-Up": 79,
+  "Miscellaneous": 61,
+  "Open Culture": 53,
+  "Stationary Demonstration": 49,
+  "Press Conference": 32,
+  "Shooting Permit": 24,
+  "Bike the Block": 22,
+  "BID Multi-Block": 11,
+  "Filming/Photography": 10,
+  "Rigging Permit": 4,
+  "Rally": 2,
+  "Marathon": 1,
+  "Open Street": 1,
+  "Athletic - Charitable": 1,
+  "Grid Request": 1
+ },
+ "stations_columns": [
+  {
+   "field": "gtfs_stop_id",
+   "name": "GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "station_id",
+   "name": "Station ID",
+   "type": "number"
+  },
+  {
+   "field": "complex_id",
+   "name": "Complex ID",
+   "type": "number"
+  },
+  {
+   "field": "division",
+   "name": "Division",
+   "type": "text"
+  },
+  {
+   "field": "line",
+   "name": "Line",
+   "type": "text"
+  },
+  {
+   "field": "stop_name",
+   "name": "Stop Name",
+   "type": "text"
+  },
+  {
+   "field": "borough",
+   "name": "Borough",
+   "type": "text"
+  },
+  {
+   "field": "cbd",
+   "name": "CBD",
+   "type": "text"
+  },
+  {
+   "field": "daytime_routes",
+   "name": "Daytime Routes",
+   "type": "text"
+  },
+  {
+   "field": "structure",
+   "name": "Structure",
+   "type": "text"
+  },
+  {
+   "field": "gtfs_latitude",
+   "name": "GTFS Latitude",
+   "type": "number"
+  },
+  {
+   "field": "gtfs_longitude",
+   "name": "GTFS Longitude",
+   "type": "number"
+  },
+  {
+   "field": "north_direction_label",
+   "name": "North Direction Label",
+   "type": "text"
+  },
+  {
+   "field": "south_direction_label",
+   "name": "South Direction Label",
+   "type": "text"
+  },
+  {
+   "field": "ada",
+   "name": "ADA",
+   "type": "text"
+  },
+  {
+   "field": "ada_northbound",
+   "name": "ADA Northbound",
+   "type": "text"
+  },
+  {
+   "field": "ada_southbound",
+   "name": "ADA Southbound",
+   "type": "text"
+  },
+  {
+   "field": "ada_notes",
+   "name": "ADA Notes",
+   "type": "text"
+  },
+  {
+   "field": "georeference",
+   "name": "Georeference",
+   "type": "point"
+  },
+  {
+   "field": ":@computed_region_yamh_8v7k",
+   "name": "NYS Municipal Boundaries",
+   "type": "number"
+  },
+  {
+   "field": ":@computed_region_wbg7_3whc",
+   "name": "New York Zip Codes",
+   "type": "number"
+  },
+  {
+   "field": ":@computed_region_kjdx_g34t",
+   "name": "Counties",
+   "type": "number"
+  }
+ ],
+ "sched_2023_columns": [
+  {
+   "field": "service_date",
+   "name": "Service Date",
+   "type": "calendar_date"
+  },
+  {
+   "field": "service_code",
+   "name": "Service Code",
+   "type": "text"
+  },
+  {
+   "field": "train_id",
+   "name": "Train ID",
+   "type": "text"
+  },
+  {
+   "field": "line",
+   "name": "Line",
+   "type": "text"
+  },
+  {
+   "field": "trip_line",
+   "name": "Trip Line",
+   "type": "text"
+  },
+  {
+   "field": "direction",
+   "name": "Direction",
+   "type": "text"
+  },
+  {
+   "field": "stop_order",
+   "name": "Stop Order",
+   "type": "number"
+  },
+  {
+   "field": "gtfs_stop_id",
+   "name": "GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "arrival_time",
+   "name": "Arrival Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "departure_time",
+   "name": "Departure Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "date_difference",
+   "name": "Date Difference",
+   "type": "number"
+  },
+  {
+   "field": "track",
+   "name": "Track",
+   "type": "text"
+  },
+  {
+   "field": "division",
+   "name": "Division",
+   "type": "text"
+  },
+  {
+   "field": "revenue_service",
+   "name": "Revenue Service",
+   "type": "text"
+  },
+  {
+   "field": "timepoint",
+   "name": "Timepoint",
+   "type": "text"
+  },
+  {
+   "field": "trip_type",
+   "name": "Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "path_id",
+   "name": "Path ID",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_type",
+   "name": "Next Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_time",
+   "name": "Next Trip Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "supplement_schedule_number",
+   "name": "Supplement Schedule Number",
+   "type": "text"
+  },
+  {
+   "field": "schedule_file_number",
+   "name": "Schedule File Number",
+   "type": "text"
+  },
+  {
+   "field": "origin_gtfs_stop_id",
+   "name": "Origin GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "destination_gtfs_stop_id",
+   "name": "Destination GTFS Stop ID",
+   "type": "text"
+  }
+ ],
+ "sched_2023_description": "This dataset includes data for subway schedules, both the base schedule and the supplement schedule in effect. It includes rows for each scheduled stop on a trip.",
+ "sched_2023_sample": [
+  {
+   "service_date": "2023-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 0704+ 241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "1",
+   "gtfs_stop_id": "201",
+   "departure_time": "2023-01-01T07:04:30.000",
+   "date_difference": "0",
+   "track": "02",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2023-01-01T08:55:00.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  },
+  {
+   "service_date": "2023-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 0704+ 241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "2",
+   "gtfs_stop_id": "203",
+   "departure_time": "2023-01-01T07:05:30.000",
+   "date_difference": "0",
+   "track": "02",
+   "division": "A DIVISION",
+   "revenue_service": "0",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2023-01-01T08:55:00.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  },
+  {
+   "service_date": "2023-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 0704+ 241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "3",
+   "gtfs_stop_id": "204",
+   "departure_time": "2023-01-01T07:06:00.000",
+   "date_difference": "0",
+   "track": "02",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2023-01-01T08:55:00.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  },
+  {
+   "service_date": "2023-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 0704+ 241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "4",
+   "gtfs_stop_id": "205",
+   "departure_time": "2023-01-01T07:07:30.000",
+   "date_difference": "0",
+   "track": "02",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2023-01-01T08:55:00.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  },
+  {
+   "service_date": "2023-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 0704+ 241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "5",
+   "gtfs_stop_id": "206",
+   "departure_time": "2023-01-01T07:08:30.000",
+   "date_difference": "0",
+   "track": "02",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2023-01-01T08:55:00.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  }
+ ],
+ "sched_2024_columns": [
+  {
+   "field": "service_date",
+   "name": "Service Date",
+   "type": "calendar_date"
+  },
+  {
+   "field": "service_code",
+   "name": "Service Code",
+   "type": "text"
+  },
+  {
+   "field": "train_id",
+   "name": "Train ID",
+   "type": "text"
+  },
+  {
+   "field": "line",
+   "name": "Line",
+   "type": "text"
+  },
+  {
+   "field": "trip_line",
+   "name": "Trip Line",
+   "type": "text"
+  },
+  {
+   "field": "direction",
+   "name": "Direction",
+   "type": "text"
+  },
+  {
+   "field": "stop_order",
+   "name": "Stop Order",
+   "type": "number"
+  },
+  {
+   "field": "gtfs_stop_id",
+   "name": "GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "arrival_time",
+   "name": "Arrival Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "departure_time",
+   "name": "Departure Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "date_difference",
+   "name": "Date Difference",
+   "type": "number"
+  },
+  {
+   "field": "track",
+   "name": "Track",
+   "type": "text"
+  },
+  {
+   "field": "division",
+   "name": "Division",
+   "type": "text"
+  },
+  {
+   "field": "revenue_service",
+   "name": "Revenue Service",
+   "type": "text"
+  },
+  {
+   "field": "timepoint",
+   "name": "Timepoint",
+   "type": "text"
+  },
+  {
+   "field": "trip_type",
+   "name": "Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "path_id",
+   "name": "Path ID",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_type",
+   "name": "Next Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_time",
+   "name": "Next Trip Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "supplement_schedule_number",
+   "name": "Supplement Schedule Number",
+   "type": "text"
+  },
+  {
+   "field": "schedule_file_number",
+   "name": "Schedule File Number",
+   "type": "text"
+  },
+  {
+   "field": "origin_gtfs_stop_id",
+   "name": "Origin GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "destination_gtfs_stop_id",
+   "name": "Destination GTFS Stop ID",
+   "type": "text"
+  }
+ ],
+ "sched_2024_description": "This dataset includes data for subway schedules, both the base schedule and the supplement schedule in effect. It includes rows for each scheduled stop on a trip.",
+ "sched_2024_sample": [
+  {
+   "service_date": "2024-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "0N 1059  STL/DIT",
+   "line": "N",
+   "trip_line": "N",
+   "direction": "N",
+   "stop_order": "35",
+   "gtfs_stop_id": "R05",
+   "departure_time": "2024-01-01T12:09:30.000",
+   "date_difference": "0",
+   "track": "G2",
+   "division": "B DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "N..N34R",
+   "next_trip_type": "0",
+   "next_trip_time": "2024-01-01T12:36:00.000",
+   "supplement_schedule_number": "0059",
+   "schedule_file_number": "139",
+   "origin_gtfs_stop_id": "D43",
+   "destination_gtfs_stop_id": "R01"
+  },
+  {
+   "service_date": "2024-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "02 1834  241/FLA",
+   "line": "2",
+   "trip_line": "2",
+   "direction": "S",
+   "stop_order": "48",
+   "gtfs_stop_id": "240",
+   "departure_time": "2024-01-01T19:54:30.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "0",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "2..S01R",
+   "next_trip_type": "0",
+   "next_trip_time": "2024-01-01T20:25:30.000",
+   "supplement_schedule_number": "0048",
+   "schedule_file_number": "224",
+   "origin_gtfs_stop_id": "201",
+   "destination_gtfs_stop_id": "247"
+  },
+  {
+   "service_date": "2024-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "0N 1059  STL/DIT",
+   "line": "N",
+   "trip_line": "N",
+   "direction": "N",
+   "stop_order": "36",
+   "gtfs_stop_id": "R04",
+   "departure_time": "2024-01-01T12:11:00.000",
+   "date_difference": "0",
+   "track": "G2",
+   "division": "B DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "N..N34R",
+   "next_trip_type": "0",
+   "next_trip_time": "2024-01-01T12:36:00.000",
+   "supplement_schedule_number": "0059",
+   "schedule_file_number": "139",
+   "origin_gtfs_stop_id": "D43",
+   "destination_gtfs_stop_id": "R01"
+  },
+  {
+   "service_date": "2024-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "0E 2317  P-A/WTC",
+   "line": "E",
+   "trip_line": "E",
+   "direction": "S",
+   "stop_order": "33",
+   "gtfs_stop_id": "A34",
+   "arrival_time": "2024-01-02T00:09:30.000",
+   "departure_time": "2024-01-02T00:11:00.000",
+   "date_difference": "1",
+   "track": "A1",
+   "division": "B DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "E..S04R",
+   "next_trip_type": "0",
+   "next_trip_time": "2024-01-01T00:28:30.000",
+   "supplement_schedule_number": "0049",
+   "schedule_file_number": "002",
+   "origin_gtfs_stop_id": "G05",
+   "destination_gtfs_stop_id": "E01"
+  },
+  {
+   "service_date": "2024-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "0N 1059  STL/DIT",
+   "line": "N",
+   "trip_line": "N",
+   "direction": "N",
+   "stop_order": "37",
+   "gtfs_stop_id": "R03",
+   "departure_time": "2024-01-01T12:12:30.000",
+   "date_difference": "0",
+   "track": "G2",
+   "division": "B DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "N..N34R",
+   "next_trip_type": "0",
+   "next_trip_time": "2024-01-01T12:36:00.000",
+   "supplement_schedule_number": "0059",
+   "schedule_file_number": "139",
+   "origin_gtfs_stop_id": "D43",
+   "destination_gtfs_stop_id": "R01"
+  }
+ ],
+ "sched_2025_columns": [
+  {
+   "field": "service_date",
+   "name": "Service Date",
+   "type": "calendar_date"
+  },
+  {
+   "field": "service_code",
+   "name": "Service Code",
+   "type": "text"
+  },
+  {
+   "field": "train_id",
+   "name": "Train ID",
+   "type": "text"
+  },
+  {
+   "field": "line",
+   "name": "Line",
+   "type": "text"
+  },
+  {
+   "field": "trip_line",
+   "name": "Trip Line",
+   "type": "text"
+  },
+  {
+   "field": "direction",
+   "name": "Direction",
+   "type": "text"
+  },
+  {
+   "field": "stop_order",
+   "name": "Stop Order",
+   "type": "number"
+  },
+  {
+   "field": "gtfs_stop_id",
+   "name": "GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "arrival_time",
+   "name": "Arrival Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "departure_time",
+   "name": "Departure Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "date_difference",
+   "name": "Date Difference",
+   "type": "number"
+  },
+  {
+   "field": "track",
+   "name": "Track",
+   "type": "text"
+  },
+  {
+   "field": "division",
+   "name": "Division",
+   "type": "text"
+  },
+  {
+   "field": "revenue_service",
+   "name": "Revenue Service",
+   "type": "text"
+  },
+  {
+   "field": "timepoint",
+   "name": "Timepoint",
+   "type": "text"
+  },
+  {
+   "field": "trip_type",
+   "name": "Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "path_id",
+   "name": "Path ID",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_type",
+   "name": "Next Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_time",
+   "name": "Next Trip Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "supplement_schedule_number",
+   "name": "Supplement Schedule Number",
+   "type": "text"
+  },
+  {
+   "field": "schedule_file_number",
+   "name": "Schedule File Number",
+   "type": "text"
+  },
+  {
+   "field": "origin_gtfs_stop_id",
+   "name": "Origin GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "destination_gtfs_stop_id",
+   "name": "Destination GTFS Stop ID",
+   "type": "text"
+  }
+ ],
+ "sched_2025_description": "This dataset includes data for subway schedules, both the base schedule and the supplement schedule in effect. It includes rows for each scheduled stop on a trip.",
+ "sched_2025_sample": [
+  {
+   "service_date": "2025-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0658+ 242/SFT",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "S",
+   "stop_order": "1",
+   "gtfs_stop_id": "101",
+   "departure_time": "2025-01-01T06:58:30.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "1..S03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2025-01-01T08:08:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "101",
+   "destination_gtfs_stop_id": "142"
+  },
+  {
+   "service_date": "2025-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0658+ 242/SFT",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "S",
+   "stop_order": "2",
+   "gtfs_stop_id": "103",
+   "departure_time": "2025-01-01T07:00:00.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "1..S03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2025-01-01T08:08:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "101",
+   "destination_gtfs_stop_id": "142"
+  },
+  {
+   "service_date": "2025-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0658+ 242/SFT",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "S",
+   "stop_order": "3",
+   "gtfs_stop_id": "104",
+   "departure_time": "2025-01-01T07:01:30.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..S03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2025-01-01T08:08:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "101",
+   "destination_gtfs_stop_id": "142"
+  },
+  {
+   "service_date": "2025-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0658+ 242/SFT",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "S",
+   "stop_order": "4",
+   "gtfs_stop_id": "105",
+   "departure_time": "2025-01-01T07:02:00.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "0",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..S03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2025-01-01T08:08:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "101",
+   "destination_gtfs_stop_id": "142"
+  },
+  {
+   "service_date": "2025-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0658+ 242/SFT",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "S",
+   "stop_order": "5",
+   "gtfs_stop_id": "106",
+   "departure_time": "2025-01-01T07:03:00.000",
+   "date_difference": "0",
+   "track": "01",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..S03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2025-01-01T08:08:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "000",
+   "origin_gtfs_stop_id": "101",
+   "destination_gtfs_stop_id": "142"
+  }
+ ],
+ "sched_2026_columns": [
+  {
+   "field": "service_date",
+   "name": "Service Date",
+   "type": "calendar_date"
+  },
+  {
+   "field": "service_code",
+   "name": "Service Code",
+   "type": "text"
+  },
+  {
+   "field": "train_id",
+   "name": "Train ID",
+   "type": "text"
+  },
+  {
+   "field": "line",
+   "name": "Line",
+   "type": "text"
+  },
+  {
+   "field": "trip_line",
+   "name": "Trip Line",
+   "type": "text"
+  },
+  {
+   "field": "direction",
+   "name": "Direction",
+   "type": "text"
+  },
+  {
+   "field": "stop_order",
+   "name": "Stop Order",
+   "type": "number"
+  },
+  {
+   "field": "gtfs_stop_id",
+   "name": "GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "arrival_time",
+   "name": "Arrival Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "departure_time",
+   "name": "Departure Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "date_difference",
+   "name": "Date Difference",
+   "type": "number"
+  },
+  {
+   "field": "track",
+   "name": "Track",
+   "type": "text"
+  },
+  {
+   "field": "division",
+   "name": "Division",
+   "type": "text"
+  },
+  {
+   "field": "revenue_service",
+   "name": "Revenue Service",
+   "type": "text"
+  },
+  {
+   "field": "timepoint",
+   "name": "Timepoint",
+   "type": "text"
+  },
+  {
+   "field": "trip_type",
+   "name": "Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "path_id",
+   "name": "Path ID",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_type",
+   "name": "Next Trip Type",
+   "type": "text"
+  },
+  {
+   "field": "next_trip_time",
+   "name": "Next Trip Time",
+   "type": "calendar_date"
+  },
+  {
+   "field": "supplement_schedule_number",
+   "name": "Supplement Schedule Number",
+   "type": "text"
+  },
+  {
+   "field": "schedule_file_number",
+   "name": "Schedule File Number",
+   "type": "text"
+  },
+  {
+   "field": "origin_gtfs_stop_id",
+   "name": "Origin GTFS Stop ID",
+   "type": "text"
+  },
+  {
+   "field": "destination_gtfs_stop_id",
+   "name": "Destination GTFS Stop ID",
+   "type": "text"
+  }
+ ],
+ "sched_2026_description": "This dataset includes data for subway schedules, both the base schedule and the supplement schedule in effect. It includes rows for each scheduled stop on a trip.",
+ "sched_2026_sample": [
+  {
+   "service_date": "2026-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0942+ SFT/242",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "N",
+   "stop_order": "13",
+   "gtfs_stop_id": "128",
+   "departure_time": "2026-01-01T09:58:30.000",
+   "date_difference": "0",
+   "track": "04",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..N03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2026-01-01T10:45:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "001",
+   "origin_gtfs_stop_id": "142",
+   "destination_gtfs_stop_id": "101"
+  },
+  {
+   "service_date": "2026-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0942+ SFT/242",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "N",
+   "stop_order": "14",
+   "gtfs_stop_id": "127",
+   "departure_time": "2026-01-01T10:00:00.000",
+   "date_difference": "0",
+   "track": "04",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "1..N03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2026-01-01T10:45:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "001",
+   "origin_gtfs_stop_id": "142",
+   "destination_gtfs_stop_id": "101"
+  },
+  {
+   "service_date": "2026-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0942+ SFT/242",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "N",
+   "stop_order": "15",
+   "gtfs_stop_id": "126",
+   "departure_time": "2026-01-01T10:02:00.000",
+   "date_difference": "0",
+   "track": "04",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..N03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2026-01-01T10:45:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "001",
+   "origin_gtfs_stop_id": "142",
+   "destination_gtfs_stop_id": "101"
+  },
+  {
+   "service_date": "2026-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0942+ SFT/242",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "N",
+   "stop_order": "16",
+   "gtfs_stop_id": "125",
+   "departure_time": "2026-01-01T10:04:00.000",
+   "date_difference": "0",
+   "track": "04",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "1",
+   "trip_type": "0",
+   "path_id": "1..N03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2026-01-01T10:45:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "001",
+   "origin_gtfs_stop_id": "142",
+   "destination_gtfs_stop_id": "101"
+  },
+  {
+   "service_date": "2026-01-01T00:00:00.000",
+   "service_code": "3",
+   "train_id": "01 0942+ SFT/242",
+   "line": "1",
+   "trip_line": "1",
+   "direction": "N",
+   "stop_order": "17",
+   "gtfs_stop_id": "124",
+   "departure_time": "2026-01-01T10:05:30.000",
+   "date_difference": "0",
+   "track": "04",
+   "division": "A DIVISION",
+   "revenue_service": "1",
+   "timepoint": "0",
+   "trip_type": "0",
+   "path_id": "1..N03R",
+   "next_trip_type": "0",
+   "next_trip_time": "2026-01-01T10:45:30.000",
+   "supplement_schedule_number": "0038",
+   "schedule_file_number": "001",
+   "origin_gtfs_stop_id": "142",
+   "destination_gtfs_stop_id": "101"
+  }
+ ]
+}

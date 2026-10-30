@@ -1,0 +1,190 @@
+[{"stream_name":"stderr","time":10.825152794,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.825200618,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.825207733,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.825212573,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.682245402,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.682576436,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.682587518,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.682592273000001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":34.357392503,"data":"train 349165 провалов 0.0881\n"}
+,{"stream_name":"stdout","time":34.357430072,"data":"val 105492 провалов 0.0643\n"}
+,{"stream_name":"stdout","time":34.35743598,"data":"test 265288 провалов 0.0866\n"}
+,{"stream_name":"stdout","time":34.357440565,"data":"holdout 153022 провалов 0.0389\n"}
+,{"stream_name":"stdout","time":52.750165219,"data":"мероприятия: 187449 событий, 196892 пар событие–станция, 8 c\n"}
+,{"stream_name":"stdout","time":56.147034148,"data":"{'W': 13, 'WT': 8, 'E': 7, 'ET': 16, 'S': 3}\n"}
+,{"stream_name":"stdout","time":56.398666825,"data":"   part      n  дождь ≥1 мм у станции  есть предупреждение NWS  мероприятие у станции  расписание \u003c 80% обычного\n"}
+,{"stream_name":"stdout","time":56.398711952,"data":"  train 349165                    NaN                   0.1894                 0.0373                     0.0424\n"}
+,{"stream_name":"stdout","time":56.398719445,"data":"    val 105492                    NaN                   0.0904                 0.0247                     0.0410\n"}
+,{"stream_name":"stdout","time":56.398725553,"data":"   test 265288                    NaN                   0.3623                 0.0290                     0.0372\n"}
+,{"stream_name":"stdout","time":56.398731654,"data":"holdout 153022                    NaN                   0.5006                 0.0370                     0.0117\n"}
+,{"stream_name":"stdout","time":57.292646059,"data":"источник  NWS: действующих предупреждений  мероприятия у станции\n"}
+,{"stream_name":"stdout","time":57.292687731,"data":"сдвиг, ч                                                        \n"}
+,{"stream_name":"stdout","time":57.29269564,"data":"-3                                -0.0621                 0.0062\n"}
+,{"stream_name":"stdout","time":57.292700045,"data":"-2                                -0.0651                 0.0065\n"}
+,{"stream_name":"stdout","time":57.292704233,"data":"-1                                -0.0663                 0.0074\n"}
+,{"stream_name":"stdout","time":57.292707994,"data":" 0                                -0.0696                 0.0082\n"}
+,{"stream_name":"stdout","time":57.29271335,"data":" 1                                -0.0707                 0.0077\n"}
+,{"stream_name":"stdout","time":57.292718809,"data":" 2                                -0.0712                 0.0076\n"}
+,{"stream_name":"stdout","time":57.2927226,"data":" 3                                -0.0706                 0.0077\n"}
+,{"stream_name":"stdout","time":57.49337239,"data":"15 моделей: ['U1_num', '+W', '+WT', '+E', '+ET', '+S', '+NWS', '+мероприятия', 'ALL', 'ALL−NWS', 'ALL−мероприятия', 'ALL−расписание', 'NEW_only', 'C0_U1_plus_noise', 'C1_U1_seed2']\n"}
+,{"stream_name":"stdout","time":139.012215495,"data":"cls U1_num                 признаков  52 деревьев  518 81 c\n"}
+,{"stream_name":"stdout","time":223.792619588,"data":"cls +W                     признаков  65 деревьев  529 85 c\n"}
+,{"stream_name":"stdout","time":303.196444693,"data":"cls +WT                    признаков  60 деревьев  483 79 c\n"}
+,{"stream_name":"stdout","time":406.166981971,"data":"cls +E                     признаков  59 деревьев  674 103 c\n"}
+,{"stream_name":"stdout","time":492.225525409,"data":"cls +ET                    признаков  68 деревьев  526 86 c\n"}
+,{"stream_name":"stdout","time":574.263168911,"data":"cls +S                     признаков  55 деревьев  517 82 c\n"}
+,{"stream_name":"stdout","time":672.043161664,"data":"cls +NWS                   признаков  73 деревьев  654 98 c\n"}
+,{"stream_name":"stdout","time":736.31053883,"data":"cls +мероприятия           признаков  75 деревьев  392 64 c\n"}
+,{"stream_name":"stdout","time":810.834435106,"data":"cls ALL                    признаков  99 деревьев  402 74 c\n"}
+,{"stream_name":"stdout","time":894.739221362,"data":"cls ALL−NWS                признаков  78 деревьев  520 84 c\n"}
+,{"stream_name":"stdout","time":967.806714884,"data":"cls ALL−мероприятия        признаков  76 деревьев  411 73 c\n"}
+,{"stream_name":"stdout","time":1055.056565457,"data":"cls ALL−расписание         признаков  96 деревьев  483 87 c\n"}
+,{"stream_name":"stdout","time":1061.967761488,"data":"cls NEW_only               признаков  47 деревьев   13 7 c\n"}
+,{"stream_name":"stdout","time":1182.972548815,"data":"cls C0_U1_plus_noise       признаков  68 деревьев  693 121 c\n"}
+,{"stream_name":"stdout","time":1304.100447255,"data":"cls C1_U1_seed2            признаков  52 деревьев  839 121 c\n"}
+,{"stream_name":"stdout","time":1480.376647114,"data":"reg U1_num                 признаков  52 деревьев 1390 176 c\n"}
+,{"stream_name":"stdout","time":1690.522373168,"data":"reg +W                     признаков  65 деревьев 1948 210 c\n"}
+,{"stream_name":"stdout","time":1870.385003312,"data":"reg +WT                    признаков  60 деревьев 1573 180 c\n"}
+,{"stream_name":"stdout","time":2014.844023184,"data":"reg +E                     признаков  59 деревьев 1152 144 c\n"}
+,{"stream_name":"stdout","time":2192.065930528,"data":"reg +ET                    признаков  68 деревьев 1495 177 c\n"}
+,{"stream_name":"stdout","time":2397.852405866,"data":"reg +S                     признаков  55 деревьев 1637 206 c\n"}
+,{"stream_name":"stdout","time":2568.034043337,"data":"reg +NWS                   признаков  73 деревьев 1433 170 c\n"}
+,{"stream_name":"stdout","time":2751.441090383,"data":"reg +мероприятия           признаков  75 деревьев 1529 183 c\n"}
+,{"stream_name":"stdout","time":2962.746755031,"data":"reg ALL                    признаков  99 деревьев 1635 211 c\n"}
+,{"stream_name":"stdout","time":3119.080229551,"data":"reg ALL−NWS                признаков  78 деревьев 1222 156 c\n"}
+,{"stream_name":"stdout","time":3302.646258913,"data":"reg ALL−мероприятия        признаков  76 деревьев 1537 184 c\n"}
+,{"stream_name":"stdout","time":3467.883012952,"data":"reg ALL−расписание         признаков  96 деревьев 1253 165 c\n"}
+,{"stream_name":"stdout","time":3473.675566178,"data":"reg NEW_only               признаков  47 деревьев   16 6 c\n"}
+,{"stream_name":"stdout","time":3677.587953037,"data":"reg C0_U1_plus_noise       признаков  68 деревьев 1362 204 c\n"}
+,{"stream_name":"stdout","time":3834.89363097,"data":"reg C1_U1_seed2            признаков  52 деревьев 1206 157 c\n"}
+,{"stream_name":"stdout","time":3864.858353125,"data":"           model part  pr_auc  auroc   wape  mae_z\n"}
+,{"stream_name":"stdout","time":3864.858395965,"data":"          U1_num test  0.7495 0.9425 0.0748 0.0891\n"}
+,{"stream_name":"stdout","time":3864.858401264,"data":"              +W test  0.7485 0.9432 0.0747 0.0891\n"}
+,{"stream_name":"stdout","time":3864.858405202,"data":"             +WT test  0.7468 0.9424 0.0746 0.0891\n"}
+,{"stream_name":"stdout","time":3864.858409078,"data":"              +E test  0.7483 0.9415 0.0750 0.0894\n"}
+,{"stream_name":"stdout","time":3864.858412719,"data":"             +ET test  0.7507 0.9424 0.0748 0.0891\n"}
+,{"stream_name":"stdout","time":3864.858416354,"data":"              +S test  0.7498 0.9427 0.0750 0.0892\n"}
+,{"stream_name":"stdout","time":3864.858419976,"data":"            +NWS test  0.7467 0.9426 0.0748 0.0892\n"}
+,{"stream_name":"stdout","time":3864.85842353,"data":"    +мероприятия test  0.7468 0.9421 0.0749 0.0893\n"}
+,{"stream_name":"stdout","time":3864.858427882,"data":"             ALL test  0.7485 0.9424 0.0749 0.0892\n"}
+,{"stream_name":"stdout","time":3864.858431487,"data":"         ALL−NWS test  0.7469 0.9416 0.0749 0.0893\n"}
+,{"stream_name":"stdout","time":3864.858435204,"data":" ALL−мероприятия test  0.7497 0.9437 0.0747 0.0891\n"}
+,{"stream_name":"stdout","time":3864.858439035,"data":"  ALL−расписание test  0.7465 0.9421 0.0748 0.0893\n"}
+,{"stream_name":"stdout","time":3864.858442874,"data":"        NEW_only test  0.2949 0.7059 0.1085 0.1254\n"}
+,{"stream_name":"stdout","time":3864.858446462,"data":"C0_U1_plus_noise test  0.7473 0.9418 0.0749 0.0894\n"}
+,{"stream_name":"stdout","time":3864.858450092,"data":"     C1_U1_seed2 test  0.7475 0.9418 0.0748 0.0892\n"}
+,{"stream_name":"stdout","time":3864.858453865,"data":"           model part                    task    diff  ci_low  ci_high  p_perm\n"}
+,{"stream_name":"stdout","time":3864.858457717,"data":"              +W test PR-AUC (больше — лучше) -0.0010 -0.0026   0.0012  0.8032\n"}
+,{"stream_name":"stdout","time":3864.858461666,"data":"              +W test   WAPE (меньше — лучше) -0.0001 -0.0003   0.0001  0.2178\n"}
+,{"stream_name":"stdout","time":3864.858465597,"data":"             +WT test PR-AUC (больше — лучше) -0.0027 -0.0072   0.0006  0.8442\n"}
+,{"stream_name":"stdout","time":3864.858469352,"data":"             +WT test   WAPE (меньше — лучше) -0.0001 -0.0004   0.0002  0.1928\n"}
+,{"stream_name":"stdout","time":3864.858473119,"data":"              +E test PR-AUC (больше — лучше) -0.0012 -0.0031   0.0005  0.8741\n"}
+,{"stream_name":"stdout","time":3864.858476872,"data":"              +E test   WAPE (меньше — лучше)  0.0003 -0.0000   0.0005  0.9710\n"}
+,{"stream_name":"stdout","time":3864.85848063,"data":"             +ET test PR-AUC (больше — лучше)  0.0012 -0.0002   0.0030  0.0779\n"}
+,{"stream_name":"stdout","time":3864.858484375,"data":"             +ET test   WAPE (меньше — лучше) -0.0000 -0.0001   0.0001  0.4855\n"}
+,{"stream_name":"stdout","time":3864.858503142,"data":"              +S test PR-AUC (больше — лучше)  0.0003 -0.0011   0.0020  0.2897\n"}
+,{"stream_name":"stdout","time":3864.858506635,"data":"              +S test   WAPE (меньше — лучше)  0.0002  0.0000   0.0005  0.9760\n"}
+,{"stream_name":"stdout","time":3864.858509804,"data":"            +NWS test PR-AUC (больше — лучше) -0.0028 -0.0073   0.0010  0.8791\n"}
+,{"stream_name":"stdout","time":3864.858512917,"data":"            +NWS test   WAPE (меньше — лучше)  0.0000 -0.0002   0.0002  0.5974\n"}
+,{"stream_name":"stdout","time":3864.858517098,"data":"    +мероприятия test PR-AUC (больше — лучше) -0.0027 -0.0053  -0.0009  0.9780\n"}
+,{"stream_name":"stdout","time":3864.858520479,"data":"    +мероприятия test   WAPE (меньше — лучше)  0.0001 -0.0001   0.0004  0.8352\n"}
+,{"stream_name":"stdout","time":3864.858523702,"data":"             ALL test PR-AUC (больше — лучше) -0.0010 -0.0052   0.0020  0.6923\n"}
+,{"stream_name":"stdout","time":3864.85852687,"data":"             ALL test   WAPE (меньше — лучше)  0.0001 -0.0003   0.0005  0.7263\n"}
+,{"stream_name":"stdout","time":3864.858529977,"data":"         ALL−NWS test PR-AUC (больше — лучше) -0.0026 -0.0053  -0.0006  0.9890\n"}
+,{"stream_name":"stdout","time":3864.858533101,"data":"         ALL−NWS test   WAPE (меньше — лучше)  0.0001 -0.0001   0.0004  0.8951\n"}
+,{"stream_name":"stdout","time":3864.858536184,"data":" ALL−мероприятия test PR-AUC (больше — лучше)  0.0002 -0.0025   0.0033  0.4236\n"}
+,{"stream_name":"stdout","time":3864.85853941,"data":" ALL−мероприятия test   WAPE (меньше — лучше) -0.0001 -0.0004   0.0003  0.3776\n"}
+,{"stream_name":"stdout","time":3864.858542574,"data":"  ALL−расписание test PR-AUC (больше — лучше) -0.0030 -0.0053  -0.0012  0.9880\n"}
+,{"stream_name":"stdout","time":3864.858545752,"data":"  ALL−расписание test   WAPE (меньше — лучше)  0.0001 -0.0003   0.0005  0.6593\n"}
+,{"stream_name":"stdout","time":3864.858548944,"data":"        NEW_only test PR-AUC (больше — лучше) -0.4546 -0.5704  -0.3400  1.0000\n"}
+,{"stream_name":"stdout","time":3864.858551997,"data":"        NEW_only test   WAPE (меньше — лучше)  0.0338  0.0214   0.0491  1.0000\n"}
+,{"stream_name":"stdout","time":3864.858555067,"data":"C0_U1_plus_noise test PR-AUC (больше — лучше) -0.0022 -0.0036  -0.0009  0.9830\n"}
+,{"stream_name":"stdout","time":3864.858558115,"data":"C0_U1_plus_noise test   WAPE (меньше — лучше)  0.0002  0.0000   0.0003  0.9880\n"}
+,{"stream_name":"stdout","time":3864.858561151,"data":"     C1_U1_seed2 test PR-AUC (больше — лучше) -0.0020 -0.0041  -0.0004  0.9970\n"}
+,{"stream_name":"stdout","time":3864.858564458,"data":"     C1_U1_seed2 test   WAPE (меньше — лучше)  0.0001 -0.0001   0.0002  0.7702\n"}
+,{"stream_name":"stdout","time":3872.274762921,"data":"model                                  +E    +ET   +NWS     +S     +W    +WT  +мероприятия    ALL  ALL − U1  U1_num\n"}
+,{"stream_name":"stdout","time":3872.274811875,"data":"срез                                                                                                               \n"}
+,{"stream_name":"stdout","time":3872.274819522,"data":"все                                 0.748  0.751  0.747  0.750  0.749  0.747         0.747  0.748    -0.001   0.750\n"}
+,{"stream_name":"stdout","time":3872.274825523,"data":"действует предупреждение NWS        0.822  0.823  0.817  0.822  0.820  0.817         0.819  0.820    -0.002   0.822\n"}
+,{"stream_name":"stdout","time":3872.274848914,"data":"мероприятие у станции               0.775  0.771  0.773  0.779  0.773  0.774         0.766  0.775    -0.001   0.776\n"}
+,{"stream_name":"stdout","time":3872.274853848,"data":"начало провала (в T−1 провала нет)  0.359  0.363  0.352  0.361  0.360  0.354         0.355  0.356    -0.003   0.358\n"}
+,{"stream_name":"stdout","time":3872.274858976,"data":"расписание \u003c 80% обычного           0.959  0.959  0.959  0.959  0.959  0.959         0.959  0.959    -0.000   0.960\n"}
+,{"stream_name":"stdout","time":3872.274864199,"data":"model                                   +E     +ET    +NWS      +S      +W     +WT  +мероприятия     ALL  ALL − U1  U1_num\n"}
+,{"stream_name":"stdout","time":3872.274869544,"data":"срез                                                                                                                      \n"}
+,{"stream_name":"stdout","time":3872.274874063,"data":"все                                 0.0750  0.0748  0.0748  0.0750  0.0747  0.0746        0.0749  0.0749    0.0001  0.0748\n"}
+,{"stream_name":"stdout","time":3872.274878775,"data":"действует предупреждение NWS        0.0847  0.0849  0.0851  0.0854  0.0846  0.0849        0.0850  0.0851    0.0003  0.0849\n"}
+,{"stream_name":"stdout","time":3872.274883772,"data":"мероприятие у станции               0.0740  0.0737  0.0744  0.0744  0.0744  0.0743        0.0733  0.0736   -0.0002  0.0738\n"}
+,{"stream_name":"stdout","time":3872.274888553,"data":"начало провала (в T−1 провала нет)  0.0725  0.0722  0.0722  0.0723  0.0721  0.0721        0.0723  0.0722    0.0000  0.0722\n"}
+,{"stream_name":"stdout","time":3872.274893677,"data":"расписание \u003c 80% обычного           0.1139  0.1139  0.1154  0.1175  0.1139  0.1130        0.1142  0.1146    0.0001  0.1144\n"}
+,{"stream_name":"stdout","time":3872.373929531,"data":"task  числа      W     WT      E     ET      S\n"}
+,{"stream_name":"stdout","time":3872.373967867,"data":" cls 0.9670 0.0038 0.0071 0.0059 0.0044 0.0118\n"}
+,{"stream_name":"stdout","time":3872.373972708,"data":" reg 0.9813 0.0013 0.0037 0.0037 0.0017 0.0083\n"}
+,{"stream_name":"stdout","time":3872.373976202,"data":"# Эксперимент 2: новые модальности — сводка\n"}
+,{"stream_name":"stdout","time":3872.373980068,"data":"\n"}
+,{"stream_name":"stdout","time":3872.373984057,"data":"Источники: NWS, мероприятия, расписание; статус: {\"nws\": {\"events\": 1726, \"hours_any_active\": 0.1505747829277241}, \"permits\": {\"events\": 187449, \"objects_hours_with_direct\": 0.7928947046594106}, \"schedules\": {\"days\": 1307, \"station_days_ratio_lt_0.5\": 0.021331076496658052}}\n"}
+,{"stream_name":"stdout","time":3872.373990673,"data":"\n"}
+,{"stream_name":"stdout","time":3872.373993808,"data":"## Прирост к U1 на test и holdout\n"}
+,{"stream_name":"stdout","time":3872.373997074,"data":"\n"}
+,{"stream_name":"stdout","time":3872.373999853,"data":"| модель | часть | задача | разность | 95% ДИ | p |\n"}
+,{"stream_name":"stdout","time":3872.374003182,"data":"| --- | --- | --- | --- | --- | --- |\n"}
+,{"stream_name":"stdout","time":3872.374006173,"data":"| +W | test | PR-AUC (больше — лучше) | -0.0010 | [-0.0026; +0.0012] | 0.803 |\n"}
+,{"stream_name":"stdout","time":3872.374009552,"data":"| +W | test | WAPE (меньше — лучше) | -0.0001 | [-0.0003; +0.0001] | 0.218 |\n"}
+,{"stream_name":"stdout","time":3872.374012682,"data":"| +WT | test | PR-AUC (больше — лучше) | -0.0027 | [-0.0072; +0.0006] | 0.844 |\n"}
+,{"stream_name":"stdout","time":3872.374026784,"data":"| +WT | test | WAPE (меньше — лучше) | -0.0001 | [-0.0004; +0.0002] | 0.193 |\n"}
+,{"stream_name":"stdout","time":3872.374030276,"data":"| +E | test | PR-AUC (больше — лучше) | -0.0012 | [-0.0031; +0.0005] | 0.874 |\n"}
+,{"stream_name":"stdout","time":3872.374033519,"data":"| +E | test | WAPE (меньше — лучше) | +0.0003 | [-0.0000; +0.0005] | 0.971 |\n"}
+,{"stream_name":"stdout","time":3872.374036738,"data":"| +ET | test | PR-AUC (больше — лучше) | +0.0012 | [-0.0002; +0.0030] | 0.078 |\n"}
+,{"stream_name":"stdout","time":3872.374039819,"data":"| +ET | test | WAPE (меньше — лучше) | -0.0000 | [-0.0001; +0.0001] | 0.486 |\n"}
+,{"stream_name":"stdout","time":3872.374042868,"data":"| +S | test | PR-AUC (больше — лучше) | +0.0003 | [-0.0011; +0.0020] | 0.290 |\n"}
+,{"stream_name":"stdout","time":3872.374046296,"data":"| +S | test | WAPE (меньше — лучше) | +0.0002 | [+0.0000; +0.0005] | 0.976 |\n"}
+,{"stream_name":"stdout","time":3872.374049375,"data":"| +NWS | test | PR-AUC (больше — лучше) | -0.0028 | [-0.0073; +0.0010] | 0.879 |\n"}
+,{"stream_name":"stdout","time":3872.374052624,"data":"| +NWS | test | WAPE (меньше — лучше) | +0.0000 | [-0.0002; +0.0002] | 0.597 |\n"}
+,{"stream_name":"stdout","time":3872.374055743,"data":"| +мероприятия | test | PR-AUC (больше — лучше) | -0.0027 | [-0.0053; -0.0009] | 0.978 |\n"}
+,{"stream_name":"stdout","time":3872.374059056,"data":"| +мероприятия | test | WAPE (меньше — лучше) | +0.0001 | [-0.0001; +0.0004] | 0.835 |\n"}
+,{"stream_name":"stdout","time":3872.37406322,"data":"| ALL | test | PR-AUC (больше — лучше) | -0.0010 | [-0.0052; +0.0020] | 0.692 |\n"}
+,{"stream_name":"stdout","time":3872.374085932,"data":"| ALL | test | WAPE (меньше — лучше) | +0.0001 | [-0.0003; +0.0005] | 0.726 |\n"}
+,{"stream_name":"stdout","time":3872.374093221,"data":"| ALL−NWS | test | PR-AUC (больше — лучше) | -0.0026 | [-0.0053; -0.0006] | 0.989 |\n"}
+,{"stream_name":"stdout","time":3872.374108591,"data":"| ALL−NWS | test | WAPE (меньше — лучше) | +0.0001 | [-0.0001; +0.0004] | 0.895 |\n"}
+,{"stream_name":"stdout","time":3872.374113611,"data":"| ALL−мероприятия | test | PR-AUC (больше — лучше) | +0.0002 | [-0.0025; +0.0033] | 0.424 |\n"}
+,{"stream_name":"stdout","time":3872.374117988,"data":"| ALL−мероприятия | test | WAPE (меньше — лучше) | -0.0001 | [-0.0004; +0.0003] | 0.378 |\n"}
+,{"stream_name":"stdout","time":3872.374122974,"data":"| ALL−расписание | test | PR-AUC (больше — лучше) | -0.0030 | [-0.0053; -0.0012] | 0.988 |\n"}
+,{"stream_name":"stdout","time":3872.374128213,"data":"| ALL−расписание | test | WAPE (меньше — лучше) | +0.0001 | [-0.0003; +0.0005] | 0.659 |\n"}
+,{"stream_name":"stdout","time":3872.374133341,"data":"| NEW_only | test | PR-AUC (больше — лучше) | -0.4546 | [-0.5704; -0.3400] | 1.000 |\n"}
+,{"stream_name":"stdout","time":3872.374138454,"data":"| NEW_only | test | WAPE (меньше — лучше) | +0.0338 | [+0.0214; +0.0491] | 1.000 |\n"}
+,{"stream_name":"stdout","time":3872.374143428,"data":"| C0_U1_plus_noise | test | PR-AUC (больше — лучше) | -0.0022 | [-0.0036; -0.0009] | 0.983 |\n"}
+,{"stream_name":"stdout","time":3872.374148418,"data":"| C0_U1_plus_noise | test | WAPE (меньше — лучше) | +0.0002 | [+0.0000; +0.0003] | 0.988 |\n"}
+,{"stream_name":"stdout","time":3872.3741534,"data":"| C1_U1_seed2 | test | PR-AUC (больше — лучше) | -0.0020 | [-0.0041; -0.0004] | 0.997 |\n"}
+,{"stream_name":"stdout","time":3872.37416313,"data":"| C1_U1_seed2 | test | WAPE (меньше — лучше) | +0.0001 | [-0.0001; +0.0002] | 0.770 |\n"}
+,{"stream_name":"stdout","time":3872.374168217,"data":"| +W | holdout | PR-AUC (больше — лучше) | +0.0055 | [-0.0028; +0.0098] | 0.177 |\n"}
+,{"stream_name":"stdout","time":3872.374173227,"data":"| +W | holdout | WAPE (меньше — лучше) | +0.0001 | [-0.0001; +0.0003] | 0.902 |\n"}
+,{"stream_name":"stdout","time":3872.374178529,"data":"| +WT | holdout | PR-AUC (больше — лучше) | -0.0052 | [-0.0124; -0.0003] | 0.968 |\n"}
+,{"stream_name":"stdout","time":3872.374183812,"data":"| +WT | holdout | WAPE (меньше — лучше) | +0.0002 | [-0.0004; +0.0006] | 0.698 |\n"}
+,{"stream_name":"stdout","time":3872.374187444,"data":"| +E | holdout | PR-AUC (больше — лучше) | +0.0014 | [-0.0015; +0.0053] | 0.193 |\n"}
+,{"stream_name":"stdout","time":3872.374190541,"data":"| +E | holdout | WAPE (меньше — лучше) | +0.0001 | [-0.0000; +0.0003] | 0.937 |\n"}
+,{"stream_name":"stdout","time":3872.37419628,"data":"| +ET | holdout | PR-AUC (больше — лучше) | -0.0017 | [-0.0044; +0.0019] | 0.825 |\n"}
+,{"stream_name":"stdout","time":3872.374200951,"data":"| +ET | holdout | WAPE (меньше — лучше) | -0.0001 | [-0.0002; +0.0001] | 0.204 |\n"}
+,{"stream_name":"stdout","time":3872.374205708,"data":"| +S | holdout | PR-AUC (больше — лучше) | -0.0029 | [-0.0081; +0.0015] | 0.915 |\n"}
+,{"stream_name":"stdout","time":3872.37421013,"data":"| +S | holdout | WAPE (меньше — лучше) | +0.0004 | [+0.0000; +0.0007] | 0.988 |\n"}
+,{"stream_name":"stdout","time":3872.374215008,"data":"| +NWS | holdout | PR-AUC (больше — лучше) | +0.0008 | [-0.0092; +0.0061] | 0.462 |\n"}
+,{"stream_name":"stdout","time":3872.374219587,"data":"| +NWS | holdout | WAPE (меньше — лучше) | +0.0001 | [-0.0003; +0.0004] | 0.696 |\n"}
+,{"stream_name":"stdout","time":3872.374224057,"data":"| +мероприятия | holdout | PR-AUC (больше — лучше) | -0.0009 | [-0.0042; +0.0027] | 0.693 |\n"}
+,{"stream_name":"stdout","time":3872.374228975,"data":"| +мероприятия | holdout | WAPE (меньше — лучше) | +0.0001 | [-0.0001; +0.0003] | 0.873 |\n"}
+,{"stream_name":"stdout","time":3872.374234169,"data":"| ALL | holdout | PR-AUC (больше — лучше) | -0.0026 | [-0.0157; +0.0050] | 0.685 |\n"}
+,{"stream_name":"stdout","time":3872.374239169,"data":"| ALL | holdout | WAPE (меньше — лучше) | +0.0005 | [+0.0000; +0.0010] | 0.975 |\n"}
+,{"stream_name":"stdout","time":3872.374243985,"data":"| ALL−NWS | holdout | PR-AUC (больше — лучше) | -0.0035 | [-0.0067; +0.0004] | 0.931 |\n"}
+,{"stream_name":"stdout","time":3872.374248921,"data":"| ALL−NWS | holdout | WAPE (меньше — лучше) | +0.0004 | [+0.0000; +0.0008] | 0.996 |\n"}
+,{"stream_name":"stdout","time":3872.374253847,"data":"| ALL−мероприятия | holdout | PR-AUC (больше — лучше) | -0.0026 | [-0.0173; +0.0057] | 0.705 |\n"}
+,{"stream_name":"stdout","time":3872.374258918,"data":"| ALL−мероприятия | holdout | WAPE (меньше — лучше) | +0.0003 | [-0.0001; +0.0008] | 0.921 |\n"}
+,{"stream_name":"stdout","time":3872.374264279,"data":"| ALL−расписание | holdout | PR-AUC (больше — лучше) | -0.0007 | [-0.0119; +0.0059] | 0.566 |\n"}
+,{"stream_name":"stdout","time":3872.374269329,"data":"| ALL−расписание | holdout | WAPE (меньше — лучше) | +0.0002 | [-0.0005; +0.0007] | 0.699 |\n"}
+,{"stream_name":"stdout","time":3872.374274409,"data":"| NEW_only | holdout | PR-AUC (больше — лучше) | -0.4834 | [-0.5490; -0.4025] | 1.000 |\n"}
+,{"stream_name":"stdout","time":3872.374283168,"data":"| NEW_only | holdout | WAPE (меньше — лучше) | +0.0265 | [+0.0185; +0.0356] | 1.000 |\n"}
+,{"stream_name":"stderr","time":3877.053396026,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3877.053432875,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3877.330416346,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3877.330453782,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3878.349464878,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3878.476223009,"data":"[NbConvertApp] Writing 58715 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3882.062004039,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3883.037628593,"data":"[NbConvertApp] Writing 484946 bytes to __results__.html\n"}
+]

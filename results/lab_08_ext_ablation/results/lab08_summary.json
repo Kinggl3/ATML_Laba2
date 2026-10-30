@@ -1,0 +1,192 @@
+{
+ "status": {
+  "nws": {
+   "events": 1726,
+   "hours_any_active": 0.1505747829277241
+  },
+  "permits": {
+   "events": 187449,
+   "objects_hours_with_direct": 0.7928947046594106
+  },
+  "schedules": {
+   "days": 1307,
+   "station_days_ratio_lt_0.5": 0.021331076496658052
+  }
+ },
+ "models": [
+  "U1_num",
+  "+W",
+  "+WT",
+  "+E",
+  "+ET",
+  "+S",
+  "+NWS",
+  "+мероприятия",
+  "ALL",
+  "ALL−NWS",
+  "ALL−мероприятия",
+  "ALL−расписание",
+  "NEW_only",
+  "C0_U1_plus_noise",
+  "C1_U1_seed2"
+ ],
+ "groups": {
+  "W": 13,
+  "WT": 8,
+  "E": 7,
+  "ET": 16,
+  "S": 3
+ },
+ "info": {
+  "cls|U1_num": {
+   "feats": 52,
+   "trees": 518,
+   "sec": 81.4
+  },
+  "cls|+W": {
+   "feats": 65,
+   "trees": 529,
+   "sec": 84.7
+  },
+  "cls|+WT": {
+   "feats": 60,
+   "trees": 483,
+   "sec": 79.4
+  },
+  "cls|+E": {
+   "feats": 59,
+   "trees": 674,
+   "sec": 102.9
+  },
+  "cls|+ET": {
+   "feats": 68,
+   "trees": 526,
+   "sec": 86.0
+  },
+  "cls|+S": {
+   "feats": 55,
+   "trees": 517,
+   "sec": 82.0
+  },
+  "cls|+NWS": {
+   "feats": 73,
+   "trees": 654,
+   "sec": 97.7
+  },
+  "cls|+мероприятия": {
+   "feats": 75,
+   "trees": 392,
+   "sec": 64.2
+  },
+  "cls|ALL": {
+   "feats": 99,
+   "trees": 402,
+   "sec": 74.5
+  },
+  "cls|ALL−NWS": {
+   "feats": 78,
+   "trees": 520,
+   "sec": 83.9
+  },
+  "cls|ALL−мероприятия": {
+   "feats": 76,
+   "trees": 411,
+   "sec": 73.0
+  },
+  "cls|ALL−расписание": {
+   "feats": 96,
+   "trees": 483,
+   "sec": 87.2
+  },
+  "cls|NEW_only": {
+   "feats": 47,
+   "trees": 13,
+   "sec": 6.9
+  },
+  "cls|C0_U1_plus_noise": {
+   "feats": 68,
+   "trees": 693,
+   "sec": 120.9
+  },
+  "cls|C1_U1_seed2": {
+   "feats": 52,
+   "trees": 839,
+   "sec": 121.1
+  },
+  "reg|U1_num": {
+   "feats": 52,
+   "trees": 1390,
+   "sec": 176.2
+  },
+  "reg|+W": {
+   "feats": 65,
+   "trees": 1948,
+   "sec": 210.1
+  },
+  "reg|+WT": {
+   "feats": 60,
+   "trees": 1573,
+   "sec": 179.8
+  },
+  "reg|+E": {
+   "feats": 59,
+   "trees": 1152,
+   "sec": 144.4
+  },
+  "reg|+ET": {
+   "feats": 68,
+   "trees": 1495,
+   "sec": 177.2
+  },
+  "reg|+S": {
+   "feats": 55,
+   "trees": 1637,
+   "sec": 205.7
+  },
+  "reg|+NWS": {
+   "feats": 73,
+   "trees": 1433,
+   "sec": 170.1
+  },
+  "reg|+мероприятия": {
+   "feats": 75,
+   "trees": 1529,
+   "sec": 183.4
+  },
+  "reg|ALL": {
+   "feats": 99,
+   "trees": 1635,
+   "sec": 211.3
+  },
+  "reg|ALL−NWS": {
+   "feats": 78,
+   "trees": 1222,
+   "sec": 156.3
+  },
+  "reg|ALL−мероприятия": {
+   "feats": 76,
+   "trees": 1537,
+   "sec": 183.5
+  },
+  "reg|ALL−расписание": {
+   "feats": 96,
+   "trees": 1253,
+   "sec": 165.2
+  },
+  "reg|NEW_only": {
+   "feats": 47,
+   "trees": 16,
+   "sec": 5.8
+  },
+  "reg|C0_U1_plus_noise": {
+   "feats": 68,
+   "trees": 1362,
+   "sec": 203.9
+  },
+  "reg|C1_U1_seed2": {
+   "feats": 52,
+   "trees": 1206,
+   "sec": 157.5
+  }
+ }
+}

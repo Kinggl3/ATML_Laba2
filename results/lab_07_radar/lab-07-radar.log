@@ -1,0 +1,52 @@
+[{"stream_name":"stderr","time":11.954505746,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.954598878,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.954608878,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.954623966,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.976152036,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.976191683,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.976197947,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.976203104,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":26.05670156,"data":"bbox [-74.281 -73.505  40.326  41.153] 2023-01-01 … 2026-08-11\n"}
+,{"stream_name":"stdout","time":59.649378676,"data":"файлов в архиве: 31678 за 33 c; дней без списка: 0\n"}
+,{"stream_name":"stdout","time":59.649450103,"data":"шаг между файлами, мин: {60.0: 31671, 180.0: 3, 120.0: 2, 1140.0: 1}\n"}
+,{"stream_name":"stdout","time":59.649459443,"data":"часов T: 23742; без текущего кадра: 0.06%; к загрузке файлов: 25040\n"}
+,{"stream_name":"stdout","time":60.033764079,"data":"world-файл: {'dx': 0.01, 'dy': -0.01, 'x0': -130.0, 'y0': 55.0, 'source': 'wld'} | последний: {'dx': 0.01, 'dy': -0.01, 'x0': -129.995, 'y0': 54.995, 'source': 'wld'}\n"}
+,{"stream_name":"stdout","time":60.033834982,"data":"world-файл сдвинут меньше чем на пиксель — используется последний: {'dx': 0.01, 'dy': -0.01, 'x0': -129.995, 'y0': 54.995, 'source': 'wld'}\n"}
+,{"stream_name":"stdout","time":60.03384652,"data":"вырезка: {'lon0': -74.285, 'lat0': 41.155, 'dx': 0.01, 'dy': -0.01, 'h': 84, 'w': 79, 'world_source': 'wld'}\n"}
+,{"stream_name":"stdout","time":61.027229763,"data":"0/25040  1 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":126.99995342,"data":"2000/25040  67 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":201.720579212,"data":"4000/25040  142 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":266.851105694,"data":"6000/25040  207 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":332.952491356,"data":"8000/25040  273 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":406.957542343,"data":"10000/25040  347 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":484.050440834,"data":"12000/25040  424 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":550.852066804,"data":"14000/25040  491 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":614.144920088,"data":"16000/25040  554 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":694.551884611,"data":"18000/25040  634 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":773.022294501,"data":"20000/25040  713 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":837.277426216,"data":"22000/25040  777 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":911.748060735,"data":"24000/25040  852 c  получено 100.0%\n"}
+,{"stream_name":"stdout","time":950.947555552,"data":"загружено 100.00% файлов за 15 мин\n"}
+,{"stream_name":"stderr","time":951.764284995,"data":"/tmp/ipykernel_16/3042386067.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":951.764370398,"data":"  city = np.array([np.nanmean(p1h_mm(CROPS[i])) if i \u003e= 0 else np.nan for i in hm[\"cur\"]])\n"}
+,{"stream_name":"stderr","time":951.764380123,"data":"\n"}
+,{"stream_name":"stderr","time":951.764385589,"data":"/tmp/ipykernel_16/3042386067.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":951.764390121,"data":"  city = np.array([np.nanmean(p1h_mm(CROPS[i])) if i \u003e= 0 else np.nan for i in hm[\"cur\"]])\n"}
+,{"stream_name":"stdout","time":954.874707615,"data":" сдвиг ERA5, ч  корреляция\n"}
+,{"stream_name":"stdout","time":954.874760136,"data":"            -3       0.363\n"}
+,{"stream_name":"stdout","time":954.874766968,"data":"            -2       0.439\n"}
+,{"stream_name":"stdout","time":954.874771729,"data":"            -1       0.519\n"}
+,{"stream_name":"stdout","time":954.874776475,"data":"             0       0.531\n"}
+,{"stream_name":"stdout","time":954.874796787,"data":"             1       0.474\n"}
+,{"stream_name":"stdout","time":954.874804516,"data":"             2       0.396\n"}
+,{"stream_name":"stdout","time":954.874809892,"data":"             3       0.327\n"}
+,{"stream_name":"stdout","time":954.874814354,"data":"пик корреляции должен быть на сдвиге 0 (правило S16); другой пик — время одного из источников сдвинуто\n"}
+,{"stream_name":"stderr","time":959.022865727,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":959.022917002,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":959.362971985,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":959.363011999,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":960.518235147,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":960.620262253,"data":"[NbConvertApp] Writing 17936 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":964.192238196,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":964.935303598,"data":"[NbConvertApp] Writing 337025 bytes to __results__.html\n"}
+]

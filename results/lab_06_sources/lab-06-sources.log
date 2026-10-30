@@ -1,0 +1,143 @@
+[{"stream_name":"stderr","time":9.561423719,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.561554074,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.561562171,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.561566643,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.340182129,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.340234906,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.340240864,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.340244908,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.079198163,"data":"424 станций; 2023-01-01 00:00:00 … 2026-09-24 23:00:00\n"}
+,{"stream_name":"stdout","time":30.145135251,"data":"NWS: столбцы ['url', 'product_issued', 'issue', 'expire', 'init_expired', 'purge_time', 'updated', 'eventid', 'phenomena', 'hvtec_nwsli', 'significance', 'last_product_id', 'product_id', 'wfo', 'ugc'] строк 22264\n"}
+,{"stream_name":"stdout","time":30.145178275,"data":"NWS: событий в районах НЙ 2116 продуктов 685\n"}
+,{"stream_name":"stdout","time":52.371652926,"data":"{'ok': True, 'rows': 2116, 'products': 685, 'text_found_share': 1.0, 'by_group': {'coastal': 513, 'cold': 35, 'flood': 610, 'heat': 120, 'other': 214, 'storm': 353, 'wind': 174, 'winter': 97}, 'by_year': {2022: 29, 2023: 560, 2024: 628, 2025: 448, 2026: 451}}\n"}
+,{"stream_name":"stdout","time":52.371717707,"data":"1290    FA.Y Advisory for Manhattan. Flood Advisory Na...\n"}
+,{"stream_name":"stdout","time":52.371725398,"data":"1621    WI.Y Advisory for Brooklyn. URGENT - WEATHER M...\n"}
+,{"stream_name":"stdout","time":52.371730693,"data":"1609    WI.Y Advisory for Manhattan. URGENT - WEATHER ...\n"}
+,{"stream_name":"stdout","time":53.326706344,"data":"bkfu-528j колонки: ['event_id', 'event_name', 'start_date_time', 'end_date_time', 'event_agency', 'event_type', 'event_borough', 'event_location', 'event_street_side', 'street_closure_type', 'community_board', 'police_precinct', 'cemsid'] | start: start_date_time end: end_date_time\n"}
+,{"stream_name":"stdout","time":288.614667757,"data":"bkfu-528j строк 954412\n"}
+,{"stream_name":"stdout","time":288.614752758,"data":"tvpp-9vvx колонки: ['event_id', 'event_name', 'start_date_time', 'end_date_time', 'event_agency', 'event_type', 'event_borough', 'event_location', 'event_street_side', 'street_closure_type', 'community_board', 'police_precinct', 'cemsid'] | start: start_date_time end: end_date_time\n"}
+,{"stream_name":"stdout","time":289.158065605,"data":"tvpp-9vvx строк 4\n"}
+,{"stream_name":"stdout","time":289.487757417,"data":"поля: {'id': 'event_id', 'name': 'event_name', 'type': 'event_type', 'start': 'start_date_time', 'end': 'end_date_time', 'boro': 'event_borough', 'loc': 'event_location', 'closure': 'street_closure_type', 'agency': 'event_agency'}\n"}
+,{"stream_name":"stdout","time":292.601972211,"data":"type\n"}
+,{"stream_name":"stdout","time":292.60200846,"data":"Sport - Youth                    562843\n"}
+,{"stream_name":"stdout","time":292.602017591,"data":"Sport - Adult                    196320\n"}
+,{"stream_name":"stdout","time":292.602022536,"data":"Special Event                    154194\n"}
+,{"stream_name":"stdout","time":292.602027431,"data":"Street Event                      10722\n"}
+,{"stream_name":"stdout","time":292.602057171,"data":"Block Party                        5364\n"}
+,{"stream_name":"stdout","time":292.60207063,"data":"Production Event                   5145\n"}
+,{"stream_name":"stdout","time":292.602074505,"data":"Farmers Market                     4842\n"}
+,{"stream_name":"stdout","time":292.602082179,"data":"Plaza Partner Event                2533\n"}
+,{"stream_name":"stdout","time":292.602085696,"data":"Parade                             2107\n"}
+,{"stream_name":"stdout","time":292.602104497,"data":"Religious Event                    2074\n"}
+,{"stream_name":"stdout","time":292.602108021,"data":"Plaza Event                        1676\n"}
+,{"stream_name":"stdout","time":292.602111489,"data":"Sidewalk Sale                      1571\n"}
+,{"stream_name":"stdout","time":292.602115069,"data":"Open Street Partner Event          1553\n"}
+,{"stream_name":"stdout","time":292.60211872,"data":"Single Block Festival               853\n"}
+,{"stream_name":"stdout","time":292.60212239,"data":"Street Festival                     700\n"}
+,{"stream_name":"stdout","time":292.60212799,"data":"Theater Load in and Load Outs       683\n"}
+,{"stream_name":"stdout","time":292.602131969,"data":"Health Fair                         422\n"}
+,{"stream_name":"stdout","time":292.602135305,"data":"Athletic Race / Tour                231\n"}
+,{"stream_name":"stdout","time":292.602138844,"data":"Stickball                           127\n"}
+,{"stream_name":"stdout","time":292.602142628,"data":"Open Street Event                    98\n"}
+,{"stream_name":"stdout","time":292.602146364,"data":"Clean-Up                             79\n"}
+,{"stream_name":"stdout","time":292.602150196,"data":"Miscellaneous                        61\n"}
+,{"stream_name":"stdout","time":292.602154026,"data":"Open Culture                         53\n"}
+,{"stream_name":"stdout","time":292.602157897,"data":"Stationary Demonstration             49\n"}
+,{"stream_name":"stdout","time":292.602161756,"data":"Press Conference                     32\n"}
+,{"stream_name":"stdout","time":292.602165632,"data":"Shooting Permit                      24\n"}
+,{"stream_name":"stdout","time":292.602169632,"data":"Bike the Block                       22\n"}
+,{"stream_name":"stdout","time":292.602173507,"data":"BID Multi-Block                      11\n"}
+,{"stream_name":"stdout","time":292.602177405,"data":"Filming/Photography                  10\n"}
+,{"stream_name":"stdout","time":292.602181543,"data":"Rigging Permit                        4\n"}
+,{"stream_name":"stdout","time":473.596484857,"data":"привязка 180 c; привязано 18.5% мероприятий\n"}
+,{"stream_name":"stdout","time":474.532245032,"data":"{'ok': True, 'datasets': ['bkfu-528j', 'tvpp-9vvx'], 'events': 187449, 'linked_share': 0.18490362711990996, 'pairs': 196892, 'by_year': {2022: 5330, 2023: 56068, 2024: 50446, 2025: 52240, 2026: 23365}}\n"}
+,{"stream_name":"stdout","time":475.390873693,"data":"станций MTA: 496 | поля gtfs_stop_id complex_id\n"}
+,{"stream_name":"stdout","time":475.88396926,"data":"2023 7pnn-mafy {'stop': 'gtfs_stop_id', 'date': 'service_date', 'date_type': 'calendar_date', 'supplement': 'supplement_schedule_number', 'fields': ['service_date', 'service_code', 'train_id', 'line', 'trip_line', 'direction', 'stop_order', 'gtfs_stop_id', 'arrival_time', 'departure_time', 'date_difference', 'track', 'division', 'revenue_service', 'timepoint', 'trip_type', 'path_id', 'next_trip_type', 'next_trip_time', 'supplement_schedule_number', 'schedule_file_number', 'origin_gtfs_stop_id', 'destination_gtfs_stop_id']}\n"}
+,{"stream_name":"stdout","time":483.335809335,"data":"  2023-01: 16857 строк\n"}
+,{"stream_name":"stdout","time":488.108599296,"data":"  2023-02: 15268 строк\n"}
+,{"stream_name":"stdout","time":493.695491837,"data":"  2023-03: 16980 строк\n"}
+,{"stream_name":"stdout","time":498.883404684,"data":"  2023-04: 16284 строк\n"}
+,{"stream_name":"stdout","time":504.022795753,"data":"  2023-05: 16760 строк\n"}
+,{"stream_name":"stdout","time":509.224362555,"data":"  2023-06: 16344 строк\n"}
+,{"stream_name":"stdout","time":514.018196532,"data":"  2023-07: 16924 строк\n"}
+,{"stream_name":"stdout","time":519.941693282,"data":"  2023-08: 16988 строк\n"}
+,{"stream_name":"stdout","time":525.163981353,"data":"  2023-09: 16358 строк\n"}
+,{"stream_name":"stdout","time":531.291676288,"data":"  2023-10: 16917 строк\n"}
+,{"stream_name":"stdout","time":536.757320545,"data":"  2023-11: 16356 строк\n"}
+,{"stream_name":"stdout","time":542.084967921,"data":"  2023-12: 17022 строк\n"}
+,{"stream_name":"stdout","time":542.500340979,"data":"2024 ebrw-j62c {'stop': 'gtfs_stop_id', 'date': 'service_date', 'date_type': 'calendar_date', 'supplement': 'supplement_schedule_number', 'fields': ['service_date', 'service_code', 'train_id', 'line', 'trip_line', 'direction', 'stop_order', 'gtfs_stop_id', 'arrival_time', 'departure_time', 'date_difference', 'track', 'division', 'revenue_service', 'timepoint', 'trip_type', 'path_id', 'next_trip_type', 'next_trip_time', 'supplement_schedule_number', 'schedule_file_number', 'origin_gtfs_stop_id', 'destination_gtfs_stop_id']}\n"}
+,{"stream_name":"stdout","time":548.028070625,"data":"  2024-01: 16959 строк\n"}
+,{"stream_name":"stdout","time":553.455663549,"data":"  2024-02: 15819 строк\n"}
+,{"stream_name":"stdout","time":559.433669982,"data":"  2024-03: 16976 строк\n"}
+,{"stream_name":"stdout","time":565.782498537,"data":"  2024-04: 16456 строк\n"}
+,{"stream_name":"stdout","time":571.004055176,"data":"  2024-05: 17004 строк\n"}
+,{"stream_name":"stdout","time":576.207146922,"data":"  2024-06: 16461 строк\n"}
+,{"stream_name":"stdout","time":581.31903262,"data":"  2024-07: 16801 строк\n"}
+,{"stream_name":"stdout","time":586.38825333,"data":"  2024-08: 16813 строк\n"}
+,{"stream_name":"stdout","time":591.602423933,"data":"  2024-09: 16478 строк\n"}
+,{"stream_name":"stdout","time":598.4293716,"data":"  2024-10: 16987 строк\n"}
+,{"stream_name":"stdout","time":603.422620881,"data":"  2024-11: 16400 строк\n"}
+,{"stream_name":"stdout","time":608.940012477,"data":"  2024-12: 17133 строк\n"}
+,{"stream_name":"stdout","time":609.449030584,"data":"2025 q9nv-uegs {'stop': 'gtfs_stop_id', 'date': 'service_date', 'date_type': 'calendar_date', 'supplement': 'supplement_schedule_number', 'fields': ['service_date', 'service_code', 'train_id', 'line', 'trip_line', 'direction', 'stop_order', 'gtfs_stop_id', 'arrival_time', 'departure_time', 'date_difference', 'track', 'division', 'revenue_service', 'timepoint', 'trip_type', 'path_id', 'next_trip_type', 'next_trip_time', 'supplement_schedule_number', 'schedule_file_number', 'origin_gtfs_stop_id', 'destination_gtfs_stop_id']}\n"}
+,{"stream_name":"stdout","time":614.584830177,"data":"  2025-01: 16961 строк\n"}
+,{"stream_name":"stdout","time":619.349068756,"data":"  2025-02: 15226 строк\n"}
+,{"stream_name":"stdout","time":626.184958594,"data":"  2025-03: 16798 строк\n"}
+,{"stream_name":"stdout","time":634.008280606,"data":"  2025-04: 16363 строк\n"}
+,{"stream_name":"stdout","time":639.325104646,"data":"  2025-05: 16948 строк\n"}
+,{"stream_name":"stdout","time":643.972432929,"data":"  2025-06: 16456 строк\n"}
+,{"stream_name":"stdout","time":649.034076473,"data":"  2025-07: 16986 строк\n"}
+,{"stream_name":"stdout","time":654.552901379,"data":"  2025-08: 16918 строк\n"}
+,{"stream_name":"stdout","time":659.584076765,"data":"  2025-09: 16483 строк\n"}
+,{"stream_name":"stdout","time":664.506824951,"data":"  2025-10: 16943 строк\n"}
+,{"stream_name":"stdout","time":669.18981457,"data":"  2025-11: 16446 строк\n"}
+,{"stream_name":"stdout","time":674.145874115,"data":"  2025-12: 17121 строк\n"}
+,{"stream_name":"stdout","time":674.60878771,"data":"2026 g8es-h7gb {'stop': 'gtfs_stop_id', 'date': 'service_date', 'date_type': 'calendar_date', 'supplement': 'supplement_schedule_number', 'fields': ['service_date', 'service_code', 'train_id', 'line', 'trip_line', 'direction', 'stop_order', 'gtfs_stop_id', 'arrival_time', 'departure_time', 'date_difference', 'track', 'division', 'revenue_service', 'timepoint', 'trip_type', 'path_id', 'next_trip_type', 'next_trip_time', 'supplement_schedule_number', 'schedule_file_number', 'origin_gtfs_stop_id', 'destination_gtfs_stop_id']}\n"}
+,{"stream_name":"stdout","time":680.08359096,"data":"  2026-01: 17015 строк\n"}
+,{"stream_name":"stdout","time":685.759498143,"data":"  2026-02: 15406 строк\n"}
+,{"stream_name":"stdout","time":691.870170468,"data":"  2026-03: 16962 строк\n"}
+,{"stream_name":"stdout","time":702.458358396,"data":"  2026-04: 16437 строк\n"}
+,{"stream_name":"stdout","time":707.623444101,"data":"  2026-05: 16416 строк\n"}
+,{"stream_name":"stdout","time":713.895070972,"data":"  2026-06: 16552 строк\n"}
+,{"stream_name":"stdout","time":719.299167763,"data":"  2026-07: 16510 строк\n"}
+,{"stream_name":"stdout","time":719.299242371,"data":"  2026-08: 0 строк\n"}
+,{"stream_name":"stdout","time":720.708220354,"data":"{'ok': True, 'rows': 546826, 'days': 1306, 'unmapped_stop_share': 0.14333633864021997}\n"}
+,{"stream_name":"stderr","time":762.761924785,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":762.761970778,"data":"\n"}
+,{"stream_name":"stderr","time":762.761976523,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1267.318973888,"data":"nws (2116, 384) 499 c на cpu\n"}
+,{"stream_name":"stdout","time":4584.534500273,"data":"permits (187449, 384) 3317 c на cpu\n"}
+,{"stream_name":"stdout","time":4584.568611184,"data":"# Новые источники: паспорт (эксперимент 2)\n"}
+,{"stream_name":"stdout","time":4584.568659859,"data":"\n"}
+,{"stream_name":"stdout","time":4584.568667181,"data":"## nws: готов\n"}
+,{"stream_name":"stdout","time":4584.56867249,"data":"- ok: True\n"}
+,{"stream_name":"stdout","time":4584.568677782,"data":"- rows: 2116\n"}
+,{"stream_name":"stdout","time":4584.568682801,"data":"- products: 685\n"}
+,{"stream_name":"stdout","time":4584.568687707,"data":"- text_found_share: 1.0\n"}
+,{"stream_name":"stdout","time":4584.568692619,"data":"- by_group: {'coastal': 513, 'cold': 35, 'flood': 610, 'heat': 120, 'other': 214, 'storm': 353, 'wind': 174, 'winter': 97}\n"}
+,{"stream_name":"stdout","time":4584.568697866,"data":"- by_year: {2022: 29, 2023: 560, 2024: 628, 2025: 448, 2026: 451}\n"}
+,{"stream_name":"stdout","time":4584.568703126,"data":"- emb_sec: 498.6\n"}
+,{"stream_name":"stdout","time":4584.568708351,"data":"\n"}
+,{"stream_name":"stdout","time":4584.568713438,"data":"## permits: готов\n"}
+,{"stream_name":"stdout","time":4584.568718722,"data":"- ok: True\n"}
+,{"stream_name":"stdout","time":4584.568740731,"data":"- datasets: ['bkfu-528j', 'tvpp-9vvx']\n"}
+,{"stream_name":"stdout","time":4584.568745024,"data":"- events: 187449\n"}
+,{"stream_name":"stdout","time":4584.568748512,"data":"- linked_share: 0.18490362711990996\n"}
+,{"stream_name":"stdout","time":4584.568752278,"data":"- pairs: 196892\n"}
+,{"stream_name":"stdout","time":4584.568755642,"data":"- by_year: {2022: 5330, 2023: 56068, 2024: 50446, 2025: 52240, 2026: 23365}\n"}
+,{"stream_name":"stdout","time":4584.568759547,"data":"- emb_sec: 3317.2\n"}
+,{"stream_name":"stdout","time":4584.568763394,"data":"\n"}
+,{"stream_name":"stdout","time":4584.568766628,"data":"## schedules: готов\n"}
+,{"stream_name":"stdout","time":4584.568770306,"data":"- ok: True\n"}
+,{"stream_name":"stdout","time":4584.568773701,"data":"- rows: 546826\n"}
+,{"stream_name":"stdout","time":4584.568776964,"data":"- days: 1306\n"}
+,{"stream_name":"stdout","time":4584.568780441,"data":"- unmapped_stop_share: 0.14333633864021997\n"}
+,{"stream_name":"stdout","time":4584.568783965,"data":"\n"}
+,{"stream_name":"stderr","time":4590.449197122,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4590.449248783,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4590.665790508,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4590.665825026,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4591.588146763,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4591.742141923,"data":"[NbConvertApp] Writing 195750 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4595.010859329,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4595.891805051,"data":"[NbConvertApp] Writing 552016 bytes to __results__.html\n"}
+]
